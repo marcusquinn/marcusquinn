@@ -28,10 +28,10 @@
 | Metric | Today | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 12.1h | 104.4h | 366.2h | ~4,672h* |
-| User AI session hours | 9.9h | 22.7h | 133.4h | 319.0h |
+| User AI session hours | 9.9h | 22.7h | 133.3h | 319.0h |
 | AI worker hours | 18.1h | 71.3h | 106.4h | 107.2h |
-| AI concurrency hours | 48.8h | 149.2h | 581.1h | 914.9h |
-| Interactive sessions | 121 | 317 | 1,446 | 1,958 |
+| AI concurrency hours | 49.0h | 149.5h | 581.0h | 915.1h |
+| Interactive sessions | 121 | 317 | 1,445 | 1,958 |
 | Worker sessions | 183 | 774 | 1,825 | 1,826 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
@@ -48,19 +48,20 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | claude-haiku-4-5 | 1,163 | 83K | 2K | 37.9M | $12.40 | $27.34 | $55.26 |
 | **Total** | **3,642** | **162K** | **24K** | **188.6M** | **$392.92** | **$1580.17** | **$109.42** |
 
-_212.9M total tokens processed. 88.6% cache hit rate. $1689.59 total saved ($1580.17 caching + $109.42 model routing vs all-Opus)._
+_212.9M total tokens processed. 88.6% cache hit rate. $1689.59 total saved ($1580.17 caching + $109.42 model routing vs all-Opus).
+Model savings are modest because ~88.6% of tokens are cache reads, where price differences between models are small._
 
 ## Top Apps by Screen Time
 
 | App | Today | 7 Days | 28 Days |
 | --- | ---: | ---: | ---: |
-| Tabby | 43% | 17% | 25% |
+| Tabby | 42% | 17% | 25% |
 | Brave Browser | 17% | 19% | 17% |
-| Slack | 13% | 12% | 9% |
-| Mail | -- | 13% | 9% |
+| Slack | 14% | 12% | 9% |
+| Mail | -- | 12% | 9% |
 | X | 11% | 8% | 9% |
 | YouTube | -- | 6% | 6% |
-| GitHub | 10% | 5% | 6% |
+| GitHub | 11% | 5% | 6% |
 | WhatsApp | -- | 4% | 3% |
 | Finder | -- | 3% | 3% |
 | Amazon | 2% | 3% | 2% |
@@ -95,5 +96,5 @@ _Top 10 apps by foreground time share. Mac only._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-09 03:41 UTC by [aidevops](https://github.com/marcusquinn/aidevops) pulse._
+_Stats auto-updated 2026-03-09 03:58 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
