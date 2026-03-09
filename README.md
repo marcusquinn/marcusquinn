@@ -25,14 +25,14 @@
 <!-- STATS-START -->
 ## Work with AI
 
-| Metric | Today | 7 Days | 28 Days | 365 Days |
+| Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 0h | 0h | 0h | ~4,672h* |
-| User AI session hours | 11.0h | 23.8h | 133.6h | 316.8h |
-| AI worker hours | 31.0h | 104.0h | 222.8h | 232.6h |
-| AI concurrency hours | 52.5h | 155.9h | 584.8h | 921.7h |
-| Interactive sessions | 9 | 62 | 473 | 985 |
-| Worker sessions | 277 | 1,059 | 2,802 | 2,829 |
+| Screen time (Mac) | 12.5h | 107.8h | 368.1h | ~4,672h* |
+| User AI session hours | 8.2h | 23.2h | 132.4h | 316.9h |
+| AI worker hours | 12.0h | 104.2h | 223.2h | 234.4h |
+| AI concurrency hours | 32.4h | 160.1h | 585.5h | 928.5h |
+| Interactive sessions | 9 | 61 | 455 | 986 |
+| Worker sessions | 139 | 1,062 | 2,816 | 2,858 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 _User AI session hours measured from AI message timestamps (reading, thinking, typing between responses)._
@@ -50,6 +50,23 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 _212.9M total tokens processed. 88.6% cache hit rate. $1689.59 total saved ($1580.17 caching + $109.42 model routing vs all-Opus).
 Model savings are modest because ~88.6% of tokens are cache reads, where price differences between models are small._
+
+## Top Apps by Screen Time
+
+| App | 24h | 7 Days | 28 Days |
+| --- | ---: | ---: | ---: |
+| Tabby | 31% | 18% | 25% |
+| Brave Browser | 14% | 19% | 17% |
+| Mail | 4% | 9% | 9% |
+| Slack | 12% | 12% | 9% |
+| X | 15% | 9% | 8% |
+| YouTube | -- | 6% | 6% |
+| GitHub | 13% | 6% | 6% |
+| WhatsApp | 1% | 4% | 3% |
+| Finder | 1% | 2% | 3% |
+| Amazon | 1% | 3% | 2% |
+
+_Top 10 apps by foreground time share. Mac only._
 <!-- STATS-END -->
 
 ## Current Projects
@@ -79,5 +96,5 @@ Model savings are modest because ~88.6% of tokens are cache reads, where price d
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-09 06:00 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-03-09 18:14 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
