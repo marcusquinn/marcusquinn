@@ -28,11 +28,11 @@
 | Metric | Today | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 12.1h | 104.4h | 366.2h | ~4,672h* |
-| User AI session hours | 9.9h | 22.7h | 133.3h | 319.0h |
-| AI worker hours | 18.1h | 71.3h | 106.4h | 107.2h |
-| AI concurrency hours | 49.0h | 149.5h | 581.0h | 915.1h |
-| Interactive sessions | 121 | 317 | 1,445 | 1,958 |
-| Worker sessions | 183 | 774 | 1,825 | 1,826 |
+| User AI session hours | 9.0h | 21.8h | 132.1h | 314.8h |
+| AI worker hours | 31.3h | 102.4h | 221.6h | 230.9h |
+| AI concurrency hours | 50.0h | 151.3h | 582.3h | 917.1h |
+| Interactive sessions | 8 | 61 | 483 | 984 |
+| Worker sessions | 295 | 1,045 | 2,798 | 2,815 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 _User AI session hours measured from AI message timestamps (reading, thinking, typing between responses)._
@@ -55,11 +55,11 @@ Model savings are modest because ~88.6% of tokens are cache reads, where price d
 
 | App | Today | 7 Days | 28 Days |
 | --- | ---: | ---: | ---: |
-| Tabby | 42% | 17% | 25% |
+| Tabby | 40% | 17% | 25% |
 | Brave Browser | 17% | 19% | 17% |
-| Slack | 14% | 12% | 9% |
-| Mail | -- | 12% | 9% |
-| X | 11% | 8% | 9% |
+| Slack | 15% | 12% | 9% |
+| Mail | 3% | 12% | 9% |
+| X | 9% | 8% | 9% |
 | YouTube | -- | 6% | 6% |
 | GitHub | 11% | 5% | 6% |
 | WhatsApp | -- | 4% | 3% |
@@ -96,5 +96,5 @@ _Top 10 apps by foreground time share. Mac only._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-09 03:58 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-03-09 04:29 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
