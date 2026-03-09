@@ -22,16 +22,17 @@
 
 > Building AI-native DevOps tooling. Shipping with AI agents around the clock -- human hours for thinking, machine hours for doing.
 
+<!-- STATS-START -->
 ## Work with AI
 
 | Metric | Today | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 15.4h | 104.4h | 371.3h | ~4,672h* |
-| User AI session hours | 7.2h | 21.4h | 137.1h | 317.8h |
-| AI worker hours | 42.9h | 121.9h | 444.9h | 590.2h |
-| Total AI work | 50.1h | 143.3h | 582.0h | 908.0h |
-| Interactive sessions | 145 | 319 | 1,460 | 1,957 |
-| Worker sessions | 185 | 757 | 1,808 | 1,809 |
+| Screen time (Mac) | 15.4h | 104.4h | 372.4h | ~4,672h* |
+| User AI session hours | 7.9h | 21.2h | 135.3h | 317.0h |
+| AI worker hours | 17.8h | 70.3h | 105.4h | 106.1h |
+| Total AI work | 51.2h | 145.4h | 581.9h | 910.0h |
+| Interactive sessions | 139 | 319 | 1,454 | 1,957 |
+| Worker sessions | 183 | 762 | 1,813 | 1,814 |
 
 _Screen time from macOS display events, snapshotted every 6h. *365-day extrapolated (accumulating real data)._
 _User AI session hours measured from AI message timestamps (reading, thinking, typing between responses)._
@@ -40,14 +41,15 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | Cost |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 1,227 | 39K | 11K | 70.8M | $249.83 |
-| claude-opus-4-5 | 456 | 33K | 3K | 35.3M | $99.23 |
-| claude-sonnet-4-5 | 395 | 2K | 3K | 11.4M | $16.17 |
-| claude-sonnet-4-6 | 401 | 4K | 5K | 33.3M | $15.29 |
-| claude-haiku-4-5 | 1,163 | 83K | 2K | 38.0M | $12.40 |
-| **Total** | **3,643** | **162K** | **25K** | **188.8M** | **$392.93** |
+| claude-opus-4-6 | 1,227 | 39K | 10K | 70.8M | $249.83 |
+| claude-opus-4-5 | 456 | 33K | 2K | 35.2M | $99.23 |
+| claude-sonnet-4-5 | 395 | 2K | 3K | 11.3M | $16.17 |
+| claude-sonnet-4-6 | 401 | 4K | 5K | 33.2M | $15.29 |
+| claude-haiku-4-5 | 1,163 | 83K | 2K | 37.9M | $12.40 |
+| **Total** | **3,642** | **162K** | **24K** | **188.6M** | **$392.92** |
 
-_213M total tokens processed. Cache hit rate: 88.6% -- prompt caching reduces cost by ~88% vs uncached._
+_212.9M total tokens processed. Cache hit rate: 88.6% -- prompt caching reduces cost by ~89% vs uncached._
+<!-- STATS-END -->
 
 ## Current Projects
 
@@ -75,4 +77,6 @@ _213M total tokens processed. Cache hit rate: 88.6% -- prompt caching reduces co
 
 ---
 
-_Stats updated periodically by [aidevops](https://github.com/marcusquinn/aidevops) pulse._
+<!-- UPDATED-START -->
+_Stats auto-updated 2026-03-09 01:13 UTC by [aidevops](https://github.com/marcusquinn/aidevops) pulse._
+<!-- UPDATED-END -->
