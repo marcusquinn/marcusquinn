@@ -24,21 +24,21 @@
 
 ## Work with AI
 
-| Metric | Today | 7 Days | 30 Days | 365 Days |
+| Metric | Today | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 15.4h | 104.4h | 372.4h | ~4,531h* |
+| Screen time (Mac) | 15.4h | 104.4h | 371.3h | ~4,672h* |
 | User AI session hours | 7.2h | 21.4h | 137.1h | 317.8h |
 | AI worker hours | 42.9h | 121.9h | 444.9h | 590.2h |
 | Total AI work | 50.1h | 143.3h | 582.0h | 908.0h |
 | Interactive sessions | 145 | 319 | 1,460 | 1,957 |
 | Worker sessions | 185 | 757 | 1,808 | 1,809 |
 
-_Screen time from macOS Knowledge DB (display backlit events). *365-day figure extrapolated from 30-day average._
-_User AI session hours measured from AI assistant message timestamps (reading, thinking, typing between responses)._
+_Screen time from macOS display events, snapshotted every 6h. *365-day extrapolated (accumulating real data)._
+_User AI session hours measured from AI message timestamps (reading, thinking, typing between responses)._
 
 ## AI Model Usage (last 30 days)
 
-| Model | Requests | Input tokens | Output tokens | Cache read | Cost |
+| Model | Requests | Input | Output | Cache read | Cost |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 1,227 | 39K | 11K | 70.8M | $249.83 |
 | claude-opus-4-5 | 456 | 33K | 3K | 35.3M | $99.23 |
@@ -46,6 +46,8 @@ _User AI session hours measured from AI assistant message timestamps (reading, t
 | claude-sonnet-4-6 | 401 | 4K | 5K | 33.3M | $15.29 |
 | claude-haiku-4-5 | 1,163 | 83K | 2K | 38.0M | $12.40 |
 | **Total** | **3,643** | **162K** | **25K** | **188.8M** | **$392.93** |
+
+_213M total tokens processed. Cache hit rate: 88.6% -- prompt caching reduces cost by ~88% vs uncached._
 
 ## Current Projects
 
