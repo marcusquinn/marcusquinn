@@ -28,9 +28,9 @@
 | Metric | Today | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 12.1h | 104.4h | 366.2h | ~4,672h* |
-| User AI session hours | 9.8h | 22.6h | 133.4h | 318.9h |
+| User AI session hours | 9.8h | 22.7h | 133.4h | 318.9h |
 | AI worker hours | 18.1h | 71.3h | 106.4h | 107.2h |
-| Total AI work | 48.7h | 149.1h | 580.9h | 914.7h |
+| Total AI work | 48.7h | 149.1h | 581.1h | 914.8h |
 | Interactive sessions | 121 | 317 | 1,446 | 1,958 |
 | Worker sessions | 183 | 774 | 1,825 | 1,826 |
 
@@ -78,5 +78,5 @@ _212.9M total tokens processed. Cache hit rate: 88.6% -- prompt caching reduces 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-09 03:35 UTC by [aidevops](https://github.com/marcusquinn/aidevops) pulse._
+_Stats auto-updated 2026-03-09 03:38 UTC by [aidevops](https://github.com/marcusquinn/aidevops) pulse._
 <!-- UPDATED-END -->
