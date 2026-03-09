@@ -28,10 +28,10 @@
 | Metric | Today | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 12.1h | 104.4h | 366.2h | ~4,672h* |
-| User AI session hours | 9.7h | 22.5h | 133.8h | 318.8h |
+| User AI session hours | 9.8h | 22.6h | 133.4h | 318.9h |
 | AI worker hours | 18.1h | 71.3h | 106.4h | 107.2h |
-| Total AI work | 48.1h | 148.5h | 581.4h | 914.2h |
-| Interactive sessions | 121 | 317 | 1,448 | 1,958 |
+| Total AI work | 48.7h | 149.1h | 580.9h | 914.7h |
+| Interactive sessions | 121 | 317 | 1,446 | 1,958 |
 | Worker sessions | 183 | 774 | 1,825 | 1,826 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
@@ -49,23 +49,6 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | **Total** | **3,642** | **162K** | **24K** | **188.6M** | **$392.92** |
 
 _212.9M total tokens processed. Cache hit rate: 88.6% -- prompt caching reduces cost by ~89% vs uncached._
-
-## Top Apps by Screen Time
-
-| App | Today | 7 Days | 28 Days |
-| --- | ---: | ---: | ---: |
-| Tabby | 44% | 16% | 25% |
-| Brave Browser | 21% | 19% | 17% |
-| Slack | 11% | 12% | 9% |
-| Mail | -- | 13% | 9% |
-| X | 8% | 8% | 9% |
-| YouTube | -- | 6% | 6% |
-| GitHub | 11% | 5% | 6% |
-| WhatsApp | -- | 4% | 3% |
-| Finder | -- | 3% | 3% |
-| Amazon | 3% | 3% | 2% |
-
-_Top 10 apps by foreground time share. Mac only._
 <!-- STATS-END -->
 
 ## Current Projects
@@ -95,5 +78,5 @@ _Top 10 apps by foreground time share. Mac only._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-09 03:02 UTC by [aidevops](https://github.com/marcusquinn/aidevops) pulse._
+_Stats auto-updated 2026-03-09 03:35 UTC by [aidevops](https://github.com/marcusquinn/aidevops) pulse._
 <!-- UPDATED-END -->
