@@ -6,16 +6,18 @@
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
 ![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![Ruby](https://img.shields.io/badge/-Ruby-CC342D?style=flat-square&logo=ruby&logoColor=white)
 ![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 ![WordPress](https://img.shields.io/badge/-WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Cloudron](https://img.shields.io/badge/-Cloudron-03A9F4?style=flat-square&logo=cloud&logoColor=white)
 ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![macOS](https://img.shields.io/badge/-macOS-000000?style=flat-square&logo=apple&logoColor=white)
 ![Claude](https://img.shields.io/badge/-Claude-000000?style=flat-square&logo=anthropic&logoColor=white)
-![OpenCode](https://img.shields.io/badge/-OpenCode-6366F1?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQyIDAtOC0zLjU4LTgtOHMzLjU4LTggOC04IDggMy41OCA4IDgtMy41OCA4LTggOHoiLz48L3N2Zz4=&logoColor=white)
+![OpenCode](https://img.shields.io/badge/-OpenCode-6366F1?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQyIDAtOC0zLjU4LTgtOHMzLjU4LTggOC04IDggMy41OCA4IDgtMy41OCA0LTggOHoiLz48L3N2Zz4=&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 > Building AI-native DevOps tooling. Shipping with AI agents around the clock -- human hours for thinking, machine hours for doing.
@@ -24,11 +26,26 @@
 
 | Metric | Today | 7 Days | 30 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Human hours | 7.2h | 21.4h | 137.1h | 317.8h |
-| AI hours | 42.9h | 121.9h | 444.9h | 590.2h |
+| Human hours online (est.) | ~14h | ~43h | ~274h | ~636h |
+| User session hours | 7.2h | 21.4h | 137.1h | 317.8h |
+| AI worker hours | 42.9h | 121.9h | 444.9h | 590.2h |
 | Total work | 50.1h | 143.3h | 582.0h | 908.0h |
 | Interactive sessions | 145 | 319 | 1,460 | 1,957 |
 | Worker sessions | 185 | 757 | 1,808 | 1,809 |
+
+_Human hours online estimated at 2x user session hours (non-AI work: testing, reviewing, reading docs)._
+_User session hours measured from AI assistant message timestamps._
+
+## AI Model Usage (last 30 days)
+
+| Model | Requests | Input tokens | Output tokens | Cache read | Cost |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| claude-opus-4-6 | 1,227 | 39K | 11K | 70.8M | $249.83 |
+| claude-opus-4-5 | 456 | 33K | 3K | 35.3M | $99.23 |
+| claude-sonnet-4-5 | 395 | 2K | 3K | 11.4M | $16.17 |
+| claude-sonnet-4-6 | 401 | 4K | 5K | 33.3M | $15.29 |
+| claude-haiku-4-5 | 1,163 | 83K | 2K | 38.0M | $12.40 |
+| **Total** | **3,643** | **162K** | **25K** | **188.8M** | **$392.93** |
 
 ## Current Projects
 
