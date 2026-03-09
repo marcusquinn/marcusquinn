@@ -28,9 +28,9 @@
 | Metric | Today | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 12.1h | 104.4h | 366.2h | ~4,672h* |
-| User AI session hours | 9.8h | 22.7h | 133.4h | 318.9h |
+| User AI session hours | 9.9h | 22.7h | 133.4h | 319.0h |
 | AI worker hours | 18.1h | 71.3h | 106.4h | 107.2h |
-| Total AI work | 48.7h | 149.1h | 581.1h | 914.8h |
+| AI concurrency hours | 48.8h | 149.2h | 581.1h | 914.9h |
 | Interactive sessions | 121 | 317 | 1,446 | 1,958 |
 | Worker sessions | 183 | 774 | 1,825 | 1,826 |
 
@@ -39,16 +39,33 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 ## AI Model Usage (last 30 days)
 
-| Model | Requests | Input | Output | Cache read | Cost |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 1,227 | 39K | 10K | 70.8M | $249.83 |
-| claude-opus-4-5 | 456 | 33K | 2K | 35.2M | $99.23 |
-| claude-sonnet-4-5 | 395 | 2K | 3K | 11.3M | $16.17 |
-| claude-sonnet-4-6 | 401 | 4K | 5K | 33.2M | $15.29 |
-| claude-haiku-4-5 | 1,163 | 83K | 2K | 37.9M | $12.40 |
-| **Total** | **3,642** | **162K** | **24K** | **188.6M** | **$392.92** |
+| Model | Requests | Input | Output | Cache read | Cost | Cache savings | Model savings |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| claude-opus-4-6 | 1,227 | 39K | 10K | 70.8M | $249.83 | $956.24 | $0.00 |
+| claude-opus-4-5 | 456 | 33K | 2K | 35.2M | $99.23 | $476.08 | $0.00 |
+| claude-sonnet-4-5 | 395 | 2K | 3K | 11.3M | $16.17 | $30.67 | $13.85 |
+| claude-sonnet-4-6 | 401 | 4K | 5K | 33.2M | $15.29 | $89.84 | $40.31 |
+| claude-haiku-4-5 | 1,163 | 83K | 2K | 37.9M | $12.40 | $27.34 | $55.26 |
+| **Total** | **3,642** | **162K** | **24K** | **188.6M** | **$392.92** | **$1580.17** | **$109.42** |
 
-_212.9M total tokens processed. Cache hit rate: 88.6% -- prompt caching reduces cost by ~89% vs uncached._
+_212.9M total tokens processed. 88.6% cache hit rate. $1689.59 total saved ($1580.17 caching + $109.42 model routing vs all-Opus)._
+
+## Top Apps by Screen Time
+
+| App | Today | 7 Days | 28 Days |
+| --- | ---: | ---: | ---: |
+| Tabby | 43% | 17% | 25% |
+| Brave Browser | 17% | 19% | 17% |
+| Slack | 13% | 12% | 9% |
+| Mail | -- | 13% | 9% |
+| X | 11% | 8% | 9% |
+| YouTube | -- | 6% | 6% |
+| GitHub | 10% | 5% | 6% |
+| WhatsApp | -- | 4% | 3% |
+| Finder | -- | 3% | 3% |
+| Amazon | 2% | 3% | 2% |
+
+_Top 10 apps by foreground time share. Mac only._
 <!-- STATS-END -->
 
 ## Current Projects
@@ -78,5 +95,5 @@ _212.9M total tokens processed. Cache hit rate: 88.6% -- prompt caching reduces 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-09 03:38 UTC by [aidevops](https://github.com/marcusquinn/aidevops) pulse._
+_Stats auto-updated 2026-03-09 03:41 UTC by [aidevops](https://github.com/marcusquinn/aidevops) pulse._
 <!-- UPDATED-END -->
