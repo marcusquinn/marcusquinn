@@ -26,15 +26,15 @@
 
 | Metric | Today | 7 Days | 30 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Human hours online (est.) | ~14h | ~43h | ~274h | ~636h |
-| User session hours | 7.2h | 21.4h | 137.1h | 317.8h |
+| Screen time (Mac) | 15.4h | 104.4h | 372.4h | ~4,531h* |
+| User AI session hours | 7.2h | 21.4h | 137.1h | 317.8h |
 | AI worker hours | 42.9h | 121.9h | 444.9h | 590.2h |
-| Total work | 50.1h | 143.3h | 582.0h | 908.0h |
+| Total AI work | 50.1h | 143.3h | 582.0h | 908.0h |
 | Interactive sessions | 145 | 319 | 1,460 | 1,957 |
 | Worker sessions | 185 | 757 | 1,808 | 1,809 |
 
-_Human hours online estimated at 2x user session hours (non-AI work: testing, reviewing, reading docs)._
-_User session hours measured from AI assistant message timestamps._
+_Screen time from macOS Knowledge DB (display backlit events). *365-day figure extrapolated from 30-day average._
+_User AI session hours measured from AI assistant message timestamps (reading, thinking, typing between responses)._
 
 ## AI Model Usage (last 30 days)
 
