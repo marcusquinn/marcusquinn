@@ -2,37 +2,29 @@
 
 **Open-Source wins. You can't lose what you give freely. Knowledge shared, multiplies.**
 
+![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Ruby](https://img.shields.io/badge/-Ruby-CC342D?style=flat-square&logo=ruby&logoColor=white)
 ![Shell](https://img.shields.io/badge/-Shell-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
-![Ruby](https://img.shields.io/badge/-Ruby-CC342D?style=flat-square&logo=ruby&logoColor=white)
-![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![WordPress](https://img.shields.io/badge/-WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Cloudron](https://img.shields.io/badge/-Cloudron-03A9F4?style=flat-square&logo=cloud&logoColor=white)
 ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![macOS](https://img.shields.io/badge/-macOS-000000?style=flat-square&logo=apple&logoColor=white)
-![Claude](https://img.shields.io/badge/-Claude-000000?style=flat-square&logo=anthropic&logoColor=white)
-![OpenCode](https://img.shields.io/badge/-OpenCode-6366F1?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQyIDAtOC0zLjU4LTgtOHMzLjU4LTggOC04IDggMy41OCA4IDgtMy41OCA0LTggOHoiLz48L3N2Zz4=&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-> Building AI-native DevOps tooling. Shipping with AI agents around the clock -- human hours for thinking, machine hours for doing.
+> Shipping with AI agents around the clock -- human hours for thinking, machine hours for doing.
+> Stats auto-updated by [aidevops](https://aidevops.sh).
 
 <!-- STATS-START -->
 ## Work with AI
 
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 15.4h | 103.9h | 365h | ~4,672h* |
-| User AI session hours | 2.1h | 21.9h | 124.7h | 320.1h |
-| AI worker hours | 4.6h | 113.9h | 227.6h | 249.4h |
-| AI concurrency hours | 20.4h | 179.9h | 554.0h | 961.5h |
-| Interactive sessions | 5 | 66 | 328 | 1,000 |
-| Worker sessions | 67 | 1,235 | 2,937 | 3,089 |
+| Screen time (Mac) | 14.4h | 91.1h | 372.5h | ~4,672h* |
+| User AI session hours | 8.7h | 32.2h | 118.7h | 332.5h |
+| AI worker hours | 7.8h | 118.7h | 215.0h | 263.3h |
+| AI concurrency hours | 31.5h | 214.1h | 495.7h | 1,008.8h |
+| Interactive sessions | 10 | 73 | 274 | 1,011 |
+| Worker sessions | 76 | 1,326 | 2,963 | 3,244 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 _User AI session hours measured from AI message timestamps (reading, thinking, typing between responses)._
@@ -50,34 +42,55 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 _212.9M total tokens processed. 88.6% cache hit rate. $1689.59 total saved ($1580.17 caching + $109.42 model routing vs all-Opus).
 Model savings are modest because ~88.6% of tokens are cache reads, where price differences between models are small._
+
+## Top Apps by Screen Time
+
+| App | 24h | 7 Days | 28 Days |
+| --- | ---: | ---: | ---: |
+| Tabby | 27% | 18% | 23% |
+| Brave Browser | 5% | 15% | 16% |
+| Slack | 22% | 13% | 10% |
+| Mail | 6% | 8% | 10% |
+| X | 12% | 12% | 9% |
+| YouTube | 8% | 9% | 7% |
+| GitHub | 5% | 8% | 6% |
+| Finder | 4% | 2% | 3% |
+| WhatsApp | 3% | 4% | 3% |
+| Amazon | -- | 2% | 2% |
+
+_Top 10 apps by foreground time share. Mac only._
 <!-- STATS-END -->
 
-## Current Projects
+## Projects
 
-- **[aidevops](https://github.com/marcusquinn/aidevops)** -- AI DevOps framework. Managed infrastructure through AI chat. Opinionated tools, services, CLI and API tech-stack for speed, security, and 24/7 results.
-- **[amazon-order-history-csv-download-mcp](https://github.com/marcusquinn/amazon-order-history-csv-download-mcp)** -- MCP server to download Amazon order history as CSV files. Supports 16 Amazon regions.
-- **[quickfile-mcp](https://github.com/marcusquinn/quickfile-mcp)** -- MCP server for QuickFile UK accounting software. Invoices, clients, purchases, banking, and reports.
-- **[aidevops.sh](https://github.com/marcusquinn/aidevops.sh)** -- The AI DevOps website source.
-- **[aidevops-cloudron-app](https://github.com/marcusquinn/aidevops-cloudron-app)** -- Cloudron app: always-on remote worker node for AI DevOps headless dispatch.
-- **[cloudron-netbird-app](https://github.com/marcusquinn/cloudron-netbird-app)** -- NetBird WireGuard mesh VPN, packaged for Cloudron.
-- **[wp-plugin-starter-template-for-ai-coding](https://github.com/wpallstars/wp-plugin-starter-template-for-ai-coding)** -- WordPress plugin starter template for coding with AI IDEs.
-- **[wp-fix-plugin-does-not-exist-notices](https://github.com/wpallstars/wp-fix-plugin-does-not-exist-notices)** -- WordPress utility plugin to clean up invalid plugin entries.
+- **[homebrew-tap](https://github.com/marcusquinn/homebrew-tap)** -- Homebrew tap for aidevops and other tools
+- **[aidevops](https://github.com/marcusquinn/aidevops)** -- Vibe-Coding is easy. DevOps is hard. AI DevOps automates your software, business, and personal development with managed infrastructure through AI chat in OpenCode. Opinionated tools, services, CLI & API tech-stack — for speed, security, and 24/7 results. Open-source-preferred, and SOTA everything.
+- **[aidevops.sh](https://github.com/marcusquinn/aidevops.sh)** -- The AI Devops website source code for https://aidevops.sh
+- **[quickfile-mcp](https://github.com/marcusquinn/quickfile-mcp)** -- MCP server for QuickFile UK accounting software - invoices, clients, purchases, banking, and reports
+- **[cloudron-netbird-app](https://github.com/marcusquinn/cloudron-netbird-app)** -- NetBird WireGuard mesh VPN - Cloudron app package
+- **[aidevops-cloudron-app](https://github.com/marcusquinn/aidevops-cloudron-app)** -- Cloudron app: always-on remote worker node for AI DevOps — headless Claude Code dispatch, multi-node orchestration
+- **[amazon-order-history-csv-download-mcp](https://github.com/marcusquinn/amazon-order-history-csv-download-mcp)** -- Download Amazon Order History As Orders & Items CSV files, plus simplified CSV file versions for importing to your accounting software. Supports Amazon United States US, United Kingdom, Canada, Germany, France, Spain, Italy, Netherlands, Japan, Australia, Mexico, India, UAE, Saudi Arabia, Ireland, Belgium
+- **[marcusquinn.github.io](https://github.com/marcusquinn/marcusquinn.github.io)** -- Personal Website, Work, Ecommerce, Social Links, Software, Hosting, Services, Preferences, Audio, Music, Video, Markdown, Plain Text, Links
+## Contributions
 
-## Project Contributions
-
-- **[anomalyco/opencode](https://github.com/anomalyco/opencode)** -- The open source coding agent.
-- **[bash-lsp/bash-language-server](https://github.com/bash-lsp/bash-language-server)** -- A language server for Bash.
-- **[steipete/claude-code-mcp](https://github.com/steipete/claude-code-mcp)** -- Claude Code as one-shot MCP server.
-- **[afragen/git-updater](https://github.com/afragen/git-updater)** -- WordPress plugin updater for GitHub, Bitbucket, GitLab, and Gitea hosted plugins and themes.
+- **[aidevops-dashboard](https://github.com/johnwaldo/aidevops-dashboard)** -- AI DevOps Dashboard
+- **[claude-code-mcp](https://github.com/steipete/claude-code-mcp)** -- Claude Code as one-shot MCP server to have an agent in your agent.
+- **[ultimate-multisite](https://github.com/Ultimate-Multisite/ultimate-multisite)** -- Website as a service plugin for WordPress Multisite
+- **[opencode](https://github.com/anomalyco/opencode)** -- The open source coding agent.
+- **[opencode-1](https://github.com/opencode-ai/opencode)** -- A powerful AI coding agent. Built for the terminal.
+- **[bash-language-server](https://github.com/bash-lsp/bash-language-server)** -- A language server for Bash
+- **[wp-performance-action](https://github.com/swissspidy/wp-performance-action)** -- Reusable GitHub action to measure performance metrics of WordPress sites
+- **[awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)** -- A list of Free Software network services and web applications which can be hosted locally. Selfhosting is the process of hosting and managing applications instead of renting from Software-as-a-Service providers
+- **[Turing-CSS](https://github.com/wangjs-jacky/Turing-CSS)** -- Typora theme inspired by the style of typewritten articles
 
 ## Connect
 
-[![Website](https://img.shields.io/badge/-marcusquinn.com-FF5722?style=flat-square&logo=hugo&logoColor=white)](https://www.marcusquinn.com)
+[![Website](https://img.shields.io/badge/-www.marcusquinn.com-FF5722?style=flat-square&logo=hugo&logoColor=white)](https://www.marcusquinn.com)
 [![X](https://img.shields.io/badge/-@marcuswquinn-000000?style=flat-square&logo=x&logoColor=white)](https://twitter.com/marcuswquinn)
 [![GitHub](https://img.shields.io/badge/-Follow-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/marcusquinn)
 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-11 06:23 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-03-12 23:14 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
