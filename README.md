@@ -20,43 +20,43 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 14.5h | 91.1h | 372.6h | ~4,672h* |
-| User AI session hours | 10.3h | 33.5h | 118.2h | 334.9h |
-| AI worker hours | 7.0h | 118.7h | 215.1h | 263.4h |
-| AI concurrency hours | 34.7h | 218.1h | 495.3h | 1,014.1h |
-| Interactive sessions | 12 | 75 | 266 | 1,013 |
-| Worker sessions | 65 | 1,330 | 2,967 | 3,248 |
+| User AI session hours | 12.4h | 35.5h | 120.2h | 336.9h |
+| AI worker hours | 7.1h | 118.9h | 215.3h | 263.5h |
+| AI concurrency hours | 37.8h | 221.3h | 498.1h | 1,017.4h |
+| Interactive sessions | 12 | 74 | 262 | 1,013 |
+| Worker sessions | 69 | 1,334 | 2,971 | 3,252 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 _User AI session hours measured from AI message timestamps (reading, thinking, typing between responses)._
 
 ## AI Model Usage (last 30 days)
 
-| Model | Requests | Input | Output | Cache read | Cost | Cache savings | Model savings |
+| Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 81,644 | 88K | 25.3M | 6117.7M | $15192.18 | $82590.13 | $0.00 |
 | claude-sonnet-4-6 | 25,896 | 27K | 7.2M | 1246.7M | $652.74 | $3366.26 | $1933.49 |
-| gpt-5.3-codex | 11,230 | 71.8M | 3.0M | 831.6M | $531.23 | $2245.43 | $2045.64 |
+| gpt-5.3-codex | 11,535 | 74.3M | 3.1M | 861.0M | $549.52 | $2324.90 | $2116.64 |
 | gpt-5.4 | 2,563 | 13.8M | 648K | 181.3M | $109.33 | $489.57 | $422.62 |
 | claude-opus-4-5 | 10 | 2 | 5K | 377K | $1.95 | $5.10 | $0.00 |
 | big-pickle | 69 | 81K | 14K | 2.9M | $1.83 | $7.98 | $5.38 |
 | claude-haiku-4-5 | 135 | 280 | 17K | 1.8M | $0.60 | $1.32 | $3.85 |
 | minimax-m2.5-free | 12 | 10K | 1K | 211K | $0.15 | $0.57 | $0.49 |
-| **Total** | **121,559** | **85.9M** | **36.3M** | **8382.8M** | **$16490.01** | **$88706.35** | **$4411.47** |
+| **Total** | **121,864** | **88.4M** | **36.4M** | **8412.3M** | **$16508.30** | **$88785.82** | **$4482.47** |
 
-_8801.6M total tokens processed. 95.2% cache hit rate. $93117.83 total saved ($88706.35 caching + $4411.47 model routing vs all-Opus).
+_8833.7M total tokens processed. 95.2% cache hit rate. $93268.29 total saved ($88785.82 caching + $4482.47 model routing vs all-Opus).
 Model savings are modest because ~95.2% of tokens are cache reads, where price differences between models are small._
 
 ## Top Apps by Screen Time
 
 | App | 24h | 7 Days | 28 Days |
 | --- | ---: | ---: | ---: |
-| Tabby | 43% | 18% | 23% |
+| Tabby | 61% | 19% | 23% |
 | Brave Browser | -- | 15% | 16% |
 | Mail | -- | 8% | 10% |
 | Slack | -- | 13% | 10% |
 | X | -- | 12% | 9% |
 | YouTube | -- | 8% | 7% |
-| GitHub | 2% | 8% | 6% |
+| GitHub | 4% | 8% | 6% |
 | Finder | -- | 2% | 3% |
 | WhatsApp | -- | 4% | 3% |
 | Amazon | -- | 2% | 2% |
@@ -76,15 +76,15 @@ _Top 10 apps by foreground time share. Mac only._
 - **[marcusquinn.github.io](https://github.com/marcusquinn/marcusquinn.github.io)** -- Personal Website, Work, Ecommerce, Social Links, Software, Hosting, Services, Preferences, Audio, Music, Video, Markdown, Plain Text, Links
 ## Contributions
 
-- **[ultimate-multisite](https://github.com/Ultimate-Multisite/ultimate-multisite)** -- Website as a service plugin for WordPress Multisite
-- **[opencode](https://github.com/anomalyco/opencode)** -- The open source coding agent.
-- **[claude-code-mcp](https://github.com/steipete/claude-code-mcp)** -- Claude Code as one-shot MCP server to have an agent in your agent.
-- **[opencode-1](https://github.com/opencode-ai/opencode)** -- A powerful AI coding agent. Built for the terminal.
 - **[aidevops-dashboard](https://github.com/johnwaldo/aidevops-dashboard)** -- AI DevOps Dashboard
+- **[claude-code-mcp](https://github.com/steipete/claude-code-mcp)** -- Claude Code as one-shot MCP server to have an agent in your agent.
+- **[opencode](https://github.com/anomalyco/opencode)** -- The open source coding agent.
+- **[opencode-1](https://github.com/opencode-ai/opencode)** -- A powerful AI coding agent. Built for the terminal.
+- **[ultimate-multisite](https://github.com/Ultimate-Multisite/ultimate-multisite)** -- Website as a service plugin for WordPress Multisite
 - **[bash-language-server](https://github.com/bash-lsp/bash-language-server)** -- A language server for Bash
+- **[wp-performance-action](https://github.com/swissspidy/wp-performance-action)** -- Reusable GitHub action to measure performance metrics of WordPress sites
 - **[awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)** -- A list of Free Software network services and web applications which can be hosted locally. Selfhosting is the process of hosting and managing applications instead of renting from Software-as-a-Service providers
 - **[Turing-CSS](https://github.com/wangjs-jacky/Turing-CSS)** -- Typora theme inspired by the style of typewritten articles
-- **[wp-performance-action](https://github.com/swissspidy/wp-performance-action)** -- Reusable GitHub action to measure performance metrics of WordPress sites
 
 ## Connect
 
@@ -95,5 +95,5 @@ _Top 10 apps by foreground time share. Mac only._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-13 00:23 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-03-13 00:39 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
