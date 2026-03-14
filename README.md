@@ -28,12 +28,12 @@
 
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 9.1h | 82.4h | 365.5h | ~4,672h* |
-| User AI session hours | 5.0h | 42.2h | 118.8h | 348.0h |
-| AI worker hours | 28.5h | 115.1h | 232.1h | 295.8h |
-| AI concurrency hours | 38.1h | 243.6h | 522.6h | 1,086.2h |
+| Screen time (Mac) | 8.8h | 81.9h | 365.4h | ~4,672h* |
+| User AI session hours | 5.2h | 42.4h | 119.0h | 348.1h |
+| AI worker hours | 28.5h | 114.9h | 232.1h | 295.8h |
+| AI concurrency hours | 38.7h | 243.4h | 523.1h | 1,086.8h |
 | Interactive sessions | 13 | 79 | 268 | 1,048 |
-| Worker sessions | 530 | 1,484 | 3,458 | 3,835 |
+| Worker sessions | 530 | 1,478 | 3,458 | 3,835 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 _User AI session hours measured from AI message timestamps (reading, thinking, typing between responses)._
@@ -42,45 +42,54 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 83,357 | 90K | 25.7M | 6291.4M | $15,639.51 | $84,934.22 | $0.00 |
-| gpt-5.3-codex | 21,729 | 124.2M | 5.8M | 1516.4M | $1,050.96 | $4,094.28 | $3,660.05 |
+| claude-opus-4-6 | 83,435 | 90K | 25.8M | 6300.7M | $15,665.93 | $85,060.09 | $0.00 |
+| gpt-5.3-codex | 21,747 | 124.3M | 5.8M | 1517.4M | $1,051.91 | $2,845.30 | $3,261.09 |
 | claude-sonnet-4-6 | 33,757 | 36K | 9.2M | 1707.5M | $900.17 | $4,610.35 | $2,604.69 |
-| gpt-5.4 | 2,677 | 16.6M | 683K | 193.2M | $120.08 | $521.82 | $473.25 |
+| gpt-5.4 | 2,677 | 16.6M | 683K | 193.2M | $120.08 | $362.38 | $422.20 |
 | claude-opus-4-5 | 10 | 2 | 5K | 377K | $1.95 | $5.10 | $0.00 |
-| big-pickle | 69 | 81K | 14K | 2.9M | $1.83 | $7.98 | $5.38 |
+| big-pickle | 69 | 81K | 14K | 2.9M | $1.83 | $0.00 | $6.72 |
 | claude-haiku-4-5 | 135 | 280 | 17K | 1.8M | $0.60 | $1.32 | $3.85 |
-| minimax-m2.5-free | 12 | 10K | 1K | 211K | $0.15 | $0.57 | $0.49 |
-| **Total** | **141,746** | **141.1M** | **41.5M** | **9714.0M** | **$17,715.25** | **$94,175.64** | **$6,747.72** |
+| minimax-m2.5-free | 12 | 10K | 1K | 211K | $0.15 | $0.00 | $0.61 |
+| **Total** | **141,842** | **141.2M** | **41.6M** | **9724.4M** | **$17,742.62** | **$92,884.54** | **$6,299.17** |
 
-_10222.4M total tokens processed. 95% cache hit rate. $100,923.36 total saved ($94,175.64 caching + $6,747.72 model routing vs all-Opus).
+_10233.5M total tokens processed. 95% cache hit rate. $99,183.71 total saved ($92,884.54 caching + $6,299.17 model routing vs all-Opus).
 Model savings are modest because ~95% of tokens are cache reads, where price differences between models are small._
 
 ## AI Model Usage (all time)
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 83,357 | 90K | 25.7M | 6291.4M | $15,639.51 | $84,934.22 | $0.00 |
-| gpt-5.3-codex | 21,729 | 124.2M | 5.8M | 1516.4M | $1,050.96 | $4,094.28 | $3,660.05 |
-| claude-sonnet-4-6 | 33,757 | 36K | 9.2M | 1707.5M | $900.17 | $4,610.35 | $2,604.69 |
-| gpt-5.4 | 2,677 | 16.6M | 683K | 193.2M | $120.08 | $521.82 | $473.25 |
-| claude-opus-4-5 | 10 | 2 | 5K | 377K | $1.95 | $5.10 | $0.00 |
-| big-pickle | 69 | 81K | 14K | 2.9M | $1.83 | $7.98 | $5.38 |
-| claude-haiku-4-5 | 135 | 280 | 17K | 1.8M | $0.60 | $1.32 | $3.85 |
-| minimax-m2.5-free | 12 | 10K | 1K | 211K | $0.15 | $0.57 | $0.49 |
-| **Total** | **141,746** | **141.1M** | **41.5M** | **9714.0M** | **$17,715.25** | **$94,175.64** | **$6,747.72** |
+| claude-opus-4-6 | 132,731 | 142K | 40.7M | 10658.3M | $19,045.57 | $143,888.28 | $0.00 |
+| claude-opus-4-5 | 42,226 | 18K | 11.9M | 3731.6M | $6,497.37 | $50,377.03 | $0.00 |
+| gpt-5.3-codex | 22,063 | 124.3M | 5.8M | 1518.0M | $1,318.06 | $2,846.30 | $3,262.37 |
+| claude-sonnet-4-6 | 34,420 | 35K | 9.1M | 1703.1M | $649.00 | $4,598.45 | $2,596.09 |
+| claude-sonnet-4-5 | 8,161 | 13K | 8.0M | 452.1M | $256.11 | $1,220.83 | $1,024.49 |
+| gpt-5.4 | 2,714 | 16.6M | 683K | 193.2M | $169.35 | $362.38 | $422.20 |
+| gpt-5.2-codex | 798 | 6.7M | 249K | 54.6M | $53.53 | $102.42 | $148.56 |
+| gpt-5.1-codex-max | 62 | 735K | 11K | 2.8M | $3.73 | $5.39 | $12.48 |
+| gpt-5.2 | 69 | 300K | 35K | 4.0M | $3.60 | $7.51 | $9.55 |
+| gemini-3-pro | 81 | 923K | 10K | 6.5M | $3.30 | $6.18 | $21.18 |
+| antigravity-claude-sonnet-4-5 | 51 | 322K | 17K | 3.6M | $2.31 | $9.89 | $9.34 |
+| gemini-3-pro-preview | 311 | 543K | 12K | 4.6M | $2.25 | $4.39 | $13.85 |
+| claude-sonnet-4 | 101 | 179 | 9K | 1.9M | $0.73 | $5.34 | $2.97 |
+| claude-haiku-4-5 | 207 | 519 | 55K | 5.2M | $0.64 | $3.81 | $11.46 |
+| grok-code | 2 | 156K | 378 | 256 | $0.47 | $0.00 | $1.91 |
+| antigravity-gemini-3-pro | 24 | 101K | 2K | 616K | $0.33 | $0.58 | $2.31 |
+| claude-3-haiku | 31 | 106 | 5K | 694K | $0.28 | $1.88 | $1.17 |
+| **Total** | **244,052** | **151.1M** | **76.8M** | **18341.6M** | **$28,006.63** | **$203,440.66** | **$7,539.92** |
 
-_10222.4M total tokens processed. 95% cache hit rate. $100,923.36 total saved ($94,175.64 caching + $6,747.72 model routing vs all-Opus).
-Model savings are modest because ~95% of tokens are cache reads, where price differences between models are small._
+_19276.3M total tokens processed. 95.2% cache hit rate. $210,980.58 total saved ($203,440.66 caching + $7,539.92 model routing vs all-Opus).
+Model savings are modest because ~95.2% of tokens are cache reads, where price differences between models are small._
 
 ## Top Apps by Screen Time
 
 | App | 24h | 7 Days | 28 Days |
 | --- | ---: | ---: | ---: |
-| Tabby | 26% | 22% | 24% |
-| Brave Browser | 17% | 13% | 15% |
-| Slack | 17% | 13% | 10% |
+| Tabby | 27% | 22% | 24% |
+| Brave Browser | 16% | 13% | 15% |
+| Slack | 16% | 13% | 10% |
 | Mail | 1% | 8% | 10% |
-| X | 6% | 9% | 8% |
+| X | 5% | 9% | 8% |
 | GitHub | 13% | 10% | 7% |
 | YouTube | 7% | 8% | 6% |
 | WhatsApp | 3% | 4% | 3% |
@@ -121,5 +130,5 @@ _Top 10 apps by foreground time share. Mac only._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-14 18:20 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-03-14 18:37 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
