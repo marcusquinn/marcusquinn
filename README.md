@@ -21,6 +21,7 @@
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 > Shipping with AI agents around the clock -- human hours for thinking, machine hours for doing.
+>
 > Stats auto-updated by [aidevops](https://aidevops.sh).
 
 <!-- STATS-START -->
@@ -130,7 +131,7 @@ _Top 10 apps by foreground time share. Mac only._
 
 ## Connect
 
-[![Website](https://img.shields.io/badge/-www.marcusquinn.com-FF5722?style=flat-square&logo=hugo&logoColor=white)](https://www.marcusquinn.com)
+[![Website](https://img.shields.io/badge/-www.marcusquinn.com-FF5722?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0tMSAxNy45M2MtMy45NS0uNDktNy0zLjg1LTctNy45MyAwLS42Mi4wOC0xLjIxLjIxLTEuNzlMOSAxNXY1YzAgLjU1LjQ1IDEgMSAxdjEuOTN6bTYuOS0yLjU0Yy0uMjYtLjgxLTEtMS4zOS0xLjktMS4zOWgtMXYtM2MwLS41NS0uNDUtMS0xLTFIOHYtMmgyYy41NSAwIDEtLjQ1IDEtMVY3aDJjMS4xIDAgMi0uOSAyLTJ2LS40MWMyLjkzIDEuMTkgNSA0LjA2IDUgNy40MSAwIDIuMDgtLjggMy45Ny0yLjEgNS4zOXoiLz48L3N2Zz4=&logoColor=white)](https://www.marcusquinn.com)
 [![X](https://img.shields.io/badge/-@marcuswquinn-000000?style=flat-square&logo=x&logoColor=white)](https://twitter.com/marcuswquinn)
 [![GitHub](https://img.shields.io/badge/-Follow-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/marcusquinn)
 
