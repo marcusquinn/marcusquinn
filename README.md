@@ -103,7 +103,6 @@ _Model savings are modest because ~94.9% of tokens are cache reads, where price 
 <!-- CONTRIBUTIONS-START -->
 ## Contributions
 
-- **[aidevops-dashboard](https://github.com/johnwaldo/aidevops-dashboard)** -- AI DevOps Dashboard
 - **[awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)** -- A list of Free Software network services and web applications which can be hosted locally. Selfhosting is the process of hosting and managing applications instead of renting from Software-as-a-Service providers
 - **[bash-language-server](https://github.com/bash-lsp/bash-language-server)** -- A language server for Bash
 - **[claude-code-mcp](https://github.com/steipete/claude-code-mcp)** -- Claude Code as one-shot MCP server to have an agent in your agent.
@@ -126,5 +125,5 @@ _Model savings are modest because ~94.9% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-25 02:32 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-03-25 03:34 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
