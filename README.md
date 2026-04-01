@@ -31,10 +31,10 @@
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 15.4h | 103.9h | 365h | ~4,672h* |
 | User AI session hours | 9.9h | 55.2h | 150.1h | 443.1h |
-| AI worker hours | 4.3h | 200.2h | 433.0h | 561.5h |
-| AI concurrency hours | 70.4h | 475.5h | 949.6h | 1,715.4h |
-| Interactive sessions | 258 | 1,063 | 1,295 | 2,218 |
-| Worker sessions | 63 | 1,341 | 4,102 | 5,872 |
+| AI worker hours | 4.2h | 191.4h | 433.0h | 561.5h |
+| AI concurrency hours | 61.5h | 466.7h | 949.6h | 1,715.4h |
+| Interactive sessions | 223 | 1,063 | 1,295 | 2,218 |
+| Worker sessions | 59 | 1,311 | 4,102 | 5,872 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -54,12 +54,13 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | qwen3.6-plus-free | 4 | 202K | 2K | 0 | $0.68 | $0.00 | $2.60 |
 | mimo-v2-pro-free | 17 | 77K | 3K | 1.1M | $0.67 | $3.21 | $2.59 |
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.25 | $0.00 | $1.00 |
+| gemini-3-flash | 150 | 1.3M | 31K | 2.5M | $0.22 | $0.29 | $26.54 |
 | minimax-m2.5-free | 3 | 3K | 521 | 57K | $0.15 | $0.00 | $0.17 |
-| **Total** | **277,779** | **634.9M** | **79.0M** | **20,590.3M** | **$28,810.52** | **$122,929.97** | **$25,818.01** |
+| **Total** | **277,929** | **636.3M** | **79.1M** | **20,592.9M** | **$28,810.74** | **$122,930.26** | **$25,844.55** |
 
-_22,233.2M total tokens processed. 92.6% cache hit rate._
+_22,239.4M total tokens processed. 92.6% cache hit rate._
 
-_$148,747.98 total saved ($122,929.97 caching + $25,818.01 model routing vs all-Opus)._
+_$148,774.81 total saved ($122,930.26 caching + $25,844.55 model routing vs all-Opus)._
 
 _Model savings are modest because ~92.6% of tokens are cache reads, where price differences between models are small._
 
@@ -133,5 +134,5 @@ _Model savings are modest because ~93.5% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-01 05:04 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-01 06:30 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
