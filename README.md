@@ -31,10 +31,10 @@
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 15.4h | 103.9h | 365h | ~4,672h* |
 | User AI session hours | 9.9h | 55.2h | 150.1h | 443.1h |
-| AI worker hours | 4.0h | 167.1h | 433.0h | 561.5h |
-| AI concurrency hours | 47.3h | 432.3h | 949.6h | 1,715.4h |
-| Interactive sessions | 147 | 994 | 1,295 | 2,218 |
-| Worker sessions | 50 | 1,150 | 4,102 | 5,872 |
+| AI worker hours | 4.0h | 166.8h | 433.0h | 561.5h |
+| AI concurrency hours | 44.8h | 431.9h | 949.6h | 1,715.4h |
+| Interactive sessions | 135 | 993 | 1,295 | 2,218 |
+| Worker sessions | 50 | 1,147 | 4,102 | 5,872 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -51,16 +51,16 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | claude-haiku-4-5 | 926 | 1K | 294K | 57.8M | $7.13 | $41.65 | $103.11 |
 | big-pickle | 76 | 84K | 17K | 3.1M | $2.26 | $0.00 | $7.33 |
 | mimo-v2-omni-free | 48 | 160K | 11K | 3.4M | $1.73 | $9.33 | $6.75 |
-| gemini-3-flash | 511 | 6.6M | 140K | 9.9M | $1.00 | $1.12 | $123.14 |
+| gemini-3-flash | 690 | 8.7M | 182K | 14.2M | $1.34 | $1.60 | $163.83 |
 | qwen3.6-plus-free | 4 | 202K | 2K | 0 | $0.68 | $0.00 | $2.60 |
 | mimo-v2-pro-free | 17 | 77K | 3K | 1.1M | $0.67 | $3.21 | $2.59 |
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.25 | $0.00 | $1.00 |
 | minimax-m2.5-free | 3 | 3K | 521 | 57K | $0.15 | $0.00 | $0.17 |
-| **Total** | **278,295** | **641.5M** | **79.2M** | **20,600.5M** | **$28,811.82** | **$122,931.63** | **$25,941.44** |
+| **Total** | **278,474** | **643.7M** | **79.2M** | **20,604.7M** | **$28,812.16** | **$122,932.10** | **$25,982.14** |
 
-_22,250.1M total tokens processed. 92.6% cache hit rate._
+_22,256.5M total tokens processed. 92.6% cache hit rate._
 
-_$148,873.07 total saved ($122,931.63 caching + $25,941.44 model routing vs all-Opus)._
+_$148,914.24 total saved ($122,932.10 caching + $25,982.14 model routing vs all-Opus)._
 
 _Model savings are modest because ~92.6% of tokens are cache reads, where price differences between models are small._
 
@@ -134,5 +134,5 @@ _Model savings are modest because ~93.5% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-01 10:06 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-01 11:10 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
