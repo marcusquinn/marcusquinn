@@ -30,11 +30,11 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 11.2h | 83.8h | 361h | ~4,657h* |
-| User AI session hours | 7.9h | 65.3h | 131.2h | 131.2h |
-| AI worker hours | 4.2h | 120.8h | 383.7h | 383.7h |
-| AI concurrency hours | 24.0h | 256.3h | 828.6h | 828.6h |
-| Interactive sessions | 69 | 359 | 1,406 | 1,406 |
-| Worker sessions | 38 | 1,155 | 2,656 | 2,656 |
+| User AI session hours | 6.9h | 65.2h | 131.2h | 131.2h |
+| AI worker hours | 3.4h | 120.8h | 383.7h | 383.7h |
+| AI concurrency hours | 21.3h | 255.5h | 828.6h | 828.6h |
+| Interactive sessions | 61 | 357 | 1,406 | 1,406 |
+| Worker sessions | 35 | 1,155 | 2,656 | 2,656 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -60,7 +60,7 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | claude-sonnet-4 | 4 | 17 | 231 | 76K | $0.12 | $0.21 | $0.11 |
 | **Total** | **302,847** | **704.4M** | **82.4M** | **22,255.5M** | **$26,902.98** | **$114,531.75** | **$30,692.62** |
 
-_23,994.7M total tokens processed. 92.8% cache hit rate._
+_23,994.8M total tokens processed. 92.8% cache hit rate._
 
 _$145,224.37 total saved ($114,531.75 caching + $30,692.62 model routing vs all-Opus)._
 
@@ -94,7 +94,7 @@ _Model savings are modest because ~92.8% of tokens are cache reads, where price 
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.24 | $0.00 | $1.00 |
 | **Total** | **499,486** | **718.0M** | **147.4M** | **37,324.6M** | **$45,452.39** | **$308,835.00** | **$32,360.03** |
 
-_39,814.5M total tokens processed. 93.8% cache hit rate._
+_39,814.6M total tokens processed. 93.8% cache hit rate._
 
 _$341,195.03 total saved ($308,835.00 caching + $32,360.03 model routing vs all-Opus)._
 
@@ -137,5 +137,5 @@ _Model savings are modest because ~93.8% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-09 20:50 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-09 21:52 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
