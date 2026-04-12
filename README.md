@@ -34,7 +34,7 @@
 | AI worker hours | 0.2h | 15.4h | 384.4h | 384.4h |
 | AI concurrency hours | 15.7h | 139.5h | 859.8h | 859.8h |
 | Interactive sessions | 71 | 390 | 1,531 | 1,531 |
-| Worker sessions | 5 | 218 | 2,665 | 2,665 |
+| Worker sessions | 5 | 217 | 2,665 | 2,665 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -46,7 +46,7 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 50,925 | 112.1M | 15.6M | 5,590.6M | $17,190.55 | $75,473.47 | $0.00 |
 | claude-sonnet-4-6 | 201,796 | 249.1M | 53.5M | 13,549.0M | $8,390.69 | $36,582.33 | $22,459.17 |
-| gpt-5.3-codex | 22,386 | 123.1M | 5.8M | 1,353.2M | $1,144.50 | $2,537.40 | $3,105.90 |
+| gpt-5.3-codex | 22,363 | 122.9M | 5.8M | 1,352.6M | $1,143.44 | $2,536.26 | $3,102.80 |
 | gpt-5.4 | 14,462 | 93.3M | 4.0M | 969.0M | $569.30 | $1,816.93 | $2,279.49 |
 | claude-haiku-4-5 | 1,428 | 1K | 405K | 89.9M | $11.19 | $64.77 | $156.55 |
 | gpt-5.4-mini | 224 | 734K | 38K | 13.0M | $6.76 | $24.54 | $23.12 |
@@ -58,11 +58,11 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | big-pickle | 7 | 2K | 3K | 212K | $0.43 | $0.00 | $0.60 |
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.25 | $0.00 | $1.00 |
 | claude-sonnet-4 | 4 | 17 | 231 | 76K | $0.12 | $0.21 | $0.11 |
-| **Total** | **293,643** | **613.0M** | **80.2M** | **21,658.3M** | **$27,323.36** | **$116,522.52** | **$28,719.29** |
+| **Total** | **293,620** | **612.9M** | **80.2M** | **21,657.7M** | **$27,322.30** | **$116,521.38** | **$28,716.19** |
 
-_23,411.5M total tokens processed. 92.5% cache hit rate._
+_23,410.8M total tokens processed. 92.5% cache hit rate._
 
-_$145,241.80 total saved ($116,522.52 caching + $28,719.29 model routing vs all-Opus)._
+_$145,237.56 total saved ($116,521.38 caching + $28,716.19 model routing vs all-Opus)._
 
 _Model savings are modest because ~92.5% of tokens are cache reads, where price differences between models are small._
 
@@ -138,5 +138,5 @@ _Model savings are modest because ~93.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-12 07:28 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-12 08:32 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
