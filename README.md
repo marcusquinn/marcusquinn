@@ -46,7 +46,7 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 50,925 | 112.1M | 15.6M | 5,590.6M | $17,190.55 | $75,473.47 | $0.00 |
 | claude-sonnet-4-6 | 201,796 | 249.1M | 53.5M | 13,549.0M | $8,390.69 | $36,582.33 | $22,459.17 |
-| gpt-5.3-codex | 22,363 | 122.9M | 5.8M | 1,352.6M | $1,143.44 | $2,536.26 | $3,102.80 |
+| gpt-5.3-codex | 21,968 | 120.8M | 5.7M | 1,321.9M | $1,120.84 | $2,478.65 | $3,042.35 |
 | gpt-5.4 | 14,462 | 93.3M | 4.0M | 969.0M | $569.30 | $1,816.93 | $2,279.49 |
 | claude-haiku-4-5 | 1,428 | 1K | 405K | 89.9M | $11.19 | $64.77 | $156.55 |
 | gpt-5.4-mini | 224 | 734K | 38K | 13.0M | $6.76 | $24.54 | $23.12 |
@@ -58,11 +58,11 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | big-pickle | 7 | 2K | 3K | 212K | $0.43 | $0.00 | $0.60 |
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.25 | $0.00 | $1.00 |
 | claude-sonnet-4 | 4 | 17 | 231 | 76K | $0.12 | $0.21 | $0.11 |
-| **Total** | **293,620** | **612.9M** | **80.2M** | **21,657.7M** | **$27,322.30** | **$116,521.38** | **$28,716.19** |
+| **Total** | **293,225** | **610.8M** | **80.1M** | **21,627.0M** | **$27,299.70** | **$116,463.78** | **$28,655.74** |
 
-_23,410.8M total tokens processed. 92.5% cache hit rate._
+_23,377.8M total tokens processed. 92.5% cache hit rate._
 
-_$145,237.56 total saved ($116,521.38 caching + $28,716.19 model routing vs all-Opus)._
+_$145,119.51 total saved ($116,463.78 caching + $28,655.74 model routing vs all-Opus)._
 
 _Model savings are modest because ~92.5% of tokens are cache reads, where price differences between models are small._
 
@@ -138,5 +138,5 @@ _Model savings are modest because ~93.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-12 08:32 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-12 09:36 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
