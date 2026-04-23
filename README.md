@@ -121,7 +121,6 @@ _Model savings are modest because ~93.9% of tokens are cache reads, where price 
 - **[bash-language-server](https://github.com/bash-lsp/bash-language-server)** -- A language server for Bash
 - **[claude-code-mcp](https://github.com/steipete/claude-code-mcp)** -- Claude Code as one-shot MCP server to have an agent in your agent.
 - **[ClaudeBar](https://github.com/tddworks/ClaudeBar)** -- A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance.
-- **[git-updater](https://github.com/afragen/git-updater)** -- This WP plugin will update GitHub, Bitbucket, GitLab, and Gitea hosted plugins and themes
 - **[mainwp-child](https://github.com/wpallstars/mainwp-child)** -- The MainWP Child plugin is installed on the WordPress sites that you want to control from the MainWP Dashboard.
 - **[mcp-adapter](https://github.com/WordPress/mcp-adapter)** -- An MCP adapter that bridges the Abilities API to the Model Context Protocol, enabling MCP clients to discover and invoke WordPress plugin, theme, and core abilities programmatically.
 - **[multisite-ultimate](https://github.com/Multisite-Ultimate/multisite-ultimate)** -- Website as a service plugin for WordPress Multisite
@@ -140,5 +139,5 @@ _Model savings are modest because ~93.9% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-22 23:50 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-23 01:28 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
