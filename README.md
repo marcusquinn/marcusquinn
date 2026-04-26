@@ -126,7 +126,6 @@ _Model savings are modest because ~94.1% of tokens are cache reads, where price 
 - **[git-updater](https://github.com/afragen/git-updater)** -- This WP plugin will update GitHub, Bitbucket, GitLab, and Gitea hosted plugins and themes
 - **[mainwp-child](https://github.com/wpallstars/mainwp-child)** -- The MainWP Child plugin is installed on the WordPress sites that you want to control from the MainWP Dashboard.
 - **[mcp-adapter](https://github.com/WordPress/mcp-adapter)** -- An MCP adapter that bridges the Abilities API to the Model Context Protocol, enabling MCP clients to discover and invoke WordPress plugin, theme, and core abilities programmatically.
-- **[multisite-ultimate](https://github.com/Multisite-Ultimate/multisite-ultimate)** -- Website as a service plugin for WordPress Multisite
 - **[opencode-cursor](https://github.com/ephraimduncan/opencode-cursor)** -- Use your cursor subscription in opencode
 - **[opencode](https://github.com/anomalyco/opencode)** -- The open source coding agent.
 - **[Turing-CSS](https://github.com/wangjs-jacky/Turing-CSS)** -- Typora theme inspired by the style of typewritten articles
@@ -142,5 +141,5 @@ _Model savings are modest because ~94.1% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-26 01:28 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-26 04:47 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
