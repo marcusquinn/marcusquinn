@@ -120,7 +120,9 @@ _Model savings are modest because ~94.1% of tokens are cache reads, where price 
 ## Contributions
 
 - **[awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)** -- A list of Free Software network services and web applications which can be hosted locally. Selfhosting is the process of hosting and managing applications instead of renting from Software-as-a-Service providers
-- **[ClaudeBar](https://github.com/marcusquinn/ClaudeBar)** -- A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance.
+- **[bash-language-server](https://github.com/bash-lsp/bash-language-server)** -- A language server for Bash
+- **[claude-code-mcp](https://github.com/steipete/claude-code-mcp)** -- Claude Code as one-shot MCP server to have an agent in your agent.
+- **[ClaudeBar](https://github.com/tddworks/ClaudeBar)** -- A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance.
 - **[git-updater](https://github.com/afragen/git-updater)** -- This WP plugin will update GitHub, Bitbucket, GitLab, and Gitea hosted plugins and themes
 - **[mainwp-child](https://github.com/wpallstars/mainwp-child)** -- The MainWP Child plugin is installed on the WordPress sites that you want to control from the MainWP Dashboard.
 - **[mcp-adapter](https://github.com/WordPress/mcp-adapter)** -- An MCP adapter that bridges the Abilities API to the Model Context Protocol, enabling MCP clients to discover and invoke WordPress plugin, theme, and core abilities programmatically.
@@ -139,5 +141,5 @@ _Model savings are modest because ~94.1% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-27 22:57 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-28 01:16 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
