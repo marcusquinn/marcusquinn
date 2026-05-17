@@ -29,12 +29,12 @@
 
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 11.2h | 83.8h | 361h | ~4,657h* |
-| User AI session hours | 0.0h | 19.4h | 68.3h | 68.3h |
-| AI worker hours | 11.4h | 100.5h | 416.0h | 416.0h |
-| AI concurrency hours | 12.2h | 167.0h | 681.6h | 681.6h |
-| Interactive sessions | 4 | 74 | 258 | 258 |
-| Worker sessions | 50 | 450 | 1,574 | 1,574 |
+| Screen time (Mac) | 15.2h | 70.5h | 439.1h | ~4,657h* |
+| User AI session hours | 0.5h | 16.2h | 64.9h | 64.9h |
+| AI worker hours | 7.7h | 99.3h | 398.7h | 398.7h |
+| AI concurrency hours | 10.6h | 160.2h | 657.8h | 657.8h |
+| Interactive sessions | 7 | 68 | 250 | 250 |
+| Worker sessions | 36 | 445 | 1,513 | 1,513 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -44,20 +44,20 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | $17,086.83 | $72,977.75 | $0.00 |
-| claude-opus-4-6 | 17,759 | 18K | 8.9M | 1,797.8M | $4,327.95 | $24,271.16 | $0.00 |
-| gpt-5.5 | 105,841 | 516.6M | 20.6M | 9,239.3M | $3,935.23 | $24,946.19 | $18,528.49 |
-| claude-sonnet-4-6 | 77,654 | 115K | 33.7M | 8,308.7M | $3,644.52 | $22,433.70 | $11,999.58 |
+| claude-opus-4-7 | 38,792 | 51K | 37.6M | 5,320.9M | $16,843.71 | $71,832.81 | $0.00 |
+| claude-opus-4-6 | 17,587 | 18K | 8.8M | 1,770.3M | $4,264.15 | $23,899.78 | $0.00 |
+| gpt-5.5 | 106,335 | 518.5M | 20.7M | 9,277.4M | $3,951.31 | $25,049.07 | $18,602.27 |
+| claude-sonnet-4-6 | 77,234 | 115K | 33.6M | 8,282.4M | $3,627.31 | $22,362.61 | $11,956.94 |
 | claude-opus-4-5 | 41 | 8 | 17K | 3.1M | $12.05 | $42.84 | $0.00 |
-| claude-haiku-4-5 | 1,153 | 1K | 265K | 93.8M | $11.91 | $67.60 | $152.17 |
+| claude-haiku-4-5 | 1,123 | 1K | 258K | 91.9M | $11.65 | $66.22 | $149.00 |
 | kimi-k2.6 | 81 | 2.2M | 25K | 2.8M | $7.96 | $0.00 | $39.79 |
 | gpt-5.4-mini | 799 | 2.7M | 117K | 46.2M | $2.63 | $86.77 | $81.90 |
 | gpt-5.4 | 10 | 86K | 3K | 469K | $0.49 | $0.88 | $1.70 |
-| **Total** | **242,911** | **521.8M** | **102.1M** | **24,898.4M** | **$29,029.57** | **$144,826.89** | **$30,803.64** |
+| **Total** | **242,002** | **523.7M** | **101.3M** | **24,795.9M** | **$28,721.26** | **$143,340.98** | **$30,831.61** |
 
-_26,074.0M total tokens processed. 95.5% cache hit rate._
+_25,967.1M total tokens processed. 95.5% cache hit rate._
 
-_$175,630.53 total saved ($144,826.89 caching + $30,803.64 model routing vs all-Opus)._
+_$174,172.58 total saved ($143,340.98 caching + $30,831.61 model routing vs all-Opus)._
 
 _Model savings are modest because ~95.5% of tokens are cache reads, where price differences between models are small._
 
@@ -65,38 +65,49 @@ _Model savings are modest because ~95.5% of tokens are cache reads, where price 
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 207,667 | 112.3M | 70.0M | 19,763.4M | $36,585.12 | $266,806.20 | $0.00 |
-| claude-opus-4-7 | 38,716 | 51K | 37.6M | 5,289.7M | $10,757.70 | $71,411.79 | $0.00 |
-| claude-sonnet-4-6 | 253,226 | 262.6M | 74.7M | 17,785.7M | $7,245.43 | $48,021.50 | $28,981.78 |
-| claude-opus-4-5 | 42,268 | 18K | 12.0M | 3,734.8M | $6,503.60 | $50,420.83 | $0.00 |
-| gpt-5.5 | 91,647 | 451.3M | 17.5M | 8,110.1M | $4,050.60 | $21,897.32 | $16,202.47 |
-| gpt-5.3-codex | 37,023 | 211.9M | 9.7M | 2,412.7M | $2,135.54 | $4,524.00 | $5,395.61 |
-| gpt-5.4 | 22,432 | 124.6M | 6.4M | 1,472.3M | $1,296.20 | $2,760.74 | $3,264.57 |
-| claude-sonnet-4-5 | 8,163 | 13K | 8.0M | 452.1M | $256.11 | $1,220.83 | $1,024.49 |
-| gpt-5.2-codex | 798 | 6.7M | 249K | 54.6M | $53.53 | $102.42 | $148.56 |
-| gpt-5.4-mini | 789 | 2.6M | 119K | 45.0M | $35.85 | $84.46 | $79.79 |
-| claude-haiku-4-5 | 2,536 | 3K | 645K | 161.5M | $15.50 | $116.33 | $275.28 |
-| gpt-5.1-codex-max | 62 | 735K | 11K | 2.8M | $3.73 | $5.39 | $12.48 |
-| gpt-5.2 | 69 | 300K | 35K | 4.0M | $3.60 | $7.51 | $9.55 |
-| gemini-3-pro | 81 | 923K | 10K | 6.5M | $3.30 | $6.18 | $21.18 |
-| antigravity-claude-sonnet-4-5 | 51 | 322K | 17K | 3.6M | $2.31 | $9.89 | $9.34 |
-| gemini-3-pro-preview | 312 | 543K | 12K | 4.6M | $2.25 | $4.39 | $13.85 |
-| mimo-v2-omni-free | 48 | 160K | 11K | 3.4M | $1.67 | $9.33 | $6.75 |
-| claude-sonnet-4 | 151 | 284 | 10K | 2.0M | $0.76 | $5.55 | $3.09 |
-| qwen3.6-plus-free | 4 | 202K | 2K | 0 | $0.64 | $0.00 | $2.60 |
-| mimo-v2-pro-free | 17 | 77K | 3K | 1.1M | $0.63 | $3.21 | $2.59 |
-| anthropic/claude-opus-4.1 | 2 | 28K | 234 | 27K | $0.47 | $0.38 | $0.00 |
-| grok-code | 2 | 156K | 378 | 256 | $0.47 | $0.00 | $1.91 |
-| antigravity-gemini-3-pro | 24 | 101K | 2K | 616K | $0.33 | $0.58 | $2.31 |
-| claude-3-haiku | 31 | 106 | 5K | 694K | $0.28 | $1.88 | $1.17 |
-| nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.24 | $0.00 | $1.00 |
-| **Total** | **706,120** | **1,176.0M** | **237.4M** | **59,312.3M** | **$68,955.86** | **$467,420.69** | **$55,460.36** |
+| claude-opus-4-6 | 165,978 | 112.2M | 60.1M | 16,297.3M | $42,977.65 | $220,013.82 | $0.00 |
+| claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | $17,086.83 | $72,977.75 | $0.00 |
+| claude-sonnet-4-6 | 317,137 | 249.2M | 99.5M | 23,951.5M | $13,126.71 | $64,669.16 | $37,706.16 |
+| gpt-5.5 | 106,335 | 518.5M | 20.7M | 9,277.4M | $3,951.31 | $25,049.07 | $18,602.27 |
+| gpt-5.3-codex | 35,935 | 208.9M | 9.6M | 2,401.2M | $1,813.74 | $4,502.32 | $5,339.86 |
+| gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | $679.12 | $2,157.79 | $2,655.04 |
+| claude-haiku-4-5 | 2,987 | 4K | 751K | 201.2M | $25.72 | $144.93 | $339.25 |
+| claude-opus-4-5 | 51 | 10 | 23K | 3.5M | $14.00 | $47.94 | $0.00 |
+| gpt-5.4-mini | 1,023 | 3.4M | 155K | 59.3M | $9.39 | $111.31 | $105.02 |
+| kimi-k2.6 | 81 | 2.2M | 25K | 2.8M | $7.96 | $0.00 | $39.79 |
+| gemini-3-flash | 2,339 | 34.0M | 624K | 88.4M | $6.01 | $9.95 | $681.41 |
+| big-pickle | 76 | 84K | 17K | 3.1M | $2.26 | $0.00 | $7.33 |
+| mimo-v2-omni-free | 48 | 160K | 11K | 3.4M | $1.73 | $9.33 | $6.75 |
+| qwen3.6-plus-free | 4 | 202K | 2K | 0 | $0.68 | $0.00 | $2.60 |
+| mimo-v2-pro-free | 17 | 77K | 3K | 1.1M | $0.67 | $3.21 | $2.59 |
+| anthropic/claude-opus-4.1 | 2 | 28K | 234 | 27K | $0.48 | $0.38 | $0.00 |
+| nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.25 | $0.00 | $1.00 |
+| minimax-m2.5-free | 12 | 10K | 1K | 211K | $0.15 | $0.00 | $0.61 |
+| claude-sonnet-4 | 4 | 17 | 231 | 76K | $0.12 | $0.21 | $0.11 |
+| **Total** | **688,638** | **1,236.8M** | **234.7M** | **58,847.7M** | **$79,704.78** | **$389,697.16** | **$65,489.79** |
 
-_62,298.7M total tokens processed. 94.4% cache hit rate._
+_63,019.4M total tokens processed. 94.2% cache hit rate._
 
-_$522,881.05 total saved ($467,420.69 caching + $55,460.36 model routing vs all-Opus)._
+_$455,186.95 total saved ($389,697.16 caching + $65,489.79 model routing vs all-Opus)._
 
-_Model savings are modest because ~94.4% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~94.2% of tokens are cache reads, where price differences between models are small._
+
+## Top Apps by Screen Time
+
+| App | 24h | 7 Days | 28 Days |
+| --- | ---: | ---: | ---: |
+| Tabby | 3% | 14% | 21% |
+| GitHub | 4% | 4% | 11% |
+| YouTube | 41% | 11% | 10% |
+| X | -- | 9% | 10% |
+| Mail | 19% | 9% | 6% |
+| Slack | -- | 6% | 6% |
+| Brave Browser | 6% | 7% | 6% |
+| Brave PWA | -- | 7% | 5% |
+| Affinity | -- | 4% | 3% |
+| Facebook | 17% | 5% | 3% |
+
+_Top 10 apps by foreground time share. Mac only._
 <!-- STATS-END -->
 
 ## Projects
@@ -136,5 +147,5 @@ _Model savings are modest because ~94.4% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-05-17 00:39 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-05-17 01:22 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
