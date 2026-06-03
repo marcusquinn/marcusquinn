@@ -30,11 +30,11 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 11.2h | 83.8h | 361h | ~4,657h* |
-| User AI session hours | 4.0h | 31.4h | 49.1h | 49.1h |
-| AI worker hours | 7.9h | 50.3h | 158.3h | 158.3h |
-| AI concurrency hours | 29.5h | 176.8h | 339.0h | 339.0h |
-| Interactive sessions | 83 | 299 | 390 | 390 |
-| Worker sessions | 37 | 198 | 515 | 515 |
+| User AI session hours | 3.5h | 30.8h | 49.1h | 49.7h |
+| AI worker hours | 8.4h | 50.5h | 158.9h | 158.9h |
+| AI concurrency hours | 27.4h | 175.7h | 340.5h | 341.1h |
+| Interactive sessions | 32 | 299 | 391 | 391 |
+| Worker sessions | 38 | 199 | 517 | 517 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -44,17 +44,17 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.5 | 112,233 | 535.8M | 21.4M | 9,445.0M | $4,182.25 | $25,501.65 | $19,049.73 |
+| gpt-5.5 | 110,938 | 531.9M | 21.1M | 9,347.9M | $4,141.89 | $25,239.36 | $18,871.00 |
 | gpt-5.2 | 579 | 1.8M | 353K | 20.3M | $9.66 | $38.19 | $64.18 |
 | gpt-5.3-codex-spark | 78 | 492K | 71K | 3.6M | $6.82 | $6.76 | $13.93 |
 | gpt-5.4-mini | 1,238 | 4.7M | 204K | 74.9M | $4.23 | $140.58 | $138.41 |
 | gpt-5.3-codex | 16 | 84K | 7K | 476K | $0.76 | $0.89 | $1.93 |
 | claude-opus-4-7 | 3 | 6 | 45 | 0 | $0.56 | $0.00 | $0.00 |
-| **Total** | **114,147** | **543.0M** | **22.0M** | **9,544.4M** | **$4,204.28** | **$25,688.08** | **$19,268.18** |
+| **Total** | **112,852** | **539.1M** | **21.8M** | **9,447.3M** | **$4,163.92** | **$25,425.78** | **$19,089.45** |
 
-_10,102.3M total tokens processed. 94.4% cache hit rate._
+_9,964.2M total tokens processed. 94.4% cache hit rate._
 
-_$44,956.26 total saved ($25,688.08 caching + $19,268.18 model routing vs all-Opus)._
+_$44,515.23 total saved ($25,425.78 caching + $19,089.45 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.4% of tokens are cache reads, where price differences between models are small._
 
@@ -65,7 +65,7 @@ _Model savings are modest because ~94.4% of tokens are cache reads, where price 
 | claude-opus-4-6 | 165,978 | 112.2M | 60.1M | 16,297.3M | $42,977.65 | $220,013.82 | $0.00 |
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | $17,086.83 | $72,977.75 | $0.00 |
 | claude-sonnet-4-6 | 317,137 | 249.2M | 99.5M | 23,951.5M | $13,126.71 | $64,669.16 | $37,706.16 |
-| gpt-5.5 | 145,557 | 707.2M | 28.3M | 12,952.9M | $5,511.05 | $34,972.86 | $25,729.79 |
+| gpt-5.5 | 145,943 | 709.4M | 28.3M | 13,007.6M | $5,532.41 | $35,120.73 | $25,826.80 |
 | gpt-5.3-codex | 35,951 | 209.0M | 9.6M | 2,401.7M | $1,814.50 | $4,503.21 | $5,341.79 |
 | gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | $679.12 | $2,157.79 | $2,655.04 |
 | claude-haiku-4-5 | 2,987 | 4K | 751K | 201.2M | $25.72 | $144.93 | $339.25 |
@@ -83,13 +83,13 @@ _Model savings are modest because ~94.4% of tokens are cache reads, where price 
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.25 | $0.00 | $1.00 |
 | minimax-m2.5-free | 12 | 10K | 1K | 211K | $0.15 | $0.00 | $0.61 |
 | claude-sonnet-4 | 4 | 17 | 231 | 76K | $0.12 | $0.21 | $0.11 |
-| **Total** | **728,973** | **1,430.0M** | **242.8M** | **62,576.3M** | **$81,283.47** | **$399,720.61** | **$72,754.39** |
+| **Total** | **729,359** | **1,432.2M** | **242.8M** | **62,631.1M** | **$81,304.83** | **$399,868.48** | **$72,851.41** |
 
-_66,934.3M total tokens processed. 94.2% cache hit rate._
+_66,477.9M total tokens processed. 94.4% cache hit rate._
 
-_$472,475.01 total saved ($399,720.61 caching + $72,754.39 model routing vs all-Opus)._
+_$472,719.89 total saved ($399,868.48 caching + $72,851.41 model routing vs all-Opus)._
 
-_Model savings are modest because ~94.2% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~94.4% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
 
 ## Projects
