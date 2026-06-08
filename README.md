@@ -112,7 +112,7 @@ _Model savings are modest because ~94.2% of tokens are cache reads, where price 
 - **[awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)** -- A list of Free Software network services and web applications which can be hosted locally. Selfhosting is the process of hosting and managing applications instead of renting from Software-as-a-Service providers
 - **[bash-language-server](https://github.com/bash-lsp/bash-language-server)** -- A language server for Bash
 - **[claude-code-mcp](https://github.com/steipete/claude-code-mcp)** -- Claude Code as one-shot MCP server to have an agent in your agent.
-- **[ClaudeBar](https://github.com/marcusquinn/ClaudeBar)** -- A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance.
+- **[ClaudeBar](https://github.com/tddworks/ClaudeBar)** -- A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance.
 - **[extro](https://github.com/turbostarter/extro)** -- Open source browser extension starter kit 🧩
 - **[git-updater](https://github.com/afragen/git-updater)** -- This WP plugin will update GitHub, Bitbucket, GitLab, and Gitea hosted plugins and themes
 - **[loading-ui](https://github.com/turbostarter/loading-ui)** -- Spinners, loaders and loading animations for modern web apps ⏳
@@ -134,5 +134,5 @@ _Model savings are modest because ~94.2% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-06-07 23:02 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-06-08 00:30 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
