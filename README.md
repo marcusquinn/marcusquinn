@@ -140,7 +140,6 @@ _Top 10 apps by foreground time share. Mac only._
 - **[mcp-adapter](https://github.com/WordPress/mcp-adapter)** -- An MCP adapter that bridges the Abilities API to the Model Context Protocol, enabling MCP clients to discover and invoke WordPress plugin, theme, and core abilities programmatically.
 - **[opencode-cursor](https://github.com/ephraimduncan/opencode-cursor)** -- Use your cursor subscription in opencode
 - **[opencode](https://github.com/anomalyco/opencode)** -- The open source coding agent.
-- **[tabby](https://github.com/Eugeny/tabby)** -- A terminal for a more modern age
 - **[Turing-CSS](https://github.com/wangjs-jacky/Turing-CSS)** -- Typora theme inspired by the style of typewritten articles
 - **[ultimate-multisite](https://github.com/Ultimate-Multisite/ultimate-multisite)** -- Website as a service plugin for WordPress Multisite
 - **[wp-performance-action](https://github.com/swissspidy/wp-performance-action)** -- Reusable GitHub action to measure performance metrics of WordPress sites<!-- CONTRIBUTIONS-END -->
@@ -154,5 +153,5 @@ _Top 10 apps by foreground time share. Mac only._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-06-15 04:37 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-06-15 07:26 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
