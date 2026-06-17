@@ -30,11 +30,11 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 11.8h | 90.2h | 340.1h | ~4,584h* |
-| User AI session hours | 2.3h | 21.6h | 89.0h | 52.3h |
-| AI worker hours | 25.0h | 53.3h | 264.8h | 4114.4h |
-| AI concurrency hours | 52.8h | 155.3h | 617.6h | 4,319.6h |
-| Interactive sessions | 22 | 91 | 383 | 139 |
-| Worker sessions | 11 | 174 | 1,091 | 430 |
+| User AI session hours | 2.6h | 21.7h | 87.9h | 53.3h |
+| AI worker hours | 6.1h | 51.7h | 262.9h | 4115.1h |
+| AI concurrency hours | 43.4h | 166.8h | 628.8h | 4,336.7h |
+| Interactive sessions | 26 | 96 | 389 | 143 |
+| Worker sessions | 5 | 157 | 1,086 | 411 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -46,18 +46,18 @@ _AI session 365-day totals cover 16 days of local assistant session history (not
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.5 | 67,343 | 327.2M | 12.8M | 5,965.0M | $2,601.02 | $16,105.61 | $11,858.00 |
+| gpt-5.5 | 67,785 | 331.5M | 12.9M | 6,064.8M | $2,638.60 | $16,375.05 | $12,033.35 |
 | gpt-5.2 | 579 | 1.8M | 353K | 20.3M | $9.66 | $38.19 | $64.18 |
 | gpt-5.3-codex-spark | 78 | 492K | 71K | 3.6M | $6.82 | $6.76 | $13.93 |
 | gpt-5.4-mini | 727 | 5.2M | 118K | 34.9M | $2.82 | $65.60 | $103.62 |
 | gpt-5.3-codex | 16 | 84K | 7K | 476K | $0.76 | $0.89 | $1.93 |
-| **Total** | **68,743** | **334.9M** | **13.4M** | **6,024.4M** | **$2,621.08** | **$16,217.04** | **$12,041.66** |
+| **Total** | **69,185** | **339.2M** | **13.4M** | **6,124.2M** | **$2,658.66** | **$16,486.49** | **$12,217.01** |
 
-_6,378.1M total tokens processed. 94.5% cache hit rate._
+_6,474.2M total tokens processed. 94.6% cache hit rate._
 
-_$28,258.71 total saved ($16,217.04 caching + $12,041.66 model routing vs all-Opus)._
+_$28,703.50 total saved ($16,486.49 caching + $12,217.01 model routing vs all-Opus)._
 
-_Model savings are modest because ~94.5% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~94.6% of tokens are cache reads, where price differences between models are small._
 
 ## AI Model Usage (all time)
 
@@ -66,7 +66,7 @@ _Model savings are modest because ~94.5% of tokens are cache reads, where price 
 | claude-opus-4-6 | 207,667 | 112.3M | 70.0M | 19,763.4M | $36,585.12 | $266,806.20 | $0.00 |
 | claude-opus-4-7 | 38,716 | 51K | 37.6M | 5,289.7M | $10,757.70 | $71,411.79 | $0.00 |
 | claude-sonnet-4-6 | 253,226 | 262.6M | 74.7M | 17,785.7M | $7,245.43 | $48,021.50 | $28,981.78 |
-| gpt-5.5 | 150,062 | 723.0M | 28.6M | 13,171.3M | $6,549.86 | $35,562.55 | $26,199.46 |
+| gpt-5.5 | 150,167 | 723.4M | 28.6M | 13,174.9M | $6,552.54 | $35,572.33 | $26,210.18 |
 | claude-opus-4-5 | 42,268 | 18K | 12.0M | 3,734.8M | $6,503.60 | $50,420.83 | $0.00 |
 | gpt-5.3-codex | 37,043 | 212.0M | 9.7M | 2,413.3M | $2,136.30 | $4,525.03 | $5,398.24 |
 | gpt-5.4 | 22,432 | 124.6M | 6.4M | 1,472.3M | $1,296.20 | $2,760.74 | $3,264.57 |
@@ -89,11 +89,11 @@ _Model savings are modest because ~94.5% of tokens are cache reads, where price 
 | antigravity-gemini-3-pro | 24 | 101K | 2K | 616K | $0.33 | $0.58 | $2.31 |
 | claude-3-haiku | 31 | 106 | 5K | 694K | $0.28 | $1.88 | $1.17 |
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.24 | $0.00 | $1.00 |
-| **Total** | **766,767** | **1,465.4M** | **249.0M** | **64,431.2M** | **$71,541.41** | **$481,194.15** | **$65,767.70** |
+| **Total** | **766,872** | **1,465.8M** | **249.0M** | **64,434.9M** | **$71,544.09** | **$481,203.92** | **$65,778.42** |
 
-_68,818.7M total tokens processed. 94.4% cache hit rate._
+_68,958.2M total tokens processed. 94.4% cache hit rate._
 
-_$546,961.85 total saved ($481,194.15 caching + $65,767.70 model routing vs all-Opus)._
+_$546,982.34 total saved ($481,203.92 caching + $65,778.42 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.4% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
