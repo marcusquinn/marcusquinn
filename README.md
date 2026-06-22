@@ -106,8 +106,7 @@ _Model savings are modest because ~94.4% of tokens are cache reads, where price 
 <!-- CONTRIBUTIONS-START -->
 ## Contributions
 
-- **[awesome-opencode](https://github.com/awesome-opencode/awesome-opencode)** -- A curated list of awesome plugins, themes, agents, projects, and resources for https://opencode.ai
-- **[ClaudeBar](https://github.com/marcusquinn/ClaudeBar)** -- A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance.
+- **[ClaudeBar](https://github.com/tddworks/ClaudeBar)** -- A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance.
 - **[extro](https://github.com/turbostarter/extro)** -- Open source browser extension starter kit 🧩
 - **[git-updater](https://github.com/afragen/git-updater)** -- This WP plugin will update GitHub, Bitbucket, GitLab, and Gitea hosted plugins and themes
 - **[loading-ui](https://github.com/turbostarter/loading-ui)** -- Spinners, loaders and loading animations for modern web apps ⏳
@@ -115,7 +114,6 @@ _Model savings are modest because ~94.4% of tokens are cache reads, where price 
 - **[mcp-adapter](https://github.com/WordPress/mcp-adapter)** -- An MCP adapter that bridges the Abilities API to the Model Context Protocol, enabling MCP clients to discover and invoke WordPress plugin, theme, and core abilities programmatically.
 - **[opencode-cursor](https://github.com/ephraimduncan/opencode-cursor)** -- Use your cursor subscription in opencode
 - **[tabby](https://github.com/Eugeny/tabby)** -- A terminal for a more modern age
-- **[Turing-CSS](https://github.com/wangjs-jacky/Turing-CSS)** -- Typora theme inspired by the style of typewritten articles
 - **[ultimate-multisite](https://github.com/Ultimate-Multisite/ultimate-multisite)** -- Website as a service plugin for WordPress Multisite
 - **[wp-performance-action](https://github.com/swissspidy/wp-performance-action)** -- Reusable GitHub action to measure performance metrics of WordPress sites<!-- CONTRIBUTIONS-END -->
 
@@ -128,5 +126,5 @@ _Model savings are modest because ~94.4% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-06-22 03:35 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-06-22 10:43 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
