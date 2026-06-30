@@ -119,6 +119,7 @@ _Model savings are modest because ~94.4% of tokens are cache reads, where price 
 - **[opencode-cursor](https://github.com/ephraimduncan/opencode-cursor)** -- Use your cursor subscription in opencode
 - **[opencode](https://github.com/anomalyco/opencode)** -- The open source coding agent.
 - **[tabby](https://github.com/Eugeny/tabby)** -- A terminal for a more modern age
+- **[Turing-CSS](https://github.com/wangjs-jacky/Turing-CSS)** -- Typora theme inspired by the style of typewritten articles
 - **[ultimate-multisite](https://github.com/Ultimate-Multisite/ultimate-multisite)** -- Website as a service plugin for WordPress Multisite
 - **[wp-performance-action](https://github.com/swissspidy/wp-performance-action)** -- Reusable GitHub action to measure performance metrics of WordPress sites<!-- CONTRIBUTIONS-END -->
 
@@ -131,5 +132,5 @@ _Model savings are modest because ~94.4% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-06-29 21:47 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-06-30 06:38 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
