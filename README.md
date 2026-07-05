@@ -30,29 +30,29 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 11.8h | 90.2h | 340.1h | ~4,584h* |
-| User AI session hours | 5.5h | 32.9h | 59.0h | 94.7h |
-| AI worker hours | 21.4h | 130.9h | 640.9h | 4416.2h |
-| AI concurrency hours | 47.6h | 323.1h | 863.4h | 4,973.8h |
-| Interactive sessions | 18 | 90 | 198 | 286 |
-| Worker sessions | 11 | 59 | 422 | 48 |
+| User AI session hours | 0.2h | 35.5h | 102.9h | 109.2h |
+| AI worker hours | 15.2h | 140.6h | 344.4h | 4425.8h |
+| AI concurrency hours | 17.5h | 301.9h | 931.1h | 5,039.0h |
+| Interactive sessions | 4 | 84 | 350 | 359 |
+| Worker sessions | 11 | 70 | 381 | 454 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
 _User AI session hours are attended interactive time measured from gaps between AI responses and the next user message; AI concurrency hours include attended time, AI generation, and background workers._
 
-_AI session 365-day totals cover 26 days of local assistant session history (not extrapolated)._
+_AI session 365-day totals cover 33 days of local assistant session history (not extrapolated)._
 
 ## AI Model Usage (last 30 days)
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.5 | 83,178 | 417.4M | 15.3M | 7,274.3M | $3,224.51 | $19,640.79 | $14,658.19 |
-| gpt-5.4-mini | 487 | 3.9M | 64K | 22.7M | $1.95 | $42.64 | $73.95 |
-| **Total** | **83,665** | **421.4M** | **15.3M** | **7,297.1M** | **$3,226.46** | **$19,683.43** | **$14,732.14** |
+| gpt-5.5 | 85,465 | 420.5M | 15.5M | 7,330.5M | $3,249.28 | $19,792.41 | $14,776.12 |
+| gpt-5.4-mini | 437 | 3.7M | 53K | 18.8M | $1.73 | $35.39 | $66.99 |
+| **Total** | **85,902** | **424.3M** | **15.5M** | **7,349.3M** | **$3,251.01** | **$19,827.80** | **$14,843.12** |
 
-_7,723.1M total tokens processed. 94.4% cache hit rate._
+_7,789.3M total tokens processed. 94.4% cache hit rate._
 
-_$34,415.57 total saved ($19,683.43 caching + $14,732.14 model routing vs all-Opus)._
+_$34,670.91 total saved ($19,827.80 caching + $14,843.12 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.4% of tokens are cache reads, where price differences between models are small._
 
@@ -63,7 +63,7 @@ _Model savings are modest because ~94.4% of tokens are cache reads, where price 
 | claude-opus-4-6 | 165,978 | 112.2M | 60.1M | 16,297.3M | $42,977.65 | $220,013.82 | $0.00 |
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | $17,086.83 | $72,977.75 | $0.00 |
 | claude-sonnet-4-6 | 317,147 | 249.2M | 99.5M | 23,951.5M | $13,126.71 | $64,669.16 | $37,706.16 |
-| gpt-5.5 | 231,938 | 1,139.4M | 44.3M | 20,595.2M | $8,881.26 | $55,607.15 | $41,049.39 |
+| gpt-5.5 | 237,244 | 1,163.4M | 45.2M | 20,971.1M | $9,054.51 | $56,622.04 | $41,843.23 |
 | gpt-5.3-codex | 35,951 | 209.0M | 9.6M | 2,401.7M | $1,814.50 | $4,503.21 | $5,341.79 |
 | gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | $679.12 | $2,157.79 | $2,655.04 |
 | claude-haiku-4-5 | 2,987 | 4K | 751K | 201.2M | $25.72 | $144.93 | $339.25 |
@@ -81,11 +81,11 @@ _Model savings are modest because ~94.4% of tokens are cache reads, where price 
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.25 | $0.00 | $1.00 |
 | minimax-m2.5-free | 12 | 10K | 1K | 211K | $0.15 | $0.00 | $0.61 |
 | claude-sonnet-4 | 4 | 17 | 231 | 76K | $0.12 | $0.21 | $0.11 |
-| **Total** | **815,877** | **1,866.3M** | **258.9M** | **70,243.7M** | **$84,655.77** | **$420,401.91** | **$88,152.75** |
+| **Total** | **821,183** | **1,890.4M** | **259.8M** | **70,619.6M** | **$84,829.02** | **$421,416.81** | **$88,946.58** |
 
-_74,381.3M total tokens processed. 94.4% cache hit rate._
+_74,778.5M total tokens processed. 94.4% cache hit rate._
 
-_$508,554.66 total saved ($420,401.91 caching + $88,152.75 model routing vs all-Opus)._
+_$510,363.39 total saved ($421,416.81 caching + $88,946.58 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.4% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -111,7 +111,7 @@ _Model savings are modest because ~94.4% of tokens are cache reads, where price 
 - **[extro](https://github.com/turbostarter/extro)** -- Open source browser extension starter kit 🧩
 - **[git-updater](https://github.com/afragen/git-updater)** -- This WP plugin will update GitHub, Bitbucket, GitLab, and Gitea hosted plugins and themes
 - **[loading-ui](https://github.com/turbostarter/loading-ui)** -- Spinners, loaders and loading animations for modern web apps ⏳
-- **[mainwp-child](https://github.com/wpallstars/mainwp-child)** -- No description
+- **[mainwp-child](https://github.com/wpallstars/mainwp-child)** -- The MainWP Child plugin is installed on the WordPress sites that you want to control from the MainWP Dashboard.
 - **[mcp-adapter](https://github.com/WordPress/mcp-adapter)** -- An MCP adapter that bridges the Abilities API to the Model Context Protocol, enabling MCP clients to discover and invoke WordPress plugin, theme, and core abilities programmatically.
 - **[opencode-cursor](https://github.com/ephraimduncan/opencode-cursor)** -- Use your cursor subscription in opencode
 - **[opencode](https://github.com/anomalyco/opencode)** -- The open source coding agent.
@@ -129,5 +129,5 @@ _Model savings are modest because ~94.4% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-03 14:13 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-05 03:59 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
