@@ -30,29 +30,29 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 11.8h | 90.2h | 340.1h | ~4,584h* |
-| User AI session hours | 2.8h | 28.3h | 104.5h | 995.1h |
-| AI worker hours | 23.3h | 152.4h | 375.0h | 2739.1h |
-| AI concurrency hours | 35.0h | 286.7h | 975.8h | 6,055.1h |
-| Interactive sessions | 8 | 76 | 346 | 5,846 |
-| Worker sessions | 19 | 85 | 353 | 13,496 |
+| User AI session hours | 2.8h | 28.3h | 104.5h | 112.7h |
+| AI worker hours | 23.9h | 150.8h | 375.2h | 4466.6h |
+| AI concurrency hours | 35.7h | 284.2h | 975.5h | 5,100.0h |
+| Interactive sessions | 8 | 74 | 344 | 368 |
+| Worker sessions | 19 | 85 | 349 | 446 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
 _User AI session hours are attended interactive time measured from gaps between AI responses and the next user message; AI concurrency hours include attended time, AI generation, and background workers._
 
-_AI session 365-day totals cover 220 days of local assistant session history (not extrapolated)._
+_AI session 365-day totals cover 34 days of local assistant session history (not extrapolated)._
 
 ## AI Model Usage (last 30 days)
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.5 | 90,230 | 442.5M | 16.4M | 7,664.1M | $3,408.00 | $20,693.17 | $15,491.33 |
+| gpt-5.5 | 90,360 | 443.0M | 16.4M | 7,668.6M | $3,410.81 | $20,705.25 | $15,504.06 |
 | gpt-5.4-mini | 443 | 3.8M | 54K | 19.1M | $1.77 | $35.92 | $68.77 |
-| **Total** | **90,673** | **446.3M** | **16.4M** | **7,683.2M** | **$3,409.77** | **$20,729.09** | **$15,560.10** |
+| **Total** | **90,803** | **446.9M** | **16.4M** | **7,687.7M** | **$3,412.58** | **$20,741.17** | **$15,572.82** |
 
-_8,145.8M total tokens processed. 94.3% cache hit rate._
+_8,151.0M total tokens processed. 94.3% cache hit rate._
 
-_$36,289.18 total saved ($20,729.09 caching + $15,560.10 model routing vs all-Opus)._
+_$36,313.99 total saved ($20,741.17 caching + $15,572.82 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.3% of tokens are cache reads, where price differences between models are small._
 
@@ -63,7 +63,7 @@ _Model savings are modest because ~94.3% of tokens are cache reads, where price 
 | claude-opus-4-6 | 165,978 | 112.2M | 60.1M | 16,297.3M | $42,977.65 | $220,013.82 | $0.00 |
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | $17,086.83 | $72,977.75 | $0.00 |
 | claude-sonnet-4-6 | 317,147 | 249.2M | 99.5M | 23,951.5M | $13,126.71 | $64,669.16 | $37,706.16 |
-| gpt-5.5 | 243,756 | 1,192.1M | 46.4M | 21,424.0M | $9,266.89 | $57,844.85 | $42,800.74 |
+| gpt-5.5 | 243,917 | 1,192.7M | 46.4M | 21,429.9M | $9,270.39 | $57,860.73 | $42,816.52 |
 | gpt-5.3-codex | 35,951 | 209.0M | 9.6M | 2,401.7M | $1,814.50 | $4,503.21 | $5,341.79 |
 | gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | $679.12 | $2,157.79 | $2,655.04 |
 | claude-haiku-4-5 | 2,987 | 4K | 751K | 201.2M | $25.72 | $144.93 | $339.25 |
@@ -81,11 +81,11 @@ _Model savings are modest because ~94.3% of tokens are cache reads, where price 
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.25 | $0.00 | $1.00 |
 | minimax-m2.5-free | 12 | 10K | 1K | 211K | $0.15 | $0.00 | $0.61 |
 | claude-sonnet-4 | 4 | 17 | 231 | 76K | $0.12 | $0.21 | $0.11 |
-| **Total** | **827,701** | **1,919.2M** | **260.9M** | **71,072.8M** | **$85,041.44** | **$422,640.15** | **$89,905.87** |
+| **Total** | **827,862** | **1,919.8M** | **261.0M** | **71,078.6M** | **$85,044.94** | **$422,656.02** | **$89,921.65** |
 
-_75,261.7M total tokens processed. 94.4% cache hit rate._
+_75,268.2M total tokens processed. 94.4% cache hit rate._
 
-_$512,546.01 total saved ($422,640.15 caching + $89,905.87 model routing vs all-Opus)._
+_$512,577.67 total saved ($422,656.02 caching + $89,921.65 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.4% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -155,5 +155,5 @@ No description
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-06 20:14 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-06 21:18 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
