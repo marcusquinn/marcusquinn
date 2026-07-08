@@ -30,11 +30,11 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 11.8h | 90.2h | 340.1h | ~4,584h* |
-| User AI session hours | 5.8h | 25.4h | 105.7h | 1001.3h |
-| AI worker hours | 23.2h | 146.9h | 395.1h | 2768.1h |
-| AI concurrency hours | 38.7h | 256.8h | 998.8h | 6,100.7h |
+| User AI session hours | 5.8h | 25.2h | 105.7h | 1001.3h |
+| AI worker hours | 21.9h | 146.5h | 395.1h | 2767.8h |
+| AI concurrency hours | 37.5h | 255.5h | 999.1h | 6,100.7h |
 | Interactive sessions | 10 | 72 | 340 | 5,858 |
-| Worker sessions | 22 | 91 | 316 | 13,520 |
+| Worker sessions | 21 | 91 | 316 | 13,520 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
