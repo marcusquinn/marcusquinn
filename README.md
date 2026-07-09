@@ -103,48 +103,22 @@ _Model savings are modest because ~94.4% of tokens are cache reads, where price 
 <!-- CONTRIBUTIONS-START -->
 ## Contributions
 
-	"documentation_url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api#rate-limiting",
-	"documentation_url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api#rate-limiting",
-	"documentation_url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api#rate-limiting",
-	"documentation_url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api#rate-limiting",
-	"documentation_url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api#rate-limiting",
-	"documentation_url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api#rate-limiting",
-	"documentation_url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api#rate-limiting",
-	"message": "API rate limit exceeded for user ID 6428977. If you reach out to GitHub Support for help, please include the request ID F785:3F45AE:3403E:3F07B:6A4D956B and timestamp 2026-07-08 00:10:20 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service https:\/\/docs.github.com\/en\/site-policy\/github-terms\/github-terms-of-service",
-	"message": "API rate limit exceeded for user ID 6428977. If you reach out to GitHub Support for help, please include the request ID F786:3874F9:31FDE:3D03A:6A4D956C and timestamp 2026-07-08 00:10:20 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service https:\/\/docs.github.com\/en\/site-policy\/github-terms\/github-terms-of-service",
-	"message": "API rate limit exceeded for user ID 6428977. If you reach out to GitHub Support for help, please include the request ID F787:52F1:379AF:429BD:6A4D956C and timestamp 2026-07-08 00:10:20 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service https:\/\/docs.github.com\/en\/site-policy\/github-terms\/github-terms-of-service",
-	"message": "API rate limit exceeded for user ID 6428977. If you reach out to GitHub Support for help, please include the request ID F788:189259:30813:3B82C:6A4D956C and timestamp 2026-07-08 00:10:21 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service https:\/\/docs.github.com\/en\/site-policy\/github-terms\/github-terms-of-service",
-	"message": "API rate limit exceeded for user ID 6428977. If you reach out to GitHub Support for help, please include the request ID F789:B6498:376A8:4277F:6A4D956D and timestamp 2026-07-08 00:10:21 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service https:\/\/docs.github.com\/en\/site-policy\/github-terms\/github-terms-of-service",
-	"message": "API rate limit exceeded for user ID 6428977. If you reach out to GitHub Support for help, please include the request ID F78A:16A44E:350F5:40188:6A4D956D and timestamp 2026-07-08 00:10:21 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service https:\/\/docs.github.com\/en\/site-policy\/github-terms\/github-terms-of-service",
-	"message": "API rate limit exceeded for user ID 6428977. If you reach out to GitHub Support for help, please include the request ID F78B:1ED51:3F0B8:4A110:6A4D956D and timestamp 2026-07-08 00:10:22 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service https:\/\/docs.github.com\/en\/site-policy\/github-terms\/github-terms-of-service",
-	"status": "403"
-	"status": "403"
-	"status": "403"
-	"status": "403"
-	"status": "403"
-	"status": "403"
-	"status": "403"
-- **[ClaudeBar](https://github.com/marcusquinn/ClaudeBar)** -- {
-- **[git-updater](https://github.com/afragen/git-updater)** -- {
-- **[mainwp-child](https://github.com/wpallstars/mainwp-child)** -- {
-- **[mcp-adapter](https://github.com/WordPress/mcp-adapter)** -- {
-- **[opencode-cursor](https://github.com/ephraimduncan/opencode-cursor)** -- {
-- **[ultimate-multisite](https://github.com/Ultimate-Multisite/ultimate-multisite)** -- {
-- **[wp-performance-action](https://github.com/swissspidy/wp-performance-action)** -- {
-No description
-No description
-No description
-No description
-No description
-No description
-No description
-}
-}
-}
-}
-}
-}
-}<!-- CONTRIBUTIONS-END -->
+- **[awesome-opencode](https://github.com/awesome-opencode/awesome-opencode)** -- A curated list of awesome plugins, themes, agents, projects, and resources for https://opencode.ai
+- **[awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)** -- A list of Free Software network services and web applications which can be hosted locally. Selfhosting is the process of hosting and managing applications instead of renting from Software-as-a-Service providers
+- **[bash-language-server](https://github.com/bash-lsp/bash-language-server)** -- A language server for Bash
+- **[claude-code-mcp](https://github.com/steipete/claude-code-mcp)** -- Claude Code as one-shot MCP server to have an agent in your agent.
+- **[ClaudeBar](https://github.com/tddworks/ClaudeBar)** -- A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance.
+- **[extro](https://github.com/turbostarter/extro)** -- Open source browser extension starter kit 🧩
+- **[git-updater](https://github.com/afragen/git-updater)** -- This WP plugin will update GitHub, Bitbucket, GitLab, and Gitea hosted plugins and themes
+- **[loading-ui](https://github.com/turbostarter/loading-ui)** -- Spinners, loaders and loading animations for modern web apps ⏳
+- **[mainwp-child](https://github.com/wpallstars/mainwp-child)** -- The MainWP Child plugin is installed on the WordPress sites that you want to control from the MainWP Dashboard.
+- **[mcp-adapter](https://github.com/WordPress/mcp-adapter)** -- An MCP adapter that bridges the Abilities API to the Model Context Protocol, enabling MCP clients to discover and invoke WordPress plugin, theme, and core abilities programmatically.
+- **[opencode-cursor](https://github.com/ephraimduncan/opencode-cursor)** -- Use your cursor subscription in opencode
+- **[opencode](https://github.com/anomalyco/opencode)** -- The open source coding agent.
+- **[tabby](https://github.com/Eugeny/tabby)** -- A terminal for a more modern age
+- **[Turing-CSS](https://github.com/wangjs-jacky/Turing-CSS)** -- Typora theme inspired by the style of typewritten articles
+- **[ultimate-multisite](https://github.com/Ultimate-Multisite/ultimate-multisite)** -- Website as a service plugin for WordPress Multisite
+- **[wp-performance-action](https://github.com/swissspidy/wp-performance-action)** -- Reusable GitHub action to measure performance metrics of WordPress sites<!-- CONTRIBUTIONS-END -->
 
 ## Connect
 
@@ -155,5 +129,5 @@ No description
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-08 23:19 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-09 00:43 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
