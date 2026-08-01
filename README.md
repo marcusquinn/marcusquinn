@@ -36,7 +36,7 @@
 | Worker/headless AI generation | 69.9h | 252.4h | 1217.9h | 4294.1h |
 | Additive observed work | 80.3h | 342.0h | 1,856.7h | 8,050.1h |
 | Interactive sessions | 33 | 75 | 333 | 7,155 |
-| Worker sessions | 391 | 1,011 | 4,056 | 25,794 |
+| Worker sessions | 392 | 1,012 | 4,057 | 25,795 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -50,16 +50,16 @@ _AI session 365-day totals cover 246 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.6-sol | 162,037 | 953.0M | 42.5M | 18,913.3M | $16,035.57 | $51,066.05 | $36,684.98 |
-| gpt-5.5 | 27,407 | 117.6M | 4.6M | 1,956.5M | $888.39 | $5,282.58 | $4,037.65 |
+| gpt-5.6-sol | 162,347 | 954.4M | 42.6M | 18,955.9M | $16,069.19 | $51,180.97 | $36,758.21 |
+| gpt-5.5 | 27,250 | 117.1M | 4.6M | 1,949.2M | $884.91 | $5,262.97 | $4,022.09 |
 | gpt-5.6-terra | 871 | 5.0M | 89K | 22.5M | $20.39 | $60.78 | $93.54 |
 | gpt-5.6-luna | 122 | 787K | 17K | 7.5M | $1.79 | $20.41 | $19.59 |
 | gpt-5.4-mini | 23 | 200K | 2K | 355K | $0.07 | $0.67 | $2.97 |
-| **Total** | **190,460** | **1,076.7M** | **47.2M** | **20,900.2M** | **$16,946.21** | **$56,430.49** | **$40,838.73** |
+| **Total** | **190,613** | **1,077.7M** | **47.3M** | **20,935.5M** | **$16,976.35** | **$56,525.81** | **$40,896.40** |
 
-_22,024.3M total tokens processed. 94.9% cache hit rate._
+_22,060.6M total tokens processed. 94.9% cache hit rate._
 
-_$97,269.22 total saved ($56,430.49 caching + $40,838.73 model routing vs all-Opus)._
+_$97,422.20 total saved ($56,525.81 caching + $40,896.40 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.9% of tokens are cache reads, where price differences between models are small._
 
@@ -69,7 +69,7 @@ _Model savings are modest because ~94.9% of tokens are cache reads, where price 
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 165,978 | 112.2M | 60.1M | 16,297.3M | $42,977.65 | $220,013.82 | $0.00 |
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | $17,086.83 | $72,977.75 | $0.00 |
-| gpt-5.6-sol | 162,037 | 953.0M | 42.5M | 18,913.3M | $16,035.57 | $51,066.05 | $36,684.98 |
+| gpt-5.6-sol | 162,347 | 954.4M | 42.6M | 18,955.9M | $16,069.19 | $51,180.97 | $36,758.21 |
 | claude-sonnet-4-6 | 317,151 | 249.2M | 99.5M | 23,951.5M | $13,126.71 | $64,669.16 | $37,706.16 |
 | gpt-5.5 | 256,258 | 1,242.7M | 48.4M | 22,306.2M | $9,658.88 | $60,226.80 | $44,585.50 |
 | gpt-5.3-codex | 35,951 | 209.0M | 9.6M | 2,401.7M | $1,814.50 | $4,503.21 | $5,341.79 |
@@ -91,11 +91,11 @@ _Model savings are modest because ~94.9% of tokens are cache reads, where price 
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.25 | $0.00 | $1.00 |
 | minimax-m2.5-free | 12 | 10K | 1K | 211K | $0.15 | $0.00 | $0.61 |
 | claude-sonnet-4 | 4 | 17 | 231 | 76K | $0.12 | $0.21 | $0.11 |
-| **Total** | **1,003,254** | **2,928.8M** | **305.6M** | **90,898.5M** | **$101,491.21** | **$476,169.47** | **$128,489.93** |
+| **Total** | **1,003,564** | **2,930.3M** | **305.7M** | **90,941.0M** | **$101,524.83** | **$476,284.40** | **$128,563.16** |
 
-_96,141.7M total tokens processed. 94.5% cache hit rate._
+_96,185.7M total tokens processed. 94.5% cache hit rate._
 
-_$604,659.40 total saved ($476,169.47 caching + $128,489.93 model routing vs all-Opus)._
+_$604,847.56 total saved ($476,284.40 caching + $128,563.16 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.5% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -141,7 +141,7 @@ _Model savings are modest because ~94.5% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-08-01 18:57 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-08-01 20:03 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <div align="center">
