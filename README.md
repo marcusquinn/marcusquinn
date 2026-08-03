@@ -35,7 +35,7 @@
 | Worker-classified human attention | 0.7h | 15.2h | 70.2h | 166.3h |
 | Worker/headless AI generation | 53.5h | 330.8h | 1301.5h | 4412.6h |
 | Additive observed work | 75.2h | 434.0h | 1,960.9h | 8,210.7h |
-| Interactive sessions | 9 | 75 | 333 | 7,168 |
+| Interactive sessions | 10 | 76 | 334 | 7,169 |
 | Worker sessions | 211 | 1,050 | 4,090 | 26,016 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
@@ -50,16 +50,16 @@ _AI session 365-day totals cover 248 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.6-sol | 175,551 | 1,025.0M | 45.9M | 20,537.7M | $17,404.72 | $55,452.06 | $39,704.39 |
+| gpt-5.6-sol | 175,573 | 1,025.2M | 45.9M | 20,538.8M | $17,406.75 | $55,454.93 | $39,708.96 |
 | gpt-5.5 | 20,390 | 83.9M | 3.3M | 1,422.6M | $642.85 | $3,841.07 | $2,917.22 |
 | gpt-5.6-terra | 871 | 5.0M | 89K | 22.5M | $20.39 | $60.78 | $93.54 |
 | gpt-5.6-luna | 170 | 1.4M | 19K | 7.5M | $2.47 | $20.48 | $27.29 |
 | gpt-5.4-mini | 23 | 200K | 2K | 355K | $0.07 | $0.67 | $2.97 |
-| **Total** | **197,005** | **1,115.7M** | **49.4M** | **21,990.8M** | **$18,070.50** | **$59,375.06** | **$42,745.41** |
+| **Total** | **197,027** | **1,115.9M** | **49.4M** | **21,991.9M** | **$18,072.53** | **$59,377.93** | **$42,749.98** |
 
-_23,156.0M total tokens processed. 95% cache hit rate._
+_23,157.3M total tokens processed. 95% cache hit rate._
 
-_$102,120.47 total saved ($59,375.06 caching + $42,745.41 model routing vs all-Opus)._
+_$102,127.91 total saved ($59,377.93 caching + $42,749.98 model routing vs all-Opus)._
 
 _Model savings are modest because ~95% of tokens are cache reads, where price differences between models are small._
 
@@ -68,7 +68,7 @@ _Model savings are modest because ~95% of tokens are cache reads, where price di
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 165,978 | 112.2M | 60.1M | 16,297.3M | $42,977.65 | $220,013.82 | $0.00 |
-| gpt-5.6-sol | 175,551 | 1,025.0M | 45.9M | 20,537.7M | $17,404.72 | $55,452.06 | $39,704.39 |
+| gpt-5.6-sol | 175,573 | 1,025.2M | 45.9M | 20,538.8M | $17,406.75 | $55,454.93 | $39,708.96 |
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | $17,086.83 | $72,977.75 | $0.00 |
 | claude-sonnet-4-6 | 317,151 | 249.2M | 99.5M | 23,951.5M | $13,126.71 | $64,669.16 | $37,706.16 |
 | gpt-5.5 | 256,258 | 1,242.7M | 48.4M | 22,306.2M | $9,658.88 | $60,226.80 | $44,585.50 |
@@ -91,11 +91,11 @@ _Model savings are modest because ~95% of tokens are cache reads, where price di
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.25 | $0.00 | $1.00 |
 | minimax-m2.5-free | 12 | 10K | 1K | 211K | $0.15 | $0.00 | $0.61 |
 | claude-sonnet-4 | 4 | 17 | 231 | 76K | $0.12 | $0.21 | $0.11 |
-| **Total** | **1,016,816** | **3,001.4M** | **309.0M** | **92,522.9M** | **$102,861.04** | **$480,555.55** | **$131,517.05** |
+| **Total** | **1,016,838** | **3,001.7M** | **309.0M** | **92,524.0M** | **$102,863.07** | **$480,558.43** | **$131,521.61** |
 
-_97,842.2M total tokens processed. 94.6% cache hit rate._
+_97,843.5M total tokens processed. 94.6% cache hit rate._
 
-_$612,072.60 total saved ($480,555.55 caching + $131,517.05 model routing vs all-Opus)._
+_$612,080.04 total saved ($480,558.43 caching + $131,521.61 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.6% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -141,7 +141,7 @@ _Model savings are modest because ~94.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-08-03 08:45 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-08-03 09:24 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <div align="center">
