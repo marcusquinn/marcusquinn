@@ -36,7 +36,7 @@
 | Worker/headless AI generation | 53.5h | 330.8h | 1301.5h | 4412.6h |
 | Additive observed work | 75.2h | 434.0h | 1,960.9h | 8,210.7h |
 | Interactive sessions | 8 | 74 | 332 | 7,167 |
-| Worker sessions | 187 | 1,026 | 4,066 | 25,992 |
+| Worker sessions | 188 | 1,027 | 4,067 | 25,993 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -50,16 +50,16 @@ _AI session 365-day totals cover 248 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.6-sol | 174,113 | 1,016.8M | 45.5M | 20,349.2M | $17,246.71 | $54,942.88 | $39,357.49 |
-| gpt-5.5 | 21,299 | 86.6M | 3.5M | 1,464.8M | $663.05 | $3,955.23 | $3,008.34 |
+| gpt-5.6-sol | 174,168 | 1,017.0M | 45.6M | 20,355.1M | $17,251.29 | $54,958.79 | $39,367.89 |
+| gpt-5.5 | 21,274 | 86.5M | 3.5M | 1,463.1M | $662.16 | $3,950.45 | $3,004.35 |
 | gpt-5.6-terra | 871 | 5.0M | 89K | 22.5M | $20.39 | $60.78 | $93.54 |
 | gpt-5.6-luna | 160 | 1.2M | 19K | 7.5M | $2.33 | $20.47 | $25.68 |
 | gpt-5.4-mini | 23 | 200K | 2K | 355K | $0.07 | $0.67 | $2.97 |
-| **Total** | **196,466** | **1,110.1M** | **49.2M** | **21,844.5M** | **$17,932.55** | **$58,980.03** | **$42,488.02** |
+| **Total** | **196,496** | **1,110.2M** | **49.2M** | **21,848.6M** | **$17,936.24** | **$58,991.15** | **$42,494.43** |
 
-_23,003.9M total tokens processed. 95% cache hit rate._
+_23,008.1M total tokens processed. 95% cache hit rate._
 
-_$101,468.05 total saved ($58,980.03 caching + $42,488.02 model routing vs all-Opus)._
+_$101,485.59 total saved ($58,991.15 caching + $42,494.43 model routing vs all-Opus)._
 
 _Model savings are modest because ~95% of tokens are cache reads, where price differences between models are small._
 
@@ -68,7 +68,7 @@ _Model savings are modest because ~95% of tokens are cache reads, where price di
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 165,978 | 112.2M | 60.1M | 16,297.3M | $42,977.65 | $220,013.82 | $0.00 |
-| gpt-5.6-sol | 174,113 | 1,016.8M | 45.5M | 20,349.2M | $17,246.71 | $54,942.88 | $39,357.49 |
+| gpt-5.6-sol | 174,168 | 1,017.0M | 45.6M | 20,355.1M | $17,251.29 | $54,958.79 | $39,367.89 |
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | $17,086.83 | $72,977.75 | $0.00 |
 | claude-sonnet-4-6 | 317,151 | 249.2M | 99.5M | 23,951.5M | $13,126.71 | $64,669.16 | $37,706.16 |
 | gpt-5.5 | 256,258 | 1,242.7M | 48.4M | 22,306.2M | $9,658.88 | $60,226.80 | $44,585.50 |
@@ -91,11 +91,11 @@ _Model savings are modest because ~95% of tokens are cache reads, where price di
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.25 | $0.00 | $1.00 |
 | minimax-m2.5-free | 12 | 10K | 1K | 211K | $0.15 | $0.00 | $0.61 |
 | claude-sonnet-4 | 4 | 17 | 231 | 76K | $0.12 | $0.21 | $0.11 |
-| **Total** | **1,015,368** | **2,993.2M** | **308.6M** | **92,334.4M** | **$102,702.89** | **$480,046.37** | **$131,168.54** |
+| **Total** | **1,015,423** | **2,993.4M** | **308.6M** | **92,340.2M** | **$102,707.47** | **$480,062.27** | **$131,178.94** |
 
-_97,644.9M total tokens processed. 94.6% cache hit rate._
+_97,651.1M total tokens processed. 94.6% cache hit rate._
 
-_$611,214.90 total saved ($480,046.37 caching + $131,168.54 model routing vs all-Opus)._
+_$611,241.20 total saved ($480,062.27 caching + $131,178.94 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.6% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -141,7 +141,7 @@ _Model savings are modest because ~94.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-08-03 02:11 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-08-03 02:20 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <div align="center">
