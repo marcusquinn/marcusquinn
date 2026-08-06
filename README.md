@@ -35,8 +35,8 @@
 | Worker-classified human attention | 3.2h | 16.2h | 71.4h | 169.9h |
 | Worker/headless AI generation | 26.0h | 278.7h | 1238.2h | 4401.1h |
 | Additive observed work | 34.0h | 427.1h | 2,023.9h | 8,368.1h |
-| Interactive sessions | 16 | 73 | 331 | 7,190 |
-| Worker sessions | 103 | 1,006 | 4,016 | 26,312 |
+| Interactive sessions | 15 | 72 | 330 | 7,189 |
+| Worker sessions | 104 | 1,007 | 4,017 | 26,313 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -50,15 +50,15 @@ _AI session 365-day totals cover 251 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.6-sol | 192,951 | 1,117.0M | 50.5M | 22,652.7M | $19,183.52 | $61,162.48 | $43,619.67 |
-| gpt-5.5 | 11,846 | 48.2M | 1.9M | 861.3M | $379.47 | $2,325.68 | $1,726.47 |
+| gpt-5.6-sol | 193,003 | 1,117.2M | 50.5M | 22,661.3M | $19,190.39 | $61,185.76 | $43,634.14 |
+| gpt-5.5 | 11,689 | 47.5M | 1.8M | 853.8M | $375.40 | $2,305.53 | $1,707.94 |
 | gpt-5.6-terra | 871 | 5.0M | 89K | 22.5M | $20.39 | $60.78 | $93.54 |
 | gpt-5.6-luna | 257 | 2.5M | 24K | 7.6M | $3.69 | $20.71 | $40.79 |
-| **Total** | **205,925** | **1,172.8M** | **52.5M** | **23,544.3M** | **$19,587.07** | **$63,569.65** | **$45,480.47** |
+| **Total** | **205,820** | **1,172.4M** | **52.5M** | **23,545.4M** | **$19,589.87** | **$63,572.78** | **$45,476.40** |
 
-_24,769.9M total tokens processed. 95.1% cache hit rate._
+_24,770.6M total tokens processed. 95.1% cache hit rate._
 
-_$109,050.12 total saved ($63,569.65 caching + $45,480.47 model routing vs all-Opus)._
+_$109,049.18 total saved ($63,572.78 caching + $45,476.40 model routing vs all-Opus)._
 
 _Model savings are modest because ~95.1% of tokens are cache reads, where price differences between models are small._
 
@@ -67,7 +67,7 @@ _Model savings are modest because ~95.1% of tokens are cache reads, where price 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 165,978 | 112.2M | 60.1M | 16,297.3M | $42,977.65 | $220,013.82 | $0.00 |
-| gpt-5.6-sol | 192,951 | 1,117.0M | 50.5M | 22,652.7M | $19,183.52 | $61,162.48 | $43,619.67 |
+| gpt-5.6-sol | 193,003 | 1,117.2M | 50.5M | 22,661.3M | $19,190.39 | $61,185.76 | $43,634.14 |
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | $17,086.83 | $72,977.75 | $0.00 |
 | claude-sonnet-4-6 | 317,151 | 249.2M | 99.5M | 23,951.5M | $13,126.71 | $64,669.16 | $37,706.16 |
 | gpt-5.5 | 256,472 | 1,244.0M | 48.4M | 22,335.9M | $9,671.05 | $60,306.96 | $44,639.52 |
@@ -90,11 +90,11 @@ _Model savings are modest because ~95.1% of tokens are cache reads, where price 
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.25 | $0.00 | $1.00 |
 | minimax-m2.5-free | 12 | 10K | 1K | 211K | $0.15 | $0.00 | $0.61 |
 | claude-sonnet-4 | 4 | 17 | 231 | 76K | $0.12 | $0.21 | $0.11 |
-| **Total** | **1,034,517** | **3,095.8M** | **313.6M** | **94,667.7M** | **$104,653.23** | **$486,346.36** | **$135,499.84** |
+| **Total** | **1,034,569** | **3,096.0M** | **313.7M** | **94,676.3M** | **$104,660.10** | **$486,369.64** | **$135,514.31** |
 
-_100,085.9M total tokens processed. 94.6% cache hit rate._
+_100,094.8M total tokens processed. 94.6% cache hit rate._
 
-_$621,846.20 total saved ($486,346.36 caching + $135,499.84 model routing vs all-Opus)._
+_$621,883.96 total saved ($486,369.64 caching + $135,514.31 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.6% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -140,7 +140,7 @@ _Model savings are modest because ~94.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-08-06 03:27 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-08-06 03:43 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <div align="center">
