@@ -29,16 +29,16 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | unavailable | unavailable | unavailable | unavailable |
+| Screen time (Mac) | 12.7h | 52.4h | 302.6h | ~3437h* |
 | Interactive human attention | 4.4h | 10.1h | 47.8h | 891.9h |
 | Interactive AI generation | 29.8h | 98.2h | 412.5h | 3459.4h |
 | Worker-classified human attention | 2.0h | 6.7h | 31.7h | 205.4h |
 | Worker/headless AI generation | 27.1h | 57.4h | 328.0h | 4781.0h |
 | Additive observed work | 62.8h | 171.7h | 817.4h | 9,290.9h |
 | Interactive sessions | 49 | 80 | 287 | 7,467 |
-| Worker sessions | 228 | 995 | 4,441 | 30,932 |
+| Worker sessions | 231 | 998 | 4,444 | 30,935 |
 
-_Screen time from unavailable; collection status: unavailable._
+_Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
 _Periods are completed local calendar days ending at midnight; today is excluded._
 
@@ -50,14 +50,14 @@ _AI session 365-day totals cover 281 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.6-sol | 59,927 | 282.2M | 15.4M | 7,627.8M | 96.4% | 427 | 583.7h |
-| gpt-5.6-terra | 18,040 | 101.0M | 3.8M | 1,075.3M | 91.4% | 1,797 | 114.3h |
-| gpt-5.6-luna | 10,778 | 123.0M | 2.4M | 1,033.0M | 89.4% | 2,353 | 81.6h |
-| gpt-6-astra | 1,195 | 2.3M | 210K | 155.2M | 98.5% | 9 | 9.4h |
+| gpt-5.6-sol | 59,825 | 281.5M | 15.3M | 7,616.6M | 96.4% | 426 | 583.0h |
+| gpt-5.6-terra | 18,056 | 101.2M | 3.8M | 1,075.8M | 91.4% | 1,799 | 114.4h |
+| gpt-5.6-luna | 10,778 | 123.0M | 2.4M | 1,033.0M | 89.4% | 2,352 | 81.6h |
+| gpt-6-astra | 1,335 | 2.5M | 235K | 184.1M | 98.6% | 9 | 11.6h |
 | gpt-5.4-mini | 1 | 8K | 7 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **89,941** | **508.7M** | **21.9M** | **9,891.5M** | **95.1%** | **4,585** | **789.0h** |
+| **Total** | **89,995** | **508.3M** | **21.9M** | **9,909.6M** | **95.1%** | **4,585** | **790.7h** |
 
-_10,422.2M total tokens processed. 95.1% cache hit rate._
+_10,439.9M total tokens processed. 95.1% cache hit rate._
 
 ## AI Model Usage (all time)
 
@@ -69,13 +69,13 @@ _10,422.2M total tokens processed. 95.1% cache hit rate._
 | claude-opus-4-6 | 165,978 | 112.2M | 60.1M | 16,297.3M | 99.3% | 4,501 | 816.2h |
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | 100.0% | 420 | 320.7h |
 | gpt-5.3-codex | 35,951 | 209.0M | 9.6M | 2,401.7M | 92.0% | 1,570 | 178.2h |
-| gpt-5.6-terra | 18,911 | 106.1M | 3.9M | 1,097.8M | 91.2% | 2,316 | 117.3h |
+| gpt-5.6-terra | 18,927 | 106.3M | 3.9M | 1,098.3M | 91.2% | 2,318 | 117.4h |
 | gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | 91.5% | 739 | 89.8h |
-| gpt-5.6-luna | 11,033 | 125.5M | 2.5M | 1,040.7M | 89.2% | 2,549 | 82.9h |
+| gpt-5.6-luna | 11,035 | 125.5M | 2.5M | 1,040.7M | 89.2% | 2,550 | 82.9h |
 | claude-haiku-4-5 | 2,987 | 4K | 751K | 201.2M | 100.0% | 234 | 8.1h |
 | gemini-3-flash | 2,339 | 34.0M | 624K | 88.4M | 72.2% | 166 | 9.8h |
 | gpt-5.4-mini | 2,000 | 9.9M | 316K | 113.4M | 92.0% | 294 | 12.3h |
-| gpt-6-astra | 1,195 | 2.3M | 210K | 155.2M | 98.5% | 9 | 9.4h |
+| gpt-6-astra | 1,335 | 2.5M | 235K | 184.1M | 98.6% | 9 | 11.6h |
 | gpt-5.2 | 579 | 1.8M | 353K | 20.3M | 91.6% | 91 | 3.1h |
 | kimi-k2.6 | 81 | 2.2M | 25K | 2.8M | 56.2% | 3 | 0.4h |
 | gpt-5.3-codex-spark | 78 | 492K | 71K | 3.6M | 88.0% | 7 | 0.1h |
@@ -97,9 +97,25 @@ _10,422.2M total tokens processed. 95.1% cache hit rate._
 | gpt-5.6 | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | gpt-5.6-sol-pro | 1 | 13K | 40 | 0 | 0.0% | 1 | 0.0h |
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **1,124,382** | **3,603.6M** | **335.5M** | **104,539.1M** | **96.7%** | **32,593** | **7,706.1h** |
+| **Total** | **1,124,540** | **3,603.9M** | **335.6M** | **104,568.5M** | **96.7%** | **32,596** | **7,708.4h** |
 
-_110,487.0M total tokens processed. 96.7% cache hit rate._
+_110,516.7M total tokens processed. 96.7% cache hit rate._
+
+## Top Apps by Screen Time
+
+| App | Yesterday | Prior 7 Days | Prior 28 Days |
+| --- | ---: | ---: | ---: |
+| X | 15% | 19% | 14% |
+| YouTube | 9% | 17% | 13% |
+| Tabby | 23% | 15% | 12% |
+| Brave Browser | 11% | 9% | 10% |
+| Mail | 7% | 9% | 10% |
+| Affinity | 4% | 3% | 7% |
+| Slack | 7% | 7% | 7% |
+| Finder | 4% | 3% | 5% |
+| GitHub | 6% | 4% | 4% |
+| Facebook | -- | 4% | 3% |
+_Top 10 apps by foreground time share across completed local calendar days. Mac only._
 <!-- STATS-END -->
 
 ## Projects
@@ -144,14 +160,20 @@ _110,487.0M total tokens processed. 96.7% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-09-05 02:57 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-05 03:17 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
+<!-- TOTAL-CONTRIBUTIONS-START -->
 <div align="center">
-  <a href="https://commit-history.com/marcusquinn?metric=total">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://commit-history.com/embed/marcusquinn?theme=dark" />
-    <img alt="marcusquinn's commit history" src="https://commit-history.com/embed/marcusquinn" />
-  </picture>
+  <a href="https://commit-history.com/marcusquinn?metric=total" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/contributions/total-dark.svg" />
+      <img alt="marcusquinn's cumulative total GitHub contributions" src="assets/contributions/total-light.svg" width="960" />
+    </picture>
   </a>
 </div>
+
+[Verify on commit-history.com](https://commit-history.com/marcusquinn?metric=total) · [Chart data](assets/contributions/total.json)
+
+Includes commits, issues, pull requests, reviews, repositories, and restricted contributions. Refreshed daily through the prior UTC day; commit-history.com may use a different refresh cutoff. GitHub controls link navigation—Ctrl/Cmd-click opens verification in a new tab.
+<!-- TOTAL-CONTRIBUTIONS-END -->
