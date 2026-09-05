@@ -29,74 +29,93 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | unavailable | unavailable | unavailable | unavailable |
-| Interactive human attention | 5.4h | 25.2h | 70.3h | 848.8h |
-| Interactive AI generation | 8.6h | 117.0h | 648.6h | 3040.3h |
-| Worker-classified human attention | 2.5h | 15.3h | 73.8h | 177.0h |
-| Worker/headless AI generation | 13.9h | 212.8h | 963.1h | 4482.1h |
-| Additive observed work | 29.1h | 367.2h | 1,739.4h | 8,502.7h |
-| Interactive sessions | 8 | 47 | 252 | 7,203 |
-| Worker sessions | 86 | 774 | 3,355 | 26,578 |
+| Screen time (Mac) | 12.7h | 52.4h | 302.6h | ~3437h* |
+| Interactive human attention | 4.4h | 10.1h | 47.8h | 891.9h |
+| Interactive AI generation | 29.8h | 98.2h | 412.5h | 3459.4h |
+| Worker-classified human attention | 2.0h | 6.7h | 31.7h | 205.4h |
+| Worker/headless AI generation | 27.1h | 57.4h | 328.0h | 4781.0h |
+| Additive observed work | 62.8h | 171.7h | 817.4h | 9,290.9h |
+| Interactive sessions | 43 | 74 | 281 | 7,461 |
+| Worker sessions | 200 | 967 | 4,413 | 30,904 |
 
-_Screen time from unavailable; collection status: unavailable._
+_Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
 _Periods are completed local calendar days ending at midnight; today is excluded._
 
 _Human attention is unioned wall-clock time, so overlapping sessions are not double-counted. AI generation is additive machine work across sessions; it is not wall-clock concurrency._
 
-_AI session 365-day totals cover 254 days of local assistant session history (not extrapolated)._
+_AI session 365-day totals cover 281 days of local assistant session history (not extrapolated)._
 
 ## AI Model Usage (last 30 days)
 
-| Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
+| Model | Requests | Input | Output | Cache read | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.6-sol | 204,472 | 1,176.9M | 53.3M | 24,122.0M | $20,399.77 | $65,129.50 | $46,268.69 |
-| gpt-5.6-terra | 1,434 | 7.8M | 210K | 61.5M | $40.07 | $166.05 | $180.07 |
-| gpt-5.5 | 758 | 4.0M | 142K | 60.9M | $29.02 | $164.59 | $130.37 |
-| gpt-5.6-luna | 581 | 5.8M | 92K | 24.7M | $9.93 | $66.77 | $105.61 |
-| **Total** | **207,245** | **1,194.6M** | **53.7M** | **24,269.2M** | **$20,478.79** | **$65,526.91** | **$46,684.75** |
+| gpt-5.6-sol | 60,153 | 283.6M | 15.4M | 7,659.9M | 96.4% | 429 | 584.8h |
+| gpt-5.6-terra | 17,879 | 99.5M | 3.7M | 1,064.6M | 91.4% | 1,783 | 113.5h |
+| gpt-5.6-luna | 10,691 | 121.6M | 2.4M | 1,025.6M | 89.4% | 2,342 | 81.1h |
+| gpt-6-astra | 83 | 493K | 21K | 5.5M | 91.8% | 3 | 0.5h |
+| gpt-5.4-mini | 1 | 8K | 7 | 0 | 0.0% | 1 | 0.0h |
+| **Total** | **88,807** | **505.4M** | **21.7M** | **9,755.8M** | **95.1%** | **4,556** | **780.0h** |
 
-_25,517.8M total tokens processed. 95.1% cache hit rate._
-
-_$112,211.66 total saved ($65,526.91 caching + $46,684.75 model routing vs all-Opus)._
-
-_Model savings are modest because ~95.1% of tokens are cache reads, where price differences between models are small._
+_10,283.0M total tokens processed. 95.1% cache hit rate._
 
 ## AI Model Usage (all time)
 
-| Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
+| Model | Requests | Input | Output | Cache read | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 165,978 | 112.2M | 60.1M | 16,297.3M | $42,977.65 | $220,013.82 | $0.00 |
-| gpt-5.6-sol | 204,760 | 1,178.8M | 53.3M | 24,150.3M | $20,406.57 | $65,205.86 | $46,328.75 |
-| claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | $17,086.83 | $72,977.75 | $0.00 |
-| claude-sonnet-4-6 | 317,151 | 249.2M | 99.5M | 23,951.5M | $13,126.71 | $64,669.16 | $37,706.16 |
-| gpt-5.5 | 256,472 | 1,244.0M | 48.4M | 22,335.9M | $9,671.05 | $60,306.96 | $44,639.52 |
-| gpt-5.3-codex | 35,951 | 209.0M | 9.6M | 2,401.7M | $1,814.50 | $4,503.21 | $5,341.79 |
-| gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | $679.12 | $2,157.79 | $2,655.04 |
-| gpt-5.6-terra | 1,434 | 7.8M | 210K | 61.5M | $40.07 | $166.05 | $180.07 |
-| claude-haiku-4-5 | 2,987 | 4K | 751K | 201.2M | $25.72 | $144.93 | $339.25 |
-| claude-opus-4-5 | 51 | 10 | 23K | 3.5M | $14.00 | $47.94 | $0.00 |
-| gpt-5.4-mini | 1,999 | 9.9M | 316K | 113.4M | $13.26 | $212.81 | $243.79 |
-| gpt-5.6-luna | 581 | 5.8M | 92K | 24.7M | $9.93 | $66.77 | $105.61 |
-| gpt-5.2 | 579 | 1.8M | 353K | 20.3M | $9.66 | $38.19 | $64.18 |
-| kimi-k2.6 | 81 | 2.2M | 25K | 2.8M | $7.96 | $0.00 | $39.79 |
-| gpt-5.3-codex-spark | 78 | 492K | 71K | 3.6M | $6.82 | $6.76 | $13.93 |
-| gemini-3-flash | 2,339 | 34.0M | 624K | 88.4M | $6.01 | $9.95 | $681.41 |
-| big-pickle | 76 | 84K | 17K | 3.1M | $2.26 | $0.00 | $7.33 |
-| mimo-v2-omni-free | 48 | 160K | 11K | 3.4M | $1.73 | $9.33 | $6.75 |
-| qwen3.6-plus-free | 4 | 202K | 2K | 0 | $0.68 | $0.00 | $2.60 |
-| mimo-v2-pro-free | 17 | 77K | 3K | 1.1M | $0.67 | $3.21 | $2.59 |
-| anthropic/claude-opus-4.1 | 2 | 28K | 234 | 27K | $0.48 | $0.38 | $0.00 |
-| nemotron-3-super-free | 1 | 83K | 129 | 0 | $0.25 | $0.00 | $1.00 |
-| minimax-m2.5-free | 12 | 10K | 1K | 211K | $0.15 | $0.00 | $0.61 |
-| claude-sonnet-4 | 4 | 17 | 231 | 76K | $0.12 | $0.21 | $0.11 |
-| **Total** | **1,047,213** | **3,163.7M** | **316.7M** | **96,221.3M** | **$105,902.20** | **$490,541.07** | **$138,360.28** |
+| claude-sonnet-4-6 | 317,151 | 249.2M | 99.5M | 23,951.5M | 99.0% | 9,476 | 1,398.1h |
+| gpt-5.5 | 256,472 | 1,244.0M | 48.4M | 22,335.9M | 94.7% | 6,487 | 2,209.6h |
+| gpt-5.6-sol | 252,602 | 1,398.1M | 65.8M | 30,247.8M | 95.6% | 3,771 | 2,448.1h |
+| claude-opus-4-6 | 165,978 | 112.2M | 60.1M | 16,297.3M | 99.3% | 4,501 | 816.2h |
+| claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | 100.0% | 420 | 320.7h |
+| gpt-5.3-codex | 35,951 | 209.0M | 9.6M | 2,401.7M | 92.0% | 1,570 | 178.2h |
+| gpt-5.6-terra | 18,750 | 104.6M | 3.8M | 1,087.1M | 91.2% | 2,302 | 116.4h |
+| gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | 91.5% | 739 | 89.8h |
+| gpt-5.6-luna | 10,944 | 124.1M | 2.4M | 1,033.3M | 89.3% | 2,536 | 82.4h |
+| claude-haiku-4-5 | 2,987 | 4K | 751K | 201.2M | 100.0% | 234 | 8.1h |
+| gemini-3-flash | 2,339 | 34.0M | 624K | 88.4M | 72.2% | 166 | 9.8h |
+| gpt-5.4-mini | 2,000 | 9.9M | 316K | 113.4M | 92.0% | 294 | 12.3h |
+| gpt-5.2 | 579 | 1.8M | 353K | 20.3M | 91.6% | 91 | 3.1h |
+| gpt-6-astra | 83 | 493K | 21K | 5.5M | 91.8% | 3 | 0.5h |
+| kimi-k2.6 | 81 | 2.2M | 25K | 2.8M | 56.2% | 3 | 0.4h |
+| gpt-5.3-codex-spark | 78 | 492K | 71K | 3.6M | 88.0% | 7 | 0.1h |
+| big-pickle | 76 | 84K | 17K | 3.1M | 97.4% | 5 | 0.2h |
+| claude-opus-4-5 | 51 | 10 | 23K | 3.5M | 100.0% | 5 | 0.2h |
+| mimo-v2-omni-free | 48 | 160K | 11K | 3.4M | 95.5% | 2 | 0.1h |
+| gemini-3.1-pro | 47 | 0 | 0 | 0 | 0.0% | 47 | 0.0h |
+| composer-2 | 21 | 0 | 0 | 0 | 0.0% | 13 | 0.2h |
+| mimo-v2-pro-free | 17 | 77K | 3K | 1.1M | 93.9% | 1 | 0.0h |
+| minimax-m2.5-free | 12 | 10K | 1K | 211K | 95.3% | 2 | 0.0h |
+| gpt-5.5-pro | 8 | 0 | 0 | 0 | 0.0% | 5 | 0.0h |
+| claude-opus-4-6 | 5 | 0 | 0 | 0 | 0.0% | 4 | 0.0h |
+| claude-sonnet-4 | 4 | 17 | 231 | 76K | 100.0% | 1 | 0.0h |
+| qwen3.6-plus-free | 4 | 202K | 2K | 0 | 0.0% | 1 | 0.0h |
+| anthropic/claude-opus-4.1 | 2 | 28K | 234 | 27K | 49.7% | 1 | 0.0h |
+| claude-3-7-sonnet-latest | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
+| claude-opus-4-6-fast | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
+| gemini-3-pro-preview | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
+| gpt-5.6 | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
+| gpt-5.6-sol-pro | 1 | 13K | 40 | 0 | 0.0% | 1 | 0.0h |
+| nemotron-3-super-free | 1 | 83K | 129 | 0 | 0.0% | 1 | 0.0h |
+| **Total** | **1,122,904** | **3,598.6M** | **335.3M** | **104,358.6M** | **96.7%** | **32,560** | **7,694.8h** |
 
-_101,710.4M total tokens processed. 94.6% cache hit rate._
+_110,301.3M total tokens processed. 96.7% cache hit rate._
 
-_$628,901.35 total saved ($490,541.07 caching + $138,360.28 model routing vs all-Opus)._
+## Top Apps by Screen Time
 
-_Model savings are modest because ~94.6% of tokens are cache reads, where price differences between models are small._
+| App | Yesterday | Prior 7 Days | Prior 28 Days |
+| --- | ---: | ---: | ---: |
+| X | 15% | 19% | 14% |
+| YouTube | 9% | 17% | 13% |
+| Tabby | 23% | 15% | 12% |
+| Brave Browser | 11% | 9% | 10% |
+| Mail | 7% | 9% | 10% |
+| Affinity | 4% | 3% | 7% |
+| Slack | 7% | 7% | 7% |
+| Finder | 4% | 3% | 5% |
+| GitHub | 6% | 4% | 4% |
+| Facebook | -- | 4% | 3% |
+_Top 10 apps by foreground time share across completed local calendar days. Mac only._
 <!-- STATS-END -->
 
 ## Projects
@@ -116,6 +135,7 @@ _Model savings are modest because ~94.6% of tokens are cache reads, where price 
 - **[awesome-opencode](https://github.com/awesome-opencode/awesome-opencode)** -- A curated list of awesome plugins, themes, agents, projects, and resources for https://opencode.ai
 - **[awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)** -- A list of Free Software network services and web applications which can be hosted locally. Selfhosting is the process of hosting and managing applications instead of renting from Software-as-a-Service providers
 - **[bash-language-server](https://github.com/bash-lsp/bash-language-server)** -- A language server for Bash
+- **[buzz](https://github.com/block/buzz)** -- A hive mind communication platform
 - **[claude-code-mcp](https://github.com/steipete/claude-code-mcp)** -- Claude Code as one-shot MCP server to have an agent in your agent.
 - **[ClaudeBar](https://github.com/tddworks/ClaudeBar)** -- A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance.
 - **[extro](https://github.com/turbostarter/extro)** -- Open source browser extension starter kit 🧩
@@ -140,12 +160,14 @@ _Model savings are modest because ~94.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-08-08 23:53 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-05 00:53 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <div align="center">
+  <a href="https://commit-history.com/marcusquinn">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://commit-history.com/embed/marcusquinn?theme=dark" />
     <img alt="marcusquinn's commit history" src="https://commit-history.com/embed/marcusquinn" />
   </picture>
+  </a>
 </div>
