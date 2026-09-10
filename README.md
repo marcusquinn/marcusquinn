@@ -36,7 +36,7 @@
 | Worker/headless AI generation | 8.6h | 76.7h | 286.9h | 4819.6h |
 | Additive observed work | 31.2h | 375.3h | 913.1h | 9,573.0h |
 | Interactive sessions | 22 | 159 | 316 | 7,567 |
-| Worker sessions | 130 | 1,041 | 4,435 | 31,603 |
+| Worker sessions | 133 | 1,044 | 4,438 | 31,606 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -144,7 +144,7 @@ _114,553.0M total tokens processed. 96.7% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-09-10 08:03 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-10 09:09 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
