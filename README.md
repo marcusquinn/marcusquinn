@@ -29,14 +29,14 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 15.1h | 85.9h | 297.7h | ~3521h* |
-| Interactive human attention | 9.2h | 28.7h | 85.2h | 964.9h |
+| Screen time (Mac) | 15.1h | 83.9h | 312.8h | ~3530h* |
+| Interactive human attention | 9.3h | 28.8h | 85.4h | 965.0h |
 | Interactive AI generation | 45.0h | 166.6h | 620.4h | 3969.8h |
 | Worker-classified human attention | 0.8h | 2.2h | 23.8h | 220.8h |
 | Worker/headless AI generation | 7.5h | 31.8h | 169.7h | 4885.9h |
-| Additive observed work | 62.3h | 228.1h | 896.3h | 9,992.4h |
-| Interactive sessions | 37 | 464 | 716 | 8,098 |
-| Worker sessions | 85 | 626 | 3,135 | 32,849 |
+| Additive observed work | 62.5h | 228.2h | 896.5h | 9,992.5h |
+| Interactive sessions | 39 | 466 | 718 | 8,100 |
+| Worker sessions | 93 | 634 | 3,143 | 32,857 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -50,15 +50,15 @@ _AI session 365-day totals cover 300 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.6-sol | 55,154 | 203.1M | 11.5M | 6,903.0M | 97.1% | 491 | 437.2h |
-| gpt-6-astra | 19,668 | 85.3M | 5.8M | 3,962.0M | 97.9% | 154 | 235.5h |
-| gpt-5.6-terra | 13,962 | 85.8M | 2.8M | 768.8M | 90.0% | 1,116 | 82.7h |
-| gpt-6-sol | 6,056 | 31.4M | 1.1M | 2,004.2M | 98.5% | 29 | 53.6h |
-| gpt-5.6-luna | 4,078 | 51.3M | 797K | 289.2M | 84.9% | 1,594 | 19.6h |
-| gpt-6-luna | 24 | 428K | 2K | 275K | 39.2% | 17 | 0.0h |
-| **Total** | **98,942** | **457.5M** | **22.1M** | **13,927.7M** | **96.8%** | **3,377** | **828.7h** |
+| gpt-5.6-sol | 55,027 | 202.4M | 11.4M | 6,883.2M | 97.1% | 489 | 435.4h |
+| gpt-6-astra | 19,669 | 85.3M | 5.8M | 3,962.0M | 97.9% | 155 | 235.5h |
+| gpt-5.6-terra | 13,980 | 85.9M | 2.8M | 769.3M | 89.9% | 1,118 | 82.7h |
+| gpt-6-sol | 6,594 | 33.5M | 1.2M | 2,086.2M | 98.4% | 30 | 57.8h |
+| gpt-5.6-luna | 4,062 | 51.1M | 795K | 288.8M | 85.0% | 1,588 | 19.5h |
+| gpt-6-luna | 42 | 563K | 4K | 711K | 55.8% | 20 | 0.1h |
+| **Total** | **99,374** | **459.1M** | **22.2M** | **13,990.4M** | **96.8%** | **3,376** | **831.0h** |
 
-_14,407.5M total tokens processed. 96.8% cache hit rate._
+_14,471.8M total tokens processed. 96.8% cache hit rate._
 
 ## AI Model Usage (all time)
 
@@ -70,11 +70,11 @@ _14,407.5M total tokens processed. 96.8% cache hit rate._
 | claude-opus-4-6 | 165,978 | 112.2M | 60.1M | 16,297.3M | 99.3% | 4,501 | 816.2h |
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | 100.0% | 420 | 320.7h |
 | gpt-5.3-codex | 35,951 | 209.0M | 9.6M | 2,401.7M | 92.0% | 1,570 | 178.2h |
-| gpt-5.6-terra | 25,870 | 151.4M | 5.4M | 1,492.0M | 90.8% | 2,886 | 163.3h |
-| gpt-6-astra | 19,668 | 85.3M | 5.8M | 3,962.0M | 97.9% | 154 | 235.5h |
+| gpt-5.6-terra | 25,891 | 151.6M | 5.4M | 1,492.6M | 90.8% | 2,890 | 163.4h |
+| gpt-6-astra | 19,669 | 85.3M | 5.8M | 3,962.0M | 97.9% | 155 | 235.5h |
 | gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | 91.5% | 739 | 89.8h |
 | gpt-5.6-luna | 12,055 | 144.0M | 2.6M | 1,057.9M | 88.0% | 3,249 | 84.8h |
-| gpt-6-sol | 6,056 | 31.4M | 1.1M | 2,004.2M | 98.5% | 29 | 53.6h |
+| gpt-6-sol | 6,594 | 33.5M | 1.2M | 2,086.2M | 98.4% | 30 | 57.8h |
 | claude-haiku-4-5 | 2,987 | 4K | 751K | 201.2M | 100.0% | 234 | 8.1h |
 | gemini-3-flash | 2,339 | 34.0M | 624K | 88.4M | 72.2% | 166 | 9.8h |
 | gpt-5.4-mini | 2,000 | 9.9M | 316K | 113.4M | 92.0% | 294 | 12.3h |
@@ -85,7 +85,7 @@ _14,407.5M total tokens processed. 96.8% cache hit rate._
 | claude-opus-4-5 | 51 | 10 | 23K | 3.5M | 100.0% | 5 | 0.2h |
 | mimo-v2-omni-free | 48 | 160K | 11K | 3.4M | 95.5% | 2 | 0.1h |
 | gemini-3.1-pro | 47 | 0 | 0 | 0 | 0.0% | 47 | 0.0h |
-| gpt-6-luna | 24 | 428K | 2K | 275K | 39.2% | 17 | 0.0h |
+| gpt-6-luna | 42 | 563K | 4K | 711K | 55.8% | 20 | 0.1h |
 | composer-2 | 21 | 0 | 0 | 0 | 0.0% | 13 | 0.2h |
 | mimo-v2-pro-free | 17 | 77K | 3K | 1.1M | 93.9% | 1 | 0.0h |
 | minimax-m2.5-free | 12 | 10K | 1K | 211K | 95.3% | 2 | 0.0h |
@@ -100,9 +100,9 @@ _14,407.5M total tokens processed. 96.8% cache hit rate._
 | gpt-5.6 | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | gpt-5.6-sol-pro | 1 | 13K | 40 | 0 | 0.0% | 1 | 0.0h |
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **1,195,216** | **3,910.3M** | **351.1M** | **115,524.7M** | **96.7%** | **34,404** | **8,300.6h** |
+| **Total** | **1,195,794** | **3,912.8M** | **351.2M** | **115,607.6M** | **96.7%** | **34,413** | **8,304.9h** |
 
-_121,794.9M total tokens processed. 96.7% cache hit rate._
+_121,880.4M total tokens processed. 96.7% cache hit rate._
 <!-- STATS-END -->
 
 ## Projects
@@ -147,7 +147,7 @@ _121,794.9M total tokens processed. 96.7% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-09-23 23:12 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-24 00:24 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
