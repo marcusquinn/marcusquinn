@@ -36,7 +36,7 @@
 | Worker/headless AI generation | 6.1h | 183.4h | 305.7h | 5105.6h |
 | Additive observed work | 151.8h | 742.7h | 1,567.6h | 10,993.1h |
 | Interactive sessions | 110 | 315 | 1,151 | 8,652 |
-| Worker sessions | 287 | 1,503 | 3,570 | 34,798 |
+| Worker sessions | 288 | 1,504 | 3,571 | 34,799 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -52,22 +52,22 @@ _AI session 365-day totals cover 311 days of local assistant session history (no
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-5-5 | 76,333 | 156K | 30.8M | 12,296.9M | 382.8M | 97.0% | 247 | 481.5h |
 | gpt-5.6-sol | 38,652 | 129.5M | 7.2M | 4,808.1M | 0 | 97.4% | 373 | 270.1h |
-| gpt-6.1-sol | 27,380 | 75.0M | 5.4M | 3,159.0M | 0 | 97.7% | 440 | 204.2h |
+| gpt-6.1-sol | 27,427 | 75.1M | 5.4M | 3,163.8M | 0 | 97.7% | 441 | 204.5h |
 | gpt-6-sol | 24,111 | 87.9M | 4.1M | 4,494.7M | 0 | 98.1% | 163 | 172.5h |
 | gpt-6-astra | 18,464 | 83.1M | 5.7M | 3,681.3M | 0 | 97.8% | 151 | 217.6h |
-| gpt-5.6-terra | 11,724 | 66.4M | 2.4M | 762.7M | 0 | 92.0% | 785 | 75.2h |
+| gpt-5.6-terra | 11,669 | 66.2M | 2.4M | 759.9M | 0 | 92.0% | 782 | 75.0h |
 | claude-sonnet-5-5 | 7,377 | 15K | 2.9M | 891.0M | 36.1M | 96.1% | 200 | 41.8h |
 | claude-sonnet-5 | 3,393 | 6K | 1.0M | 481.2M | 10.9M | 97.8% | 73 | 14.4h |
 | gpt-6-luna | 2,098 | 45.5M | 1.2M | 37.3M | 0 | 45.0% | 891 | 12.1h |
-| gpt-5.6-luna | 976 | 17.8M | 103K | 16.0M | 0 | 47.4% | 674 | 1.8h |
+| gpt-5.6-luna | 974 | 17.8M | 103K | 16.0M | 0 | 47.4% | 672 | 1.8h |
 | claude-haiku-4-5 | 215 | 5K | 47K | 8.1M | 1.9M | 80.9% | 35 | 0.5h |
 | claude-fable-5-1 | 26 | 54 | 20K | 3.5M | 501K | 87.7% | 1 | 0.3h |
 | openai/gpt-4o-mini | 9 | 34K | 114 | 199K | 0 | 85.4% | 6 | 0.0h |
 | z-ai/glm-5.3-uncensored | 4 | 27K | 334 | 27K | 0 | 50.2% | 1 | 0.0h |
 | gpt-5.4-mini | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **210,763** | **505.8M** | **61.3M** | **30,640.8M** | **432.2M** | **97%** | **3,824** | **1,492.0h** |
+| **Total** | **210,753** | **505.7M** | **61.3M** | **30,642.8M** | **432.2M** | **97%** | **3,820** | **1,492.1h** |
 
-_31,640.2M total tokens processed. 97% cache hit rate._
+_31,642.1M total tokens processed. 97% cache hit rate._
 
 ## AI Model Usage (all time)
 
@@ -81,7 +81,7 @@ _31,640.2M total tokens processed. 97% cache hit rate._
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | 325.5M | 94.3% | 420 | 320.7h |
 | gpt-5.3-codex | 35,951 | 209.0M | 9.6M | 2,401.7M | 0 | 92.0% | 1,570 | 178.2h |
 | gpt-5.6-terra | 30,931 | 175.0M | 6.4M | 1,879.0M | 0 | 91.5% | 3,126 | 194.6h |
-| gpt-6.1-sol | 27,380 | 75.0M | 5.4M | 3,159.0M | 0 | 97.7% | 440 | 204.2h |
+| gpt-6.1-sol | 27,427 | 75.1M | 5.4M | 3,163.8M | 0 | 97.7% | 441 | 204.5h |
 | gpt-6-sol | 24,111 | 87.9M | 4.1M | 4,494.7M | 0 | 98.1% | 163 | 172.5h |
 | gpt-6-astra | 20,566 | 89.5M | 6.1M | 4,087.6M | 0 | 97.9% | 163 | 243.4h |
 | gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | 0 | 91.5% | 739 | 89.8h |
@@ -115,9 +115,9 @@ _31,640.2M total tokens processed. 97% cache hit rate._
 | gpt-5.6 | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | gpt-5.6-sol-pro | 1 | 13K | 40 | 0 | 0 | 0.0% | 1 | 0.0h |
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **1,336,394** | **4,116.4M** | **397.1M** | **135,450.6M** | **2,440.9M** | **95.4%** | **36,469** | **9,216.7h** |
+| **Total** | **1,336,441** | **4,116.6M** | **397.1M** | **135,455.4M** | **2,440.9M** | **95.4%** | **36,470** | **9,217.0h** |
 
-_142,405.2M total tokens processed. 95.4% cache hit rate._
+_142,410.1M total tokens processed. 95.4% cache hit rate._
 <!-- STATS-END -->
 
 ## Projects
@@ -162,7 +162,7 @@ _142,405.2M total tokens processed. 95.4% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-10-05 11:47 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-10-05 12:55 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
