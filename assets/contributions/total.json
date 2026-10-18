@@ -1,10 +1,10 @@
 {
   "schema": "aidevops.total-contributions/v1",
   "user": "marcusquinn",
-  "updated": "2026-10-12",
-  "through": "2026-10-11",
+  "updated": "2026-10-18",
+  "through": "2026-10-17",
   "metric": "GitHub contributionCalendar.totalContributions",
-  "total": 69464,
+  "total": 71323,
   "months": [
     {
       "month": "2014-01",
@@ -773,8 +773,8 @@
     },
     {
       "month": "2026-10",
-      "total": 5310,
-      "cumulative": 69464
+      "total": 7169,
+      "cumulative": 71323
     }
   ]
 }
