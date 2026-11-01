@@ -1,10 +1,10 @@
 {
   "schema": "aidevops.total-contributions/v1",
   "user": "marcusquinn",
-  "updated": "2026-10-18",
-  "through": "2026-10-17",
+  "updated": "2026-11-01",
+  "through": "2026-10-31",
   "metric": "GitHub contributionCalendar.totalContributions",
-  "total": 71323,
+  "total": 78127,
   "months": [
     {
       "month": "2014-01",
@@ -733,48 +733,48 @@
     },
     {
       "month": "2026-02",
-      "total": 6435,
-      "cumulative": 9971
+      "total": 6422,
+      "cumulative": 9958
     },
     {
       "month": "2026-03",
       "total": 17242,
-      "cumulative": 27213
+      "cumulative": 27200
     },
     {
       "month": "2026-04",
       "total": 12983,
-      "cumulative": 40196
+      "cumulative": 40183
     },
     {
       "month": "2026-05",
       "total": 6647,
-      "cumulative": 46843
+      "cumulative": 46830
     },
     {
       "month": "2026-06",
       "total": 3840,
-      "cumulative": 50683
+      "cumulative": 50670
     },
     {
       "month": "2026-07",
       "total": 6088,
-      "cumulative": 56771
+      "cumulative": 56758
     },
     {
       "month": "2026-08",
       "total": 2914,
-      "cumulative": 59685
+      "cumulative": 59672
     },
     {
       "month": "2026-09",
       "total": 4469,
-      "cumulative": 64154
+      "cumulative": 64141
     },
     {
       "month": "2026-10",
-      "total": 7169,
-      "cumulative": 71323
+      "total": 13986,
+      "cumulative": 78127
     }
   ]
 }
