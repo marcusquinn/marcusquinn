@@ -29,16 +29,16 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | unavailable | 76.3h | 360.7h | ~3753h* |
-| Interactive human attention | 5.3h | 43.0h | 165.2h | 1247.5h |
-| Interactive AI generation | 62.9h | 532.6h | 1475.5h | 6296.2h |
-| Worker-classified human attention | 0.6h | 4.6h | 14.7h | 257.9h |
-| Worker/headless AI generation | 19.9h | 144.6h | 735.2h | 5888.6h |
-| Additive observed work | 88.4h | 722.1h | 2,386.3h | 13,628.1h |
-| Interactive sessions | 33 | 152 | 520 | 9,258 |
-| Worker sessions | 213 | 1,158 | 5,046 | 40,334 |
+| Screen time (Mac) | 8.3h | 81.4h | 301.5h | ~3768h* |
+| Interactive human attention | 9.4h | 43.5h | 165.9h | 1256.9h |
+| Interactive AI generation | 102.5h | 504.4h | 1534.7h | 6398.7h |
+| Worker-classified human attention | 1.0h | 5.2h | 15.7h | 258.9h |
+| Worker/headless AI generation | 15.3h | 147.4h | 727.2h | 5903.9h |
+| Additive observed work | 127.3h | 697.1h | 2,438.3h | 13,755.4h |
+| Interactive sessions | 35 | 132 | 516 | 9,268 |
+| Worker sessions | 163 | 1,133 | 4,880 | 40,437 |
 
-_Screen time from screen-time-history:daily-observations; collection status: ok, unavailable (pmset-failed:TimeoutExpired). *365-day estimate uses observed calendar coverage._
+_Screen time from macos-knowledge-db:/display/isBacklit; collection status: ok. *365-day estimate uses observed calendar coverage._
 
 _Periods are completed local calendar days ending at midnight; today is excluded._
 
@@ -48,31 +48,31 @@ _Human attention is unioned wall-clock time, so overlapping sessions are not dou
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-5-5 | 283,691 | 577K | 103.6M | 42,538.6M | 1,020.8M | 97.7% | 453 | 1,541.5h |
-| gpt-6.1-sol | 113,804 | 307.8M | 22.5M | 12,559.9M | 0 | 97.6% | 2,523 | 779.1h |
-| gpt-6-luna | 8,886 | 217.8M | 9.3M | 257.5M | 0 | 54.2% | 2,136 | 42.9h |
+| claude-opus-5-5 | 284,056 | 578K | 103.1M | 42,758.5M | 1,022.2M | 97.7% | 443 | 1,557.2h |
+| gpt-6.1-sol | 109,344 | 293.7M | 21.5M | 12,028.7M | 0 | 97.6% | 2,444 | 749.6h |
+| gpt-6-luna | 8,529 | 214.2M | 9.3M | 246.0M | 0 | 53.5% | 2,019 | 42.9h |
 | gpt-5.6-terra | 2,937 | 10.8M | 566K | 275.9M | 0 | 96.2% | 80 | 26.5h |
-| claude-sonnet-5-5 | 1,868 | 3K | 625K | 223.0M | 9.3M | 96.0% | 66 | 15.8h |
-| claude-haiku-5-5 | 27 | 106 | 131K | 34K | 1.9M | 1.7% | 19 | 0.5h |
+| claude-sonnet-5-5 | 2,768 | 5K | 866K | 299.8M | 14.5M | 95.4% | 109 | 26.1h |
+| claude-haiku-5-5 | 59 | 234 | 381K | 39K | 4.8M | 0.8% | 29 | 1.4h |
 | minimax-m3.1-flash-free | 10 | 54K | 696 | 80K | 0 | 59.9% | 4 | 0.0h |
 | gpt-6-astra | 7 | 99K | 4K | 0 | 0 | 0.0% | 7 | 0.1h |
 | inception/mercury-3 | 2 | 26K | 74 | 18 | 0 | 0.1% | 1 | 0.0h |
 | deepseek-v4.1-flash | 1 | 23K | 35 | 0 | 0 | 0.0% | 1 | 0.0h |
 | openai/gpt-6.1-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **411,234** | **537.3M** | **136.8M** | **55,855.2M** | **1,032.2M** | **97.3%** | **4,816** | **2,406.4h** |
+| **Total** | **407,714** | **519.6M** | **135.8M** | **55,609.2M** | **1,041.6M** | **97.3%** | **4,679** | **2,403.8h** |
 
-_57,561.6M total tokens processed. 97.3% cache hit rate._
+_57,306.4M total tokens processed. 97.3% cache hit rate._
 
 ## AI Model Usage (all time)
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-5-5 | 371,744 | 758K | 138.8M | 56,512.0M | 1,448.3M | 97.5% | 726 | 2,093.1h |
+| claude-opus-5-5 | 383,128 | 781K | 142.8M | 58,309.9M | 1,487.1M | 97.5% | 740 | 2,164.1h |
 | claude-sonnet-4-6 | 317,151 | 249.2M | 99.5M | 23,951.5M | 987.9M | 95.1% | 9,476 | 1,398.1h |
 | gpt-5.6-sol | 291,370 | 1,527.8M | 73.1M | 35,068.6M | 0 | 95.8% | 4,144 | 2,719.4h |
 | gpt-5.5 | 256,472 | 1,244.0M | 48.4M | 22,335.9M | 0 | 94.7% | 6,487 | 2,209.6h |
 | claude-opus-4-6 | 165,983 | 112.2M | 60.1M | 16,297.3M | 687.8M | 95.3% | 4,505 | 816.2h |
-| gpt-6.1-sol | 144,247 | 393.7M | 28.6M | 16,039.9M | 0 | 97.6% | 3,027 | 1,004.0h |
+| gpt-6.1-sol | 144,250 | 393.7M | 28.6M | 16,039.9M | 0 | 97.6% | 3,030 | 1,004.0h |
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | 325.5M | 94.3% | 420 | 320.7h |
 | gpt-5.3-codex | 35,951 | 209.0M | 9.6M | 2,401.7M | 0 | 92.0% | 1,570 | 178.2h |
 | gpt-5.6-terra | 33,868 | 185.8M | 7.0M | 2,154.9M | 0 | 92.1% | 3,206 | 221.1h |
@@ -80,8 +80,8 @@ _57,561.6M total tokens processed. 97.3% cache hit rate._
 | gpt-6-astra | 20,573 | 89.6M | 6.1M | 4,087.6M | 0 | 97.9% | 170 | 243.5h |
 | gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | 0 | 91.5% | 739 | 89.8h |
 | gpt-5.6-luna | 12,056 | 144.0M | 2.6M | 1,057.9M | 0 | 88.0% | 3,250 | 84.8h |
-| gpt-6-luna | 11,244 | 271.0M | 10.8M | 296.9M | 0 | 52.3% | 3,166 | 56.5h |
-| claude-sonnet-5-5 | 9,372 | 19K | 3.6M | 1,132.6M | 45.9M | 96.1% | 268 | 58.5h |
+| gpt-6-luna | 11,321 | 275.7M | 11.0M | 296.9M | 0 | 51.8% | 3,167 | 58.2h |
+| claude-sonnet-5-5 | 10,145 | 21K | 3.8M | 1,190.9M | 50.6M | 95.9% | 309 | 67.8h |
 | claude-sonnet-5 | 3,393 | 6K | 1.0M | 481.2M | 10.9M | 97.8% | 73 | 14.4h |
 | claude-haiku-4-5 | 3,202 | 9K | 798K | 209.4M | 8.5M | 96.1% | 269 | 8.6h |
 | gemini-3-flash | 2,339 | 34.0M | 624K | 88.4M | 0 | 72.2% | 166 | 9.8h |
@@ -90,10 +90,10 @@ _57,561.6M total tokens processed. 97.3% cache hit rate._
 | kimi-k2.6 | 81 | 2.2M | 25K | 2.8M | 0 | 56.2% | 3 | 0.4h |
 | gpt-5.3-codex-spark | 78 | 492K | 71K | 3.6M | 0 | 88.0% | 7 | 0.1h |
 | big-pickle | 76 | 84K | 17K | 3.1M | 211K | 91.5% | 5 | 0.2h |
+| claude-haiku-5-5 | 59 | 234 | 381K | 39K | 4.8M | 0.8% | 29 | 1.4h |
 | claude-opus-4-5 | 51 | 10 | 23K | 3.5M | 368K | 90.6% | 5 | 0.2h |
 | mimo-v2-omni-free | 48 | 160K | 11K | 3.4M | 0 | 95.5% | 2 | 0.1h |
 | gemini-3.1-pro | 47 | 0 | 0 | 0 | 0 | 0.0% | 47 | 0.0h |
-| claude-haiku-5-5 | 28 | 110 | 136K | 34K | 2.0M | 1.7% | 20 | 0.6h |
 | claude-fable-5-1 | 26 | 54 | 20K | 3.5M | 501K | 87.7% | 1 | 0.3h |
 | composer-2 | 21 | 0 | 0 | 0 | 0 | 0.0% | 13 | 0.2h |
 | mimo-v2-pro-free | 17 | 77K | 3K | 1.1M | 0 | 93.9% | 1 | 0.0h |
@@ -114,22 +114,47 @@ _57,561.6M total tokens processed. 97.3% cache hit rate._
 | gpt-5.6-sol-pro | 1 | 13K | 40 | 0 | 0 | 0.0% | 1 | 0.0h |
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | 0 | 0.0% | 1 | 0.0h |
 | openai/gpt-6.1-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **1,762,800** | **4,672.3M** | **539.3M** | **193,323.8M** | **3,518.3M** | **95.9%** | **41,504** | **11,716.4h** |
+| **Total** | **1,775,068** | **4,677.1M** | **544.0M** | **195,179.9M** | **3,564.6M** | **95.9%** | **41,563** | **11,799.3h** |
 
-_202,053.8M total tokens processed. 95.9% cache hit rate._
+_203,965.8M total tokens processed. 95.9% cache hit rate._
+
+## Top Apps by Screen Time
+
+| App | Yesterday | Prior 7 Days | Prior 28 Days |
+| --- | ---: | ---: | ---: |
+| Brave Browser | 19% | 22% | 24% |
+| Tabby | 14% | 24% | 22% |
+| X | 18% | 14% | 10% |
+| Slack | 17% | 10% | 8% |
+| YouTube | 4% | 5% | 8% |
+| Mail | 3% | 5% | 5% |
+| GitHub | 6% | 5% | 5% |
+| WhatsApp | 10% | 3% | 3% |
+| Brave PWA | 3% | 2% | 3% |
+| Firefox | 1% | 1% | 2% |
+_Top 10 apps by foreground time share across completed local calendar days. Mac only._
 <!-- STATS-END -->
 
+<!-- PROJECTS-START -->
 ## Projects
 
-- **[cloudron-buzz-app](https://github.com/marcusquinn/cloudron-buzz-app)** -- Cloudron.io app package for self-hosting Buzz.xyz Nostr relay, with storage management, backups, and auto-updates.
-- **[homebrew-tap](https://github.com/marcusquinn/homebrew-tap)** -- Homebrew tap for aidevops and other tools
-- **[aidevops](https://github.com/marcusquinn/aidevops)** -- Vibe-Coding is easy. DevOps is hard. AI DevOps automates your software, business, and personal development with managed infrastructure through AI chat in OpenCode. Opinionated tools, services, CLI & API tech-stack — for speed, security, and 24/7 results. Open-source-preferred, and SOTA everything.
-- **[aidevops.sh](https://github.com/marcusquinn/aidevops.sh)** -- The AI Devops website source code for https://aidevops.sh
-- **[quickfile-mcp](https://github.com/marcusquinn/quickfile-mcp)** -- MCP server for QuickFile UK accounting software - invoices, clients, purchases, banking, and reports
-- **[cloudron-netbird-app](https://github.com/marcusquinn/cloudron-netbird-app)** -- NetBird WireGuard mesh VPN - Cloudron app package
-- **[aidevops-cloudron-app](https://github.com/marcusquinn/aidevops-cloudron-app)** -- Cloudron app: always-on remote worker node for AI DevOps — headless Claude Code dispatch, multi-node orchestration
+- **[aidevops](https://github.com/marcusquinn/aidevops)** -- Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation for your app, business, and personal development. Opinionated tools, services, CLI & API stack for speed, security, and 24/7 results. Open-source first. SOTA everything. The best AI harness for GitHub & teamwork.
 - **[amazon-order-history-csv-download-mcp](https://github.com/marcusquinn/amazon-order-history-csv-download-mcp)** -- Download Amazon Order History As Orders & Items CSV files, plus simplified CSV file versions for importing to your accounting software. Supports Amazon United States US, United Kingdom, Canada, Germany, France, Spain, Italy, Netherlands, Japan, Australia, Mexico, India, UAE, Saudi Arabia, Ireland, Belgium
+- **[cloudron-buzz-app](https://github.com/marcusquinn/cloudron-buzz-app)** -- Cloudron.io app package for self-hosting Buzz.xyz Nostr relay, with storage management, backups, and auto-updates.
+- **[aidevops-cloudron-app](https://github.com/marcusquinn/aidevops-cloudron-app)** -- Cloudron app: always-on remote worker node for AI DevOps — headless Claude Code dispatch, multi-node orchestration
+- **[quickfile-mcp](https://github.com/marcusquinn/quickfile-mcp)** -- MCP server for QuickFile UK accounting software - invoices, clients, purchases, banking, and reports
+- **[aidevops.sh](https://github.com/marcusquinn/aidevops.sh)** -- The AI Devops website source code for https://aidevops.sh
+- **[cloudron-headscale-app](https://github.com/marcusquinn/cloudron-headscale-app)** -- Headscale self-hosted Tailscale-compatible control server - Cloudron app package
+- **[cloudron-netbird-app](https://github.com/marcusquinn/cloudron-netbird-app)** -- NetBird WireGuard mesh VPN - Cloudron app package
+- **[cloudron-nostr-relay-app](https://github.com/marcusquinn/cloudron-nostr-relay-app)** -- Private allowlisted Nostr relay strfry - Cloudron app package
+- **[cloudron-nostr-vpn-app](https://github.com/marcusquinn/cloudron-nostr-vpn-app)** -- Nostr VPN FIPS transit and bootstrap node - Cloudron app package
+- **[cloudron-opendesk-app](https://github.com/marcusquinn/cloudron-opendesk-app)** -- Cloudron app package for opendesk, the open-source support inbox and live chat
+- **[cloudron-librecrawl-app](https://github.com/marcusquinn/cloudron-librecrawl-app)** -- LibreCrawl self-hosted SEO crawler - Cloudron app package
+- **[cloudron-warmbly-app](https://github.com/marcusquinn/cloudron-warmbly-app)** -- Cloudron app package for Warmbly, the open-source cold email and deliverability platform
+- **[homebrew-tap](https://github.com/marcusquinn/homebrew-tap)** -- Homebrew tap for aidevops and other tools
 - **[marcusquinn.github.io](https://github.com/marcusquinn/marcusquinn.github.io)** -- Personal Website, Work, Ecommerce, Social Links, Software, Hosting, Services, Preferences, Audio, Music, Video, Markdown, Plain Text, Links
+<!-- PROJECTS-END -->
+
 <!-- CONTRIBUTIONS-START -->
 ## Contributions
 
@@ -139,6 +164,7 @@ _202,053.8M total tokens processed. 95.9% cache hit rate._
 - **[buzz](https://github.com/block/buzz)** -- A hive mind communication platform
 - **[claude-code-mcp](https://github.com/steipete/claude-code-mcp)** -- Claude Code as one-shot MCP server to have an agent in your agent.
 - **[ClaudeBar](https://github.com/tddworks/ClaudeBar)** -- A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance.
+- **[crosspoint-reader](https://github.com/crosspoint-reader/crosspoint-reader)** -- Open-source e-reader firmware
 - **[extro](https://github.com/turbostarter/extro)** -- Open source browser extension starter kit 🧩
 - **[git-updater](https://github.com/afragen/git-updater)** -- This WP plugin will update GitHub, Bitbucket, GitLab, and Gitea hosted plugins and themes
 - **[loading-ui](https://github.com/turbostarter/loading-ui)** -- Spinners, loaders and loading animations for modern web apps ⏳
@@ -161,7 +187,7 @@ _202,053.8M total tokens processed. 95.9% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-11-05 21:11 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-11-06 19:06 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
