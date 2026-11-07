@@ -29,16 +29,16 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 8.3h | 81.4h | 301.5h | ~3768h* |
+| Screen time (Mac) | 17.6h | 93.4h | 376.1h | ~3768h* |
 | Interactive human attention | 9.4h | 43.5h | 165.9h | 1256.9h |
 | Interactive AI generation | 102.5h | 504.4h | 1534.7h | 6398.7h |
 | Worker-classified human attention | 1.0h | 5.2h | 15.7h | 258.9h |
 | Worker/headless AI generation | 15.3h | 147.4h | 727.2h | 5903.9h |
 | Additive observed work | 127.3h | 697.1h | 2,438.3h | 13,755.4h |
-| Interactive sessions | 35 | 132 | 516 | 9,268 |
-| Worker sessions | 163 | 1,133 | 4,880 | 40,437 |
+| Interactive sessions | 44 | 141 | 525 | 9,277 |
+| Worker sessions | 195 | 1,165 | 4,912 | 40,469 |
 
-_Screen time from macos-knowledge-db:/display/isBacklit; collection status: ok. *365-day estimate uses observed calendar coverage._
+_Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
 _Periods are completed local calendar days ending at midnight; today is excluded._
 
@@ -48,31 +48,33 @@ _Human attention is unioned wall-clock time, so overlapping sessions are not dou
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-5-5 | 284,056 | 578K | 103.1M | 42,758.5M | 1,022.2M | 97.7% | 443 | 1,557.2h |
-| gpt-6.1-sol | 109,344 | 293.7M | 21.5M | 12,028.7M | 0 | 97.6% | 2,444 | 749.6h |
-| gpt-6-luna | 8,529 | 214.2M | 9.3M | 246.0M | 0 | 53.5% | 2,019 | 42.9h |
+| claude-opus-5-5 | 285,653 | 581K | 103.3M | 43,073.8M | 1,034.2M | 97.7% | 439 | 1,580.8h |
+| gpt-6.1-sol | 107,790 | 290.6M | 21.2M | 11,864.8M | 0 | 97.6% | 2,413 | 740.2h |
+| gpt-6-luna | 8,550 | 212.6M | 9.3M | 252.1M | 0 | 54.2% | 1,961 | 43.5h |
+| claude-sonnet-5-5 | 3,327 | 6K | 1.1M | 346.1M | 18.3M | 95.0% | 134 | 31.7h |
 | gpt-5.6-terra | 2,937 | 10.8M | 566K | 275.9M | 0 | 96.2% | 80 | 26.5h |
-| claude-sonnet-5-5 | 2,768 | 5K | 866K | 299.8M | 14.5M | 95.4% | 109 | 26.1h |
-| claude-haiku-5-5 | 59 | 234 | 381K | 39K | 4.8M | 0.8% | 29 | 1.4h |
+| claude-haiku-5-5 | 101 | 404 | 785K | 9K | 9.1M | 0.1% | 32 | 2.7h |
+| gpt-5.6-sol | 12 | 0 | 0 | 0 | 0 | 0.0% | 2 | 0.0h |
 | minimax-m3.1-flash-free | 10 | 54K | 696 | 80K | 0 | 59.9% | 4 | 0.0h |
 | gpt-6-astra | 7 | 99K | 4K | 0 | 0 | 0.0% | 7 | 0.1h |
 | inception/mercury-3 | 2 | 26K | 74 | 18 | 0 | 0.1% | 1 | 0.0h |
 | deepseek-v4.1-flash | 1 | 23K | 35 | 0 | 0 | 0.0% | 1 | 0.0h |
+| gpt-5.5 | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | openai/gpt-6.1-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **407,714** | **519.6M** | **135.8M** | **55,609.2M** | **1,041.6M** | **97.3%** | **4,679** | **2,403.8h** |
+| **Total** | **408,392** | **514.8M** | **136.5M** | **55,813.0M** | **1,061.7M** | **97.3%** | **4,622** | **2,425.5h** |
 
-_57,306.4M total tokens processed. 97.3% cache hit rate._
+_57,526.1M total tokens processed. 97.3% cache hit rate._
 
 ## AI Model Usage (all time)
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-5-5 | 383,128 | 781K | 142.8M | 58,309.9M | 1,487.1M | 97.5% | 740 | 2,164.1h |
+| claude-opus-5-5 | 391,170 | 797K | 145.7M | 59,574.2M | 1,520.0M | 97.5% | 749 | 2,217.3h |
 | claude-sonnet-4-6 | 317,151 | 249.2M | 99.5M | 23,951.5M | 987.9M | 95.1% | 9,476 | 1,398.1h |
-| gpt-5.6-sol | 291,370 | 1,527.8M | 73.1M | 35,068.6M | 0 | 95.8% | 4,144 | 2,719.4h |
-| gpt-5.5 | 256,472 | 1,244.0M | 48.4M | 22,335.9M | 0 | 94.7% | 6,487 | 2,209.6h |
+| gpt-5.6-sol | 291,382 | 1,527.8M | 73.1M | 35,068.6M | 0 | 95.8% | 4,146 | 2,719.4h |
+| gpt-5.5 | 256,473 | 1,244.0M | 48.4M | 22,335.9M | 0 | 94.7% | 6,488 | 2,209.6h |
 | claude-opus-4-6 | 165,983 | 112.2M | 60.1M | 16,297.3M | 687.8M | 95.3% | 4,505 | 816.2h |
-| gpt-6.1-sol | 144,250 | 393.7M | 28.6M | 16,039.9M | 0 | 97.6% | 3,030 | 1,004.0h |
+| gpt-6.1-sol | 144,251 | 393.7M | 28.6M | 16,039.9M | 0 | 97.6% | 3,031 | 1,004.0h |
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | 325.5M | 94.3% | 420 | 320.7h |
 | gpt-5.3-codex | 35,951 | 209.0M | 9.6M | 2,401.7M | 0 | 92.0% | 1,570 | 178.2h |
 | gpt-5.6-terra | 33,868 | 185.8M | 7.0M | 2,154.9M | 0 | 92.1% | 3,206 | 221.1h |
@@ -80,17 +82,17 @@ _57,306.4M total tokens processed. 97.3% cache hit rate._
 | gpt-6-astra | 20,573 | 89.6M | 6.1M | 4,087.6M | 0 | 97.9% | 170 | 243.5h |
 | gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | 0 | 91.5% | 739 | 89.8h |
 | gpt-5.6-luna | 12,056 | 144.0M | 2.6M | 1,057.9M | 0 | 88.0% | 3,250 | 84.8h |
-| gpt-6-luna | 11,321 | 275.7M | 11.0M | 296.9M | 0 | 51.8% | 3,167 | 58.2h |
-| claude-sonnet-5-5 | 10,145 | 21K | 3.8M | 1,190.9M | 50.6M | 95.9% | 309 | 67.8h |
+| gpt-6-luna | 11,456 | 278.2M | 11.2M | 303.2M | 0 | 52.2% | 3,169 | 59.2h |
+| claude-sonnet-5-5 | 10,716 | 22K | 4.1M | 1,237.7M | 54.6M | 95.8% | 337 | 73.5h |
 | claude-sonnet-5 | 3,393 | 6K | 1.0M | 481.2M | 10.9M | 97.8% | 73 | 14.4h |
 | claude-haiku-4-5 | 3,202 | 9K | 798K | 209.4M | 8.5M | 96.1% | 269 | 8.6h |
 | gemini-3-flash | 2,339 | 34.0M | 624K | 88.4M | 0 | 72.2% | 166 | 9.8h |
 | gpt-5.4-mini | 2,001 | 9.9M | 316K | 113.4M | 0 | 92.0% | 295 | 12.3h |
 | gpt-5.2 | 579 | 1.8M | 353K | 20.3M | 0 | 91.6% | 91 | 3.1h |
+| claude-haiku-5-5 | 107 | 426 | 803K | 43K | 9.4M | 0.5% | 36 | 2.8h |
 | kimi-k2.6 | 81 | 2.2M | 25K | 2.8M | 0 | 56.2% | 3 | 0.4h |
 | gpt-5.3-codex-spark | 78 | 492K | 71K | 3.6M | 0 | 88.0% | 7 | 0.1h |
 | big-pickle | 76 | 84K | 17K | 3.1M | 211K | 91.5% | 5 | 0.2h |
-| claude-haiku-5-5 | 59 | 234 | 381K | 39K | 4.8M | 0.8% | 29 | 1.4h |
 | claude-opus-4-5 | 51 | 10 | 23K | 3.5M | 368K | 90.6% | 5 | 0.2h |
 | mimo-v2-omni-free | 48 | 160K | 11K | 3.4M | 0 | 95.5% | 2 | 0.1h |
 | gemini-3.1-pro | 47 | 0 | 0 | 0 | 0 | 0.0% | 47 | 0.0h |
@@ -114,25 +116,9 @@ _57,306.4M total tokens processed. 97.3% cache hit rate._
 | gpt-5.6-sol-pro | 1 | 13K | 40 | 0 | 0 | 0.0% | 1 | 0.0h |
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | 0 | 0.0% | 1 | 0.0h |
 | openai/gpt-6.1-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **1,775,068** | **4,677.1M** | **544.0M** | **195,179.9M** | **3,564.6M** | **95.9%** | **41,563** | **11,799.3h** |
+| **Total** | **1,783,878** | **4,679.5M** | **547.7M** | **196,497.3M** | **3,606.1M** | **96%** | **41,606** | **11,860.6h** |
 
-_203,965.8M total tokens processed. 95.9% cache hit rate._
-
-## Top Apps by Screen Time
-
-| App | Yesterday | Prior 7 Days | Prior 28 Days |
-| --- | ---: | ---: | ---: |
-| Brave Browser | 19% | 22% | 24% |
-| Tabby | 14% | 24% | 22% |
-| X | 18% | 14% | 10% |
-| Slack | 17% | 10% | 8% |
-| YouTube | 4% | 5% | 8% |
-| Mail | 3% | 5% | 5% |
-| GitHub | 6% | 5% | 5% |
-| WhatsApp | 10% | 3% | 3% |
-| Brave PWA | 3% | 2% | 3% |
-| Firefox | 1% | 1% | 2% |
-_Top 10 apps by foreground time share across completed local calendar days. Mac only._
+_205,330.8M total tokens processed. 96% cache hit rate._
 <!-- STATS-END -->
 
 <!-- PROJECTS-START -->
@@ -153,6 +139,7 @@ _Top 10 apps by foreground time share across completed local calendar days. Mac 
 - **[cloudron-warmbly-app](https://github.com/marcusquinn/cloudron-warmbly-app)** -- Cloudron app package for Warmbly, the open-source cold email and deliverability platform
 - **[homebrew-tap](https://github.com/marcusquinn/homebrew-tap)** -- Homebrew tap for aidevops and other tools
 - **[marcusquinn.github.io](https://github.com/marcusquinn/marcusquinn.github.io)** -- Personal Website, Work, Ecommerce, Social Links, Software, Hosting, Services, Preferences, Audio, Music, Video, Markdown, Plain Text, Links
+- **[cloudron-orbit-app](https://github.com/marcusquinn/cloudron-orbit-app)** -- Orbit open-source tasks, docs and chat for teams - Cloudron app package
 <!-- PROJECTS-END -->
 
 <!-- CONTRIBUTIONS-START -->
@@ -161,6 +148,7 @@ _Top 10 apps by foreground time share across completed local calendar days. Mac 
 - **[awesome-opencode](https://github.com/awesome-opencode/awesome-opencode)** -- A curated list of awesome plugins, themes, agents, projects, and resources for https://opencode.ai
 - **[awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)** -- A list of Free Software network services and web applications which can be hosted locally. Selfhosting is the process of hosting and managing applications instead of renting from Software-as-a-Service providers
 - **[bash-language-server](https://github.com/bash-lsp/bash-language-server)** -- A language server for Bash
+- **[buzz-app](https://github.com/block/buzz-app)** -- A new desktop/web app experience for buzz
 - **[buzz](https://github.com/block/buzz)** -- A hive mind communication platform
 - **[claude-code-mcp](https://github.com/steipete/claude-code-mcp)** -- Claude Code as one-shot MCP server to have an agent in your agent.
 - **[ClaudeBar](https://github.com/tddworks/ClaudeBar)** -- A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance.
@@ -187,7 +175,7 @@ _Top 10 apps by foreground time share across completed local calendar days. Mac 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-11-06 19:06 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-11-07 09:15 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
