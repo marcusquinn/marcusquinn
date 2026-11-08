@@ -29,16 +29,16 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 17.6h | 93.4h | 376.1h | ~3768h* |
-| Interactive human attention | 9.4h | 43.5h | 165.9h | 1256.9h |
-| Interactive AI generation | 102.5h | 504.4h | 1534.7h | 6398.7h |
-| Worker-classified human attention | 1.0h | 5.2h | 15.7h | 258.9h |
-| Worker/headless AI generation | 15.3h | 147.4h | 727.2h | 5903.9h |
-| Additive observed work | 127.3h | 697.1h | 2,438.3h | 13,755.4h |
-| Interactive sessions | 44 | 141 | 525 | 9,277 |
-| Worker sessions | 195 | 1,165 | 4,912 | 40,469 |
+| Screen time (Mac) | 0h | 69.4h | 294.7h | ~3768h* |
+| Interactive human attention | 6.7h | 42.9h | 161.7h | 1270.2h |
+| Interactive AI generation | 83.8h | 472.2h | 1626.4h | 6573.6h |
+| Worker-classified human attention | 0.0h | 3.5h | 15.4h | 258.9h |
+| Worker/headless AI generation | 23.2h | 135.3h | 727.2h | 5937.0h |
+| Additive observed work | 113.6h | 652.2h | 2,525.5h | 13,976.7h |
+| Interactive sessions | 29 | 111 | 500 | 9,289 |
+| Worker sessions | 154 | 1,032 | 4,545 | 40,614 |
 
-_Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
+_Screen time from macos-knowledge-db:/display/isBacklit; collection status: ok, stale. *365-day estimate uses observed calendar coverage._
 
 _Periods are completed local calendar days ending at midnight; today is excluded._
 
@@ -48,48 +48,48 @@ _Human attention is unioned wall-clock time, so overlapping sessions are not dou
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-5-5 | 285,653 | 581K | 103.3M | 43,073.8M | 1,034.2M | 97.7% | 439 | 1,580.8h |
-| gpt-6.1-sol | 107,790 | 290.6M | 21.2M | 11,864.8M | 0 | 97.6% | 2,413 | 740.2h |
-| gpt-6-luna | 8,550 | 212.6M | 9.3M | 252.1M | 0 | 54.2% | 1,961 | 43.5h |
-| claude-sonnet-5-5 | 3,327 | 6K | 1.1M | 346.1M | 18.3M | 95.0% | 134 | 31.7h |
+| claude-opus-5-5 | 288,005 | 586K | 103.8M | 43,526.8M | 1,045.5M | 97.7% | 445 | 1,614.4h |
+| gpt-6.1-sol | 105,248 | 282.7M | 20.7M | 11,581.7M | 0 | 97.6% | 2,365 | 719.5h |
+| gpt-6-luna | 8,520 | 209.1M | 9.3M | 256.1M | 0 | 55.0% | 1,868 | 44.3h |
+| claude-sonnet-5-5 | 4,969 | 10K | 1.8M | 494.7M | 28.8M | 94.5% | 217 | 49.7h |
 | gpt-5.6-terra | 2,937 | 10.8M | 566K | 275.9M | 0 | 96.2% | 80 | 26.5h |
-| claude-haiku-5-5 | 101 | 404 | 785K | 9K | 9.1M | 0.1% | 32 | 2.7h |
-| gpt-5.6-sol | 12 | 0 | 0 | 0 | 0 | 0.0% | 2 | 0.0h |
+| claude-haiku-5-5 | 189 | 742 | 1.5M | 373K | 15.9M | 2.3% | 47 | 4.9h |
+| gpt-5.6-sol | 13 | 0 | 0 | 0 | 0 | 0.0% | 3 | 0.0h |
 | minimax-m3.1-flash-free | 10 | 54K | 696 | 80K | 0 | 59.9% | 4 | 0.0h |
-| gpt-6-astra | 7 | 99K | 4K | 0 | 0 | 0.0% | 7 | 0.1h |
+| gpt-6-astra | 8 | 99K | 4K | 0 | 0 | 0.0% | 8 | 0.1h |
 | inception/mercury-3 | 2 | 26K | 74 | 18 | 0 | 0.1% | 1 | 0.0h |
 | deepseek-v4.1-flash | 1 | 23K | 35 | 0 | 0 | 0.0% | 1 | 0.0h |
 | gpt-5.5 | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | openai/gpt-6.1-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **408,392** | **514.8M** | **136.5M** | **55,813.0M** | **1,061.7M** | **97.3%** | **4,622** | **2,425.5h** |
+| **Total** | **409,904** | **503.6M** | **137.9M** | **56,135.8M** | **1,090.3M** | **97.2%** | **4,582** | **2,459.4h** |
 
-_57,526.1M total tokens processed. 97.3% cache hit rate._
+_57,867.8M total tokens processed. 97.2% cache hit rate._
 
 ## AI Model Usage (all time)
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-5-5 | 391,170 | 797K | 145.7M | 59,574.2M | 1,520.0M | 97.5% | 749 | 2,217.3h |
+| claude-opus-5-5 | 401,071 | 817K | 149.4M | 61,120.8M | 1,556.1M | 97.5% | 764 | 2,282.4h |
 | claude-sonnet-4-6 | 317,151 | 249.2M | 99.5M | 23,951.5M | 987.9M | 95.1% | 9,476 | 1,398.1h |
-| gpt-5.6-sol | 291,382 | 1,527.8M | 73.1M | 35,068.6M | 0 | 95.8% | 4,146 | 2,719.4h |
+| gpt-5.6-sol | 291,383 | 1,527.8M | 73.1M | 35,068.6M | 0 | 95.8% | 4,147 | 2,719.4h |
 | gpt-5.5 | 256,473 | 1,244.0M | 48.4M | 22,335.9M | 0 | 94.7% | 6,488 | 2,209.6h |
 | claude-opus-4-6 | 165,983 | 112.2M | 60.1M | 16,297.3M | 687.8M | 95.3% | 4,505 | 816.2h |
-| gpt-6.1-sol | 144,251 | 393.7M | 28.6M | 16,039.9M | 0 | 97.6% | 3,031 | 1,004.0h |
+| gpt-6.1-sol | 144,258 | 393.7M | 28.6M | 16,039.9M | 0 | 97.6% | 3,038 | 1,004.0h |
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | 325.5M | 94.3% | 420 | 320.7h |
 | gpt-5.3-codex | 35,951 | 209.0M | 9.6M | 2,401.7M | 0 | 92.0% | 1,570 | 178.2h |
 | gpt-5.6-terra | 33,868 | 185.8M | 7.0M | 2,154.9M | 0 | 92.1% | 3,206 | 221.1h |
 | gpt-6-sol | 24,111 | 87.9M | 4.1M | 4,494.7M | 0 | 98.1% | 163 | 172.5h |
-| gpt-6-astra | 20,573 | 89.6M | 6.1M | 4,087.6M | 0 | 97.9% | 170 | 243.5h |
+| gpt-6-astra | 20,574 | 89.6M | 6.1M | 4,087.6M | 0 | 97.9% | 171 | 243.5h |
 | gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | 0 | 91.5% | 739 | 89.8h |
+| claude-sonnet-5-5 | 12,346 | 25K | 4.8M | 1,385.8M | 64.9M | 95.5% | 417 | 91.5h |
 | gpt-5.6-luna | 12,056 | 144.0M | 2.6M | 1,057.9M | 0 | 88.0% | 3,250 | 84.8h |
-| gpt-6-luna | 11,456 | 278.2M | 11.2M | 303.2M | 0 | 52.2% | 3,169 | 59.2h |
-| claude-sonnet-5-5 | 10,716 | 22K | 4.1M | 1,237.7M | 54.6M | 95.8% | 337 | 73.5h |
+| gpt-6-luna | 11,594 | 280.6M | 11.3M | 307.7M | 0 | 52.3% | 3,173 | 60.6h |
 | claude-sonnet-5 | 3,393 | 6K | 1.0M | 481.2M | 10.9M | 97.8% | 73 | 14.4h |
 | claude-haiku-4-5 | 3,202 | 9K | 798K | 209.4M | 8.5M | 96.1% | 269 | 8.6h |
 | gemini-3-flash | 2,339 | 34.0M | 624K | 88.4M | 0 | 72.2% | 166 | 9.8h |
 | gpt-5.4-mini | 2,001 | 9.9M | 316K | 113.4M | 0 | 92.0% | 295 | 12.3h |
 | gpt-5.2 | 579 | 1.8M | 353K | 20.3M | 0 | 91.6% | 91 | 3.1h |
-| claude-haiku-5-5 | 107 | 426 | 803K | 43K | 9.4M | 0.5% | 36 | 2.8h |
+| claude-haiku-5-5 | 193 | 756 | 1.5M | 407K | 16.0M | 2.5% | 50 | 4.9h |
 | kimi-k2.6 | 81 | 2.2M | 25K | 2.8M | 0 | 56.2% | 3 | 0.4h |
 | gpt-5.3-codex-spark | 78 | 492K | 71K | 3.6M | 0 | 88.0% | 7 | 0.1h |
 | big-pickle | 76 | 84K | 17K | 3.1M | 211K | 91.5% | 5 | 0.2h |
@@ -116,30 +116,54 @@ _57,526.1M total tokens processed. 97.3% cache hit rate._
 | gpt-5.6-sol-pro | 1 | 13K | 40 | 0 | 0 | 0.0% | 1 | 0.0h |
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | 0 | 0.0% | 1 | 0.0h |
 | openai/gpt-6.1-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **1,783,878** | **4,679.5M** | **547.7M** | **196,497.3M** | **3,606.1M** | **96%** | **41,606** | **11,860.6h** |
+| **Total** | **1,795,642** | **4,681.9M** | **553.0M** | **198,197.0M** | **3,659.1M** | **96%** | **41,717** | **11,947.2h** |
 
-_205,330.8M total tokens processed. 96% cache hit rate._
+_207,091.2M total tokens processed. 96% cache hit rate._
+
+## Top Apps by Screen Time
+
+| App | Yesterday | Prior 7 Days | Prior 28 Days |
+| --- | ---: | ---: | ---: |
+| Brave Browser | 17% | 20% | 25% |
+| Tabby | 24% | 20% | 22% |
+| X | 9% | 16% | 10% |
+| Slack | 4% | 10% | 8% |
+| YouTube | 21% | 6% | 8% |
+| GitHub | 6% | 6% | 5% |
+| Mail | 4% | 4% | 5% |
+| WhatsApp | -- | 5% | 3% |
+| Brave PWA | 1% | 2% | 2% |
+| Firefox | 2% | 1% | 2% |
+_Top 10 apps by foreground time share across completed local calendar days. Mac only._
 <!-- STATS-END -->
 
 <!-- PROJECTS-START -->
 ## Projects
 
 - **[aidevops](https://github.com/marcusquinn/aidevops)** -- Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation for your app, business, and personal development. Opinionated tools, services, CLI & API stack for speed, security, and 24/7 results. Open-source first. SOTA everything. The best AI harness for GitHub & teamwork.
-- **[amazon-order-history-csv-download-mcp](https://github.com/marcusquinn/amazon-order-history-csv-download-mcp)** -- Download Amazon Order History As Orders & Items CSV files, plus simplified CSV file versions for importing to your accounting software. Supports Amazon United States US, United Kingdom, Canada, Germany, France, Spain, Italy, Netherlands, Japan, Australia, Mexico, India, UAE, Saudi Arabia, Ireland, Belgium
-- **[cloudron-buzz-app](https://github.com/marcusquinn/cloudron-buzz-app)** -- Cloudron.io app package for self-hosting Buzz.xyz Nostr relay, with storage management, backups, and auto-updates.
 - **[aidevops-cloudron-app](https://github.com/marcusquinn/aidevops-cloudron-app)** -- Cloudron app: always-on remote worker node for AI DevOps — headless Claude Code dispatch, multi-node orchestration
-- **[quickfile-mcp](https://github.com/marcusquinn/quickfile-mcp)** -- MCP server for QuickFile UK accounting software - invoices, clients, purchases, banking, and reports
 - **[aidevops.sh](https://github.com/marcusquinn/aidevops.sh)** -- The AI Devops website source code for https://aidevops.sh
+- **[amazon-order-history-csv-download-mcp](https://github.com/marcusquinn/amazon-order-history-csv-download-mcp)** -- Download Amazon Order History As Orders & Items CSV files, plus simplified CSV file versions for importing to your accounting software. Supports Amazon United States US, United Kingdom, Canada, Germany, France, Spain, Italy, Netherlands, Japan, Australia, Mexico, India, UAE, Saudi Arabia, Ireland, Belgium
+- **[brandlight-brand-assets](https://github.com/brandlight/brandlight-brand-assets)** (brandlight) -- Brandlight Brands Assets
+- **[cloudron-buzz-app](https://github.com/marcusquinn/cloudron-buzz-app)** -- Cloudron.io app package for self-hosting Buzz.xyz Nostr relay, with storage management, backups, and auto-updates.
 - **[cloudron-headscale-app](https://github.com/marcusquinn/cloudron-headscale-app)** -- Headscale self-hosted Tailscale-compatible control server - Cloudron app package
+- **[cloudron-librecrawl-app](https://github.com/marcusquinn/cloudron-librecrawl-app)** -- LibreCrawl self-hosted SEO crawler - Cloudron app package
 - **[cloudron-netbird-app](https://github.com/marcusquinn/cloudron-netbird-app)** -- NetBird WireGuard mesh VPN - Cloudron app package
 - **[cloudron-nostr-relay-app](https://github.com/marcusquinn/cloudron-nostr-relay-app)** -- Private allowlisted Nostr relay strfry - Cloudron app package
 - **[cloudron-nostr-vpn-app](https://github.com/marcusquinn/cloudron-nostr-vpn-app)** -- Nostr VPN FIPS transit and bootstrap node - Cloudron app package
 - **[cloudron-opendesk-app](https://github.com/marcusquinn/cloudron-opendesk-app)** -- Cloudron app package for opendesk, the open-source support inbox and live chat
-- **[cloudron-librecrawl-app](https://github.com/marcusquinn/cloudron-librecrawl-app)** -- LibreCrawl self-hosted SEO crawler - Cloudron app package
+- **[cloudron-orbit-app](https://github.com/marcusquinn/cloudron-orbit-app)** -- Orbit open-source tasks, docs and chat for teams - Cloudron app package
 - **[cloudron-warmbly-app](https://github.com/marcusquinn/cloudron-warmbly-app)** -- Cloudron app package for Warmbly, the open-source cold email and deliverability platform
+- **[essentials.com](https://github.com/essentials-com/essentials.com)** (essentials-com) -- ESSENTIALS.COM website
 - **[homebrew-tap](https://github.com/marcusquinn/homebrew-tap)** -- Homebrew tap for aidevops and other tools
 - **[marcusquinn.github.io](https://github.com/marcusquinn/marcusquinn.github.io)** -- Personal Website, Work, Ecommerce, Social Links, Software, Hosting, Services, Preferences, Audio, Music, Video, Markdown, Plain Text, Links
-- **[cloudron-orbit-app](https://github.com/marcusquinn/cloudron-orbit-app)** -- Orbit open-source tasks, docs and chat for teams - Cloudron app package
+- **[quickfile-mcp](https://github.com/marcusquinn/quickfile-mcp)** -- MCP server for QuickFile UK accounting software - invoices, clients, purchases, banking, and reports
+- **[seoproanalytics](https://github.com/wpallstars/seoproanalytics)** (wpallstars) -- Actionable analytics: connect your content to the data that shows you how to grow. Private stats, search rankings and sales, no cookies.
+- **[seoprocookieconsent](https://github.com/wpallstars/seoprocookieconsent)** (wpallstars) -- SEO Pro Cookie Consent: the simplest, lightest cookie consent for WordPress. Blocks scripts until consent, geo-aware rules, themed embeds, editable policies. Free.
+- **[seoprostack](https://github.com/wpallstars/seoprostack)** (wpallstars) -- SEO Pro Stack: opt-in WordPress admin and workflow features plus curated plugin, theme, hosting and tool recommendations.
+- **[whitepaper](https://github.com/flumberico/whitepaper)** (flumberico) -- No description
+- **[wp-fix-plugin-does-not-exist-notices](https://github.com/wpallstars/wp-fix-plugin-does-not-exist-notices)** (wpallstars) -- Fix the WordPress "Plugin file does not exist" / "has been deactivated due to an error" message. A small plugin that explains it on the Plugins screen and cleans up what deleted plugins leave behind.
+- **[wp-plugin-starter-template-for-ai-coding](https://github.com/wpallstars/wp-plugin-starter-template-for-ai-coding)** (wpallstars) -- A WordPress plugin starter template for coding with AI IDEs, like; Claude Code, Codex, Cursor, etc. aidevops.sh recommended
 <!-- PROJECTS-END -->
 
 <!-- CONTRIBUTIONS-START -->
@@ -175,7 +199,7 @@ _205,330.8M total tokens processed. 96% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-11-07 09:15 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-11-08 02:13 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
