@@ -29,16 +29,16 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 12.1h | 81.8h | 346.8h | ~3768h* |
-| Interactive human attention | 6.7h | 42.9h | 161.7h | 1270.2h |
-| Interactive AI generation | 83.8h | 472.2h | 1626.4h | 6573.6h |
-| Worker-classified human attention | 0.0h | 3.5h | 15.4h | 258.9h |
-| Worker/headless AI generation | 23.2h | 135.3h | 727.2h | 5937.0h |
-| Additive observed work | 113.6h | 652.2h | 2,525.5h | 13,976.7h |
-| Interactive sessions | 35 | 117 | 506 | 9,295 |
-| Worker sessions | 218 | 1,096 | 4,609 | 40,678 |
+| Screen time (Mac) | unavailable | 52.1h | 331.6h | ~3768h* |
+| Interactive human attention | 5.7h | 38.3h | 159.1h | 1275.9h |
+| Interactive AI generation | 52.2h | 478.1h | 1547.5h | 6625.8h |
+| Worker-classified human attention | 0.0h | 2.9h | 15.2h | 258.9h |
+| Worker/headless AI generation | 3.6h | 116.2h | 717.5h | 5940.6h |
+| Additive observed work | 61.5h | 634.3h | 2,434.2h | 14,038.2h |
+| Interactive sessions | 24 | 102 | 489 | 9,303 |
+| Worker sessions | 92 | 946 | 4,496 | 40,693 |
 
-_Screen time from screen-time-history:daily-observations; collection status: ok, stale. *365-day estimate uses observed calendar coverage._
+_Screen time from screen-time-history:daily-observations; collection status: stale, unavailable (pmset-failed:TimeoutExpired). *365-day estimate uses observed calendar coverage._
 
 _Periods are completed local calendar days ending at midnight; today is excluded._
 
@@ -48,12 +48,12 @@ _Human attention is unioned wall-clock time, so overlapping sessions are not dou
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-5-5 | 290,779 | 591K | 104.5M | 44,030.1M | 1,055.3M | 97.7% | 442 | 1,631.5h |
-| gpt-6.1-sol | 102,482 | 275.7M | 20.1M | 11,281.5M | 0 | 97.6% | 2,313 | 703.3h |
-| gpt-6-luna | 8,312 | 205.2M | 9.3M | 253.8M | 0 | 55.3% | 1,728 | 44.2h |
-| claude-sonnet-5-5 | 5,508 | 11K | 2.0M | 533.5M | 31.9M | 94.3% | 259 | 52.4h |
+| claude-opus-5-5 | 291,324 | 593K | 104.6M | 44,127.3M | 1,058.2M | 97.7% | 449 | 1,635.8h |
+| gpt-6.1-sol | 102,366 | 275.4M | 20.0M | 11,275.2M | 0 | 97.6% | 2,308 | 702.6h |
+| gpt-6-luna | 8,229 | 204.4M | 9.3M | 249.9M | 0 | 55.0% | 1,711 | 44.0h |
+| claude-sonnet-5-5 | 5,586 | 11K | 2.1M | 537.1M | 32.4M | 94.3% | 270 | 52.8h |
 | gpt-5.6-terra | 2,937 | 10.8M | 566K | 275.9M | 0 | 96.2% | 80 | 26.5h |
-| claude-haiku-5-5 | 258 | 1K | 2.1M | 443K | 22.5M | 1.9% | 57 | 6.8h |
+| claude-haiku-5-5 | 265 | 1K | 2.2M | 445K | 23.4M | 1.9% | 58 | 7.0h |
 | gpt-5.6-sol | 13 | 0 | 0 | 0 | 0 | 0.0% | 3 | 0.0h |
 | minimax-m3.1-flash-free | 10 | 54K | 696 | 80K | 0 | 59.9% | 4 | 0.0h |
 | gpt-6-astra | 6 | 82K | 3K | 0 | 0 | 0.0% | 6 | 0.1h |
@@ -61,15 +61,15 @@ _Human attention is unioned wall-clock time, so overlapping sessions are not dou
 | deepseek-v4.1-flash | 1 | 23K | 35 | 0 | 0 | 0.0% | 1 | 0.0h |
 | gpt-5.5 | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | openai/gpt-6.1-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **410,310** | **492.5M** | **138.8M** | **56,375.6M** | **1,109.9M** | **97.2%** | **4,449** | **2,464.7h** |
+| **Total** | **410,741** | **491.6M** | **139.1M** | **56,466.1M** | **1,114.1M** | **97.2%** | **4,447** | **2,468.8h** |
 
-_58,116.9M total tokens processed. 97.2% cache hit rate._
+_58,211.0M total tokens processed. 97.2% cache hit rate._
 
 ## AI Model Usage (all time)
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-5-5 | 408,937 | 833K | 152.1M | 62,363.0M | 1,582.7M | 97.5% | 773 | 2,323.2h |
+| claude-opus-5-5 | 410,366 | 836K | 152.6M | 62,581.4M | 1,588.4M | 97.5% | 782 | 2,331.3h |
 | claude-sonnet-4-6 | 317,151 | 249.2M | 99.5M | 23,951.5M | 987.9M | 95.1% | 9,476 | 1,398.1h |
 | gpt-5.6-sol | 291,383 | 1,527.8M | 73.1M | 35,068.6M | 0 | 95.8% | 4,147 | 2,719.4h |
 | gpt-5.5 | 256,473 | 1,244.0M | 48.4M | 22,335.9M | 0 | 94.7% | 6,488 | 2,209.6h |
@@ -81,7 +81,7 @@ _58,116.9M total tokens processed. 97.2% cache hit rate._
 | gpt-6-sol | 24,111 | 87.9M | 4.1M | 4,494.7M | 0 | 98.1% | 163 | 172.5h |
 | gpt-6-astra | 20,574 | 89.6M | 6.1M | 4,087.6M | 0 | 97.9% | 171 | 243.5h |
 | gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | 0 | 91.5% | 739 | 89.8h |
-| claude-sonnet-5-5 | 12,885 | 27K | 5.0M | 1,424.6M | 68.0M | 95.4% | 459 | 94.2h |
+| claude-sonnet-5-5 | 12,963 | 27K | 5.1M | 1,428.2M | 68.5M | 95.4% | 470 | 94.5h |
 | gpt-5.6-luna | 12,056 | 144.0M | 2.6M | 1,057.9M | 0 | 88.0% | 3,250 | 84.8h |
 | gpt-6-luna | 11,618 | 281.3M | 11.4M | 308.0M | 0 | 52.3% | 3,174 | 61.0h |
 | claude-sonnet-5 | 3,393 | 6K | 1.0M | 481.2M | 10.9M | 97.8% | 73 | 14.4h |
@@ -89,7 +89,7 @@ _58,116.9M total tokens processed. 97.2% cache hit rate._
 | gemini-3-flash | 2,339 | 34.0M | 624K | 88.4M | 0 | 72.2% | 166 | 9.8h |
 | gpt-5.4-mini | 2,001 | 9.9M | 316K | 113.4M | 0 | 92.0% | 295 | 12.3h |
 | gpt-5.2 | 579 | 1.8M | 353K | 20.3M | 0 | 91.6% | 91 | 3.1h |
-| claude-haiku-5-5 | 262 | 1K | 2.1M | 476K | 22.6M | 2.1% | 60 | 6.8h |
+| claude-haiku-5-5 | 269 | 1K | 2.2M | 479K | 23.5M | 2.0% | 61 | 7.0h |
 | kimi-k2.6 | 81 | 2.2M | 25K | 2.8M | 0 | 56.2% | 3 | 0.4h |
 | gpt-5.3-codex-spark | 78 | 492K | 71K | 3.6M | 0 | 88.0% | 7 | 0.1h |
 | big-pickle | 76 | 84K | 17K | 3.1M | 211K | 91.5% | 5 | 0.2h |
@@ -116,9 +116,9 @@ _58,116.9M total tokens processed. 97.2% cache hit rate._
 | gpt-5.6-sol-pro | 1 | 13K | 40 | 0 | 0 | 0.0% | 1 | 0.0h |
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | 0 | 0.0% | 1 | 0.0h |
 | openai/gpt-6.1-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **1,804,141** | **4,682.7M** | **556.7M** | **199,478.4M** | **3,695.5M** | **96%** | **41,777** | **11,993.0h** |
+| **Total** | **1,805,655** | **4,682.7M** | **557.4M** | **199,700.3M** | **3,702.5M** | **96%** | **41,797** | **12,001.7h** |
 
-_208,413.4M total tokens processed. 96% cache hit rate._
+_208,643.0M total tokens processed. 96% cache hit rate._
 <!-- STATS-END -->
 
 <!-- PROJECTS-START -->
@@ -128,7 +128,6 @@ _208,413.4M total tokens processed. 96% cache hit rate._
 - **[aidevops-cloudron-app](https://github.com/marcusquinn/aidevops-cloudron-app)** -- Cloudron app: always-on remote worker node for AI DevOps — headless Claude Code dispatch, multi-node orchestration
 - **[aidevops.sh](https://github.com/marcusquinn/aidevops.sh)** -- The AI Devops website source code for https://aidevops.sh
 - **[amazon-order-history-csv-download-mcp](https://github.com/marcusquinn/amazon-order-history-csv-download-mcp)** -- Download Amazon Order History As Orders & Items CSV files, plus simplified CSV file versions for importing to your accounting software. Supports Amazon United States US, United Kingdom, Canada, Germany, France, Spain, Italy, Netherlands, Japan, Australia, Mexico, India, UAE, Saudi Arabia, Ireland, Belgium
-- **[brandlight-brand-assets](https://github.com/brandlight/brandlight-brand-assets)** (brandlight) -- Brandlight Brands Assets
 - **[cloudron-buzz-app](https://github.com/marcusquinn/cloudron-buzz-app)** -- Cloudron.io app package for self-hosting Buzz.xyz Nostr relay, with storage management, backups, and auto-updates.
 - **[cloudron-headscale-app](https://github.com/marcusquinn/cloudron-headscale-app)** -- Headscale self-hosted Tailscale-compatible control server - Cloudron app package
 - **[cloudron-librecrawl-app](https://github.com/marcusquinn/cloudron-librecrawl-app)** -- LibreCrawl self-hosted SEO crawler - Cloudron app package
@@ -145,7 +144,6 @@ _208,413.4M total tokens processed. 96% cache hit rate._
 - **[seoproanalytics](https://github.com/wpallstars/seoproanalytics)** (wpallstars) -- Actionable analytics: connect your content to the data that shows you how to grow. Private stats, search rankings and sales, no cookies.
 - **[seoprocookieconsent](https://github.com/wpallstars/seoprocookieconsent)** (wpallstars) -- SEO Pro Cookie Consent: the simplest, lightest cookie consent for WordPress. Blocks scripts until consent, geo-aware rules, themed embeds, editable policies. Free.
 - **[seoprostack](https://github.com/wpallstars/seoprostack)** (wpallstars) -- SEO Pro Stack: opt-in WordPress admin and workflow features plus curated plugin, theme, hosting and tool recommendations.
-- **[whitepaper](https://github.com/flumberico/whitepaper)** (flumberico) -- No description
 - **[wp-fix-plugin-does-not-exist-notices](https://github.com/wpallstars/wp-fix-plugin-does-not-exist-notices)** (wpallstars) -- Fix the WordPress "Plugin file does not exist" / "has been deactivated due to an error" message. A small plugin that explains it on the Plugins screen and cleans up what deleted plugins leave behind.
 - **[wp-plugin-starter-template-for-ai-coding](https://github.com/wpallstars/wp-plugin-starter-template-for-ai-coding)** (wpallstars) -- A WordPress plugin starter template for coding with AI IDEs, like; Claude Code, Codex, Cursor, etc. aidevops.sh recommended
 <!-- PROJECTS-END -->
@@ -183,7 +181,7 @@ _208,413.4M total tokens processed. 96% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-11-09 00:03 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-11-09 01:35 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
