@@ -29,19 +29,19 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 13.9h | 95.6h | 362.9h | ~3804h* |
-| Input activity (Mac) | 11.8h | 66.8h | 66.8h | unavailable |
-| Interactive human attention | 6.2h | 45.3h | 150.0h | 1321.1h |
-| Interactive AI generation | 94.8h | 769.8h | 1981.2h | 7395.6h |
-| Worker-classified human attention | 1.4h | 9.6h | 23.2h | 268.5h |
-| Worker/headless AI generation | 57.2h | 174.3h | 755.1h | 6114.9h |
-| Additive observed work | 159.4h | 995.9h | 2,901.9h | 15,034.0h |
-| Interactive sessions | 49 | 170 | 499 | 9,450 |
-| Worker sessions | 519 | 1,296 | 4,744 | 41,974 |
+| Screen time (Mac) | 14.5h | 95.6h | 351.6h | ~3804h* |
+| Input activity (Mac) | 12h | 78.8h | 78.8h | unavailable |
+| Interactive human attention | 4.8h | 43.0h | 150.6h | 1325.9h |
+| Interactive AI generation | 64.7h | 710.4h | 2027.1h | 7460.3h |
+| Worker-classified human attention | 10.2h | 19.7h | 31.3h | 278.7h |
+| Worker/headless AI generation | 96.1h | 260.2h | 824.0h | 6211.0h |
+| Additive observed work | 173.5h | 1028.0h | 3,023.1h | 15,207.5h |
+| Interactive sessions | 26 | 148 | 483 | 9,450 |
+| Worker sessions | 338 | 1,156 | 4,606 | 41,985 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
-_Input activity from macos-input-activity:idle-cutoff-300s (time from each keyboard, mouse or trackpad input until 5 idle minutes); collection status: ok, unavailable (fewer-than-7-sampled-days). Input sampling began 2026-11-10 (5.4 of 28 days sampled); earlier days are not counted._
+_Input activity from macos-input-activity:idle-cutoff-300s (time from each keyboard, mouse or trackpad input until 5 idle minutes); collection status: ok, unavailable (fewer-than-7-sampled-days). Input sampling began 2026-11-10 (6.4 of 28 days sampled); earlier days are not counted._
 
 _Periods are completed local calendar days ending at midnight; today is excluded._
 
@@ -51,10 +51,10 @@ _Human attention is unioned wall-clock time, so overlapping sessions are not dou
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-5-5 | 306,791 | 623K | 109.1M | 47,165.7M | 1,153.6M | 97.6% | 510 | 2,035.0h |
-| gpt-6.1-sol | 78,954 | 208.1M | 15.5M | 8,763.5M | 0 | 97.7% | 1,727 | 542.9h |
+| claude-opus-5-5 | 305,990 | 622K | 108.8M | 47,048.0M | 1,151.6M | 97.6% | 510 | 2,031.3h |
+| gpt-6.1-sol | 78,761 | 207.5M | 15.5M | 8,741.3M | 0 | 97.7% | 1,721 | 541.8h |
 | claude-sonnet-5-5 | 36,138 | 75K | 12.6M | 4,580.7M | 193.0M | 96.0% | 1,052 | 283.7h |
-| gpt-6-luna | 6,595 | 180.4M | 8.3M | 195.7M | 0 | 52.0% | 1,383 | 43.9h |
+| gpt-6-luna | 6,586 | 179.9M | 8.3M | 195.7M | 0 | 52.1% | 1,380 | 43.9h |
 | gpt-5.6-terra | 2,937 | 10.8M | 566K | 275.9M | 0 | 96.2% | 80 | 26.5h |
 | claude-fable-5-2 | 1,521 | 3K | 833K | 241.1M | 6.9M | 97.2% | 1 | 8.6h |
 | claude-haiku-5-5 | 852 | 3K | 7.0M | 1.0M | 71.2M | 1.4% | 299 | 22.4h |
@@ -67,9 +67,9 @@ _Human attention is unioned wall-clock time, so overlapping sessions are not dou
 | gpt-5.5 | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | gpt-6-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | openai/gpt-6.1-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **433,829** | **400.3M** | **154.1M** | **61,224.0M** | **1,424.9M** | **97.1%** | **4,445** | **2,963.1h** |
+| **Total** | **432,826** | **399.2M** | **153.7M** | **61,084.1M** | **1,422.9M** | **97.1%** | **4,438** | **2,958.2h** |
 
-_63,203.4M total tokens processed. 97.1% cache hit rate._
+_63,060.1M total tokens processed. 97.1% cache hit rate._
 
 ## AI Model Usage (all time)
 
@@ -190,7 +190,7 @@ _229,449.0M total tokens processed. 96% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-11-17 00:04 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-11-17 01:14 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
