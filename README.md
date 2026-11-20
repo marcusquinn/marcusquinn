@@ -37,7 +37,7 @@
 | Worker/headless AI generation | 174.5h | 656.9h | 1156.5h | 6663.2h |
 | Additive observed work | 285.2h | 1507.8h | 3,678.8h | 16,085.2h |
 | Interactive sessions | 40 | 148 | 508 | 9,512 |
-| Worker sessions | 717 | 2,227 | 5,386 | 43,459 |
+| Worker sessions | 761 | 2,270 | 5,429 | 43,502 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok, unavailable (pmset-failed:TimeoutExpired). *365-day estimate uses observed calendar coverage._
 
@@ -51,13 +51,13 @@ _Human attention is unioned wall-clock time, so overlapping sessions are not dou
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-5-5 | 329,706 | 670K | 116.4M | 50,925.8M | 1,207.4M | 97.7% | 606 | 2,364.7h |
-| claude-sonnet-5-5 | 95,988 | 199K | 30.7M | 13,241.4M | 530.5M | 96.1% | 2,240 | 700.6h |
-| gpt-6.1-sol | 66,288 | 170.0M | 12.8M | 7,380.1M | 0 | 97.7% | 1,428 | 462.7h |
-| gpt-6-luna | 6,145 | 183.5M | 8.2M | 157.8M | 0 | 46.2% | 1,393 | 46.7h |
+| claude-opus-5-5 | 329,930 | 670K | 116.5M | 50,956.4M | 1,208.1M | 97.7% | 610 | 2,366.3h |
+| claude-sonnet-5-5 | 98,123 | 203K | 31.4M | 13,562.3M | 542.6M | 96.2% | 2,277 | 718.5h |
+| gpt-6.1-sol | 65,726 | 168.0M | 12.7M | 7,309.7M | 0 | 97.8% | 1,413 | 458.5h |
+| gpt-6-luna | 6,049 | 181.5M | 8.1M | 150.3M | 0 | 45.3% | 1,384 | 46.3h |
 | gpt-5.6-terra | 2,937 | 10.8M | 566K | 275.9M | 0 | 96.2% | 80 | 26.5h |
 | claude-fable-5-2 | 1,549 | 3K | 864K | 243.3M | 7.1M | 97.1% | 2 | 8.9h |
-| claude-haiku-5-5 | 1,339 | 5K | 9.7M | 1.7M | 102.0M | 1.7% | 667 | 31.9h |
+| claude-haiku-5-5 | 1,352 | 5K | 9.8M | 1.7M | 102.7M | 1.7% | 680 | 32.1h |
 | gpt-5.6-sol | 13 | 0 | 0 | 0 | 0 | 0.0% | 3 | 0.0h |
 | gpt-6.1-terra | 6 | 0 | 0 | 0 | 0 | 0.0% | 6 | 0.0h |
 | gpt-6-astra | 5 | 74K | 2K | 0 | 0 | 0.0% | 5 | 0.0h |
@@ -65,35 +65,35 @@ _Human attention is unioned wall-clock time, so overlapping sessions are not dou
 | gpt-5.5 | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | gpt-6-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | openai/gpt-6.1-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **503,981** | **365.4M** | **179.5M** | **72,226.4M** | **1,847.1M** | **97%** | **5,420** | **3,642.0h** |
+| **Total** | **505,695** | **361.5M** | **180.0M** | **72,499.9M** | **1,860.6M** | **97%** | **5,439** | **3,657.1h** |
 
-_74,618.6M total tokens processed. 97% cache hit rate._
+_74,902.2M total tokens processed. 97% cache hit rate._
 
 ## AI Model Usage (all time)
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-5-5 | 561,167 | 1.1M | 205.7M | 85,958.2M | 2,154.1M | 97.6% | 1,118 | 3,608.8h |
+| claude-opus-5-5 | 561,391 | 1.1M | 205.8M | 85,988.7M | 2,154.8M | 97.6% | 1,122 | 3,610.4h |
 | claude-sonnet-4-6 | 317,151 | 249.2M | 99.5M | 23,951.5M | 987.9M | 95.1% | 9,476 | 1,398.1h |
 | gpt-5.6-sol | 291,383 | 1,527.8M | 73.1M | 35,068.6M | 0 | 95.8% | 4,147 | 2,719.4h |
 | gpt-5.5 | 256,473 | 1,244.0M | 48.4M | 22,335.9M | 0 | 94.7% | 6,488 | 2,209.6h |
 | claude-opus-4-6 | 165,983 | 112.2M | 60.1M | 16,297.3M | 687.8M | 95.3% | 4,505 | 816.2h |
 | gpt-6.1-sol | 144,263 | 393.7M | 28.6M | 16,039.9M | 0 | 97.6% | 3,042 | 1,004.0h |
-| claude-sonnet-5-5 | 103,736 | 215K | 33.8M | 14,185.2M | 567.9M | 96.1% | 2,448 | 744.1h |
+| claude-sonnet-5-5 | 105,872 | 219K | 34.5M | 14,506.2M | 580.0M | 96.2% | 2,485 | 762.0h |
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | 325.5M | 94.3% | 420 | 320.7h |
 | gpt-5.3-codex | 35,951 | 209.0M | 9.6M | 2,401.7M | 0 | 92.0% | 1,570 | 178.2h |
 | gpt-5.6-terra | 33,868 | 185.8M | 7.0M | 2,154.9M | 0 | 92.1% | 3,206 | 221.1h |
 | gpt-6-sol | 24,112 | 87.9M | 4.1M | 4,494.7M | 0 | 98.1% | 163 | 172.5h |
 | gpt-6-astra | 20,574 | 89.6M | 6.1M | 4,087.6M | 0 | 97.9% | 171 | 243.5h |
 | gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | 0 | 91.5% | 739 | 89.8h |
-| gpt-6-luna | 13,013 | 344.9M | 14.0M | 314.3M | 0 | 47.7% | 3,579 | 80.0h |
+| gpt-6-luna | 13,015 | 344.9M | 14.0M | 314.3M | 0 | 47.7% | 3,581 | 80.0h |
 | gpt-5.6-luna | 12,056 | 144.0M | 2.6M | 1,057.9M | 0 | 88.0% | 3,250 | 84.8h |
 | claude-sonnet-5 | 3,393 | 6K | 1.0M | 481.2M | 10.9M | 97.8% | 73 | 14.4h |
 | claude-haiku-4-5 | 3,202 | 9K | 798K | 209.4M | 8.5M | 96.1% | 269 | 8.6h |
 | gemini-3-flash | 2,339 | 34.0M | 624K | 88.4M | 0 | 72.2% | 166 | 9.8h |
 | gpt-5.4-mini | 2,001 | 9.9M | 316K | 113.4M | 0 | 92.0% | 295 | 12.3h |
 | claude-fable-5-2 | 1,549 | 3K | 864K | 243.3M | 7.1M | 97.1% | 2 | 8.9h |
-| claude-haiku-5-5 | 1,343 | 5K | 9.7M | 1.7M | 102.1M | 1.7% | 670 | 31.9h |
+| claude-haiku-5-5 | 1,356 | 5K | 9.8M | 1.7M | 102.8M | 1.7% | 683 | 32.1h |
 | gpt-5.2 | 579 | 1.8M | 353K | 20.3M | 0 | 91.6% | 91 | 3.1h |
 | kimi-k2.6 | 81 | 2.2M | 25K | 2.8M | 0 | 56.2% | 3 | 0.4h |
 | gpt-5.3-codex-spark | 78 | 492K | 71K | 3.6M | 0 | 88.0% | 7 | 0.1h |
@@ -122,9 +122,9 @@ _74,618.6M total tokens processed. 97% cache hit rate._
 | gpt-5.6-sol-pro | 1 | 13K | 40 | 0 | 0 | 0.0% | 1 | 0.0h |
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | 0 | 0.0% | 1 | 0.0h |
 | openai/gpt-6.1-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **2,051,259** | **4,746.7M** | **650.2M** | **236,085.1M** | **4,853.3M** | **96.1%** | **44,393** | **13,981.5h** |
+| **Total** | **2,053,634** | **4,746.8M** | **651.0M** | **236,436.7M** | **4,866.8M** | **96.1%** | **44,436** | **14,001.3h** |
 
-_246,335.6M total tokens processed. 96.1% cache hit rate._
+_246,701.5M total tokens processed. 96.1% cache hit rate._
 <!-- STATS-END -->
 
 <!-- PROJECTS-START -->
@@ -189,7 +189,7 @@ _246,335.6M total tokens processed. 96.1% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-11-20 06:58 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-11-20 08:32 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
