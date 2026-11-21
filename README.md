@@ -29,17 +29,17 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | unavailable | 85h | 354.1h | ~3824h* |
+| Screen time (Mac) | 12.6h | 93.5h | 354.1h | ~3824h* |
 | Input activity (Mac) | 10.4h | 82.8h | 126.6h | ~4443h* |
 | Interactive human attention | 5.9h | 42.1h | 159.9h | 1348.8h |
 | Interactive AI generation | 60.2h | 718.6h | 2334.5h | 7895.5h |
 | Worker-classified human attention | 9.4h | 64.7h | 82.1h | 330.3h |
 | Worker/headless AI generation | 199.6h | 821.9h | 1315.5h | 6862.8h |
 | Additive observed work | 273.0h | 1633.8h | 3,871.5h | 16,358.3h |
-| Interactive sessions | 42 | 157 | 516 | 9,538 |
-| Worker sessions | 608 | 2,532 | 5,601 | 43,868 |
+| Interactive sessions | 43 | 158 | 517 | 9,539 |
+| Worker sessions | 694 | 2,611 | 5,680 | 43,947 |
 
-_Screen time from screen-time-history:daily-observations; collection status: ok, unavailable (pmset-failed:TimeoutExpired). *365-day estimate uses observed calendar coverage._
+_Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
 _Input activity from macos-input-activity:idle-cutoff-300s (time from each keyboard, mouse or trackpad input until 5 idle minutes); collection status: ok. Input sampling began 2026-11-10 (10.4 of 28 days sampled); earlier days are not counted. *365-day estimate uses sampled calendar coverage._
 
@@ -51,13 +51,13 @@ _Human attention is unioned wall-clock time, so overlapping sessions are not dou
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-5-5 | 337,515 | 686K | 118.7M | 52,124.5M | 1,231.3M | 97.7% | 659 | 2,424.1h |
-| claude-sonnet-5-5 | 113,772 | 235K | 36.0M | 15,818.5M | 631.1M | 96.2% | 2,595 | 845.3h |
-| gpt-6.1-sol | 60,567 | 154.4M | 11.6M | 6,715.1M | 0 | 97.8% | 1,288 | 415.0h |
-| gpt-6-luna | 5,705 | 178.9M | 7.9M | 125.7M | 0 | 41.3% | 1,322 | 45.9h |
+| claude-opus-5-5 | 339,525 | 690K | 119.4M | 52,462.2M | 1,236.9M | 97.7% | 666 | 2,440.1h |
+| claude-sonnet-5-5 | 116,709 | 241K | 36.9M | 16,245.7M | 648.2M | 96.2% | 2,663 | 872.3h |
+| gpt-6.1-sol | 60,362 | 153.6M | 11.5M | 6,691.0M | 0 | 97.8% | 1,281 | 413.6h |
+| gpt-6-luna | 5,717 | 179.9M | 8.0M | 125.7M | 0 | 41.1% | 1,322 | 46.3h |
 | gpt-5.6-terra | 2,937 | 10.8M | 566K | 275.9M | 0 | 96.2% | 80 | 26.5h |
-| claude-fable-5-2 | 2,106 | 4K | 1.2M | 328.7M | 11.4M | 96.6% | 3 | 13.9h |
-| claude-haiku-5-5 | 1,467 | 5K | 10.5M | 1.7M | 110.4M | 1.6% | 767 | 34.5h |
+| claude-fable-5-2 | 2,408 | 4K | 1.4M | 375.7M | 12.9M | 96.7% | 4 | 16.0h |
+| claude-haiku-5-5 | 1,486 | 5K | 10.6M | 1.7M | 111.6M | 1.6% | 782 | 34.9h |
 | gpt-5.6-sol | 13 | 0 | 0 | 0 | 0 | 0.0% | 3 | 0.0h |
 | gpt-6.1-terra | 6 | 0 | 0 | 0 | 0 | 0.0% | 6 | 0.0h |
 | gpt-6-astra | 5 | 74K | 2K | 0 | 0 | 0.0% | 5 | 0.0h |
@@ -67,35 +67,35 @@ _Human attention is unioned wall-clock time, so overlapping sessions are not dou
 | gpt-5.5 | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | gpt-6-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | openai/gpt-6.1-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **524,101** | **345.3M** | **186.7M** | **75,390.5M** | **1,984.3M** | **97%** | **5,606** | **3,805.3h** |
+| **Total** | **529,176** | **345.5M** | **188.5M** | **76,178.2M** | **2,009.8M** | **97%** | **5,667** | **3,849.7h** |
 
-_77,907.0M total tokens processed. 97% cache hit rate._
+_78,722.2M total tokens processed. 97% cache hit rate._
 
 ## AI Model Usage (all time)
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-5-5 | 572,679 | 1.1M | 209.5M | 87,723.8M | 2,189.8M | 97.6% | 1,180 | 3,689.5h |
+| claude-opus-5-5 | 574,773 | 1.1M | 210.2M | 88,066.4M | 2,195.8M | 97.6% | 1,186 | 3,704.7h |
 | claude-sonnet-4-6 | 317,151 | 249.2M | 99.5M | 23,951.5M | 987.9M | 95.1% | 9,476 | 1,398.1h |
 | gpt-5.6-sol | 291,383 | 1,527.8M | 73.1M | 35,068.6M | 0 | 95.8% | 4,147 | 2,719.4h |
 | gpt-5.5 | 256,473 | 1,244.0M | 48.4M | 22,335.9M | 0 | 94.7% | 6,488 | 2,209.6h |
 | claude-opus-4-6 | 165,983 | 112.2M | 60.1M | 16,297.3M | 687.8M | 95.3% | 4,505 | 816.2h |
 | gpt-6.1-sol | 144,263 | 393.7M | 28.6M | 16,039.9M | 0 | 97.6% | 3,042 | 1,004.0h |
-| claude-sonnet-5-5 | 122,406 | 253K | 39.4M | 16,881.9M | 673.6M | 96.2% | 2,828 | 894.9h |
+| claude-sonnet-5-5 | 124,708 | 258K | 40.0M | 17,218.0M | 686.5M | 96.2% | 2,879 | 917.7h |
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | 325.5M | 94.3% | 420 | 320.7h |
 | gpt-5.3-codex | 35,951 | 209.0M | 9.6M | 2,401.7M | 0 | 92.0% | 1,570 | 178.2h |
 | gpt-5.6-terra | 33,868 | 185.8M | 7.0M | 2,154.9M | 0 | 92.1% | 3,206 | 221.1h |
 | gpt-6-sol | 24,112 | 87.9M | 4.1M | 4,494.7M | 0 | 98.1% | 163 | 172.5h |
 | gpt-6-astra | 20,574 | 89.6M | 6.1M | 4,087.6M | 0 | 97.9% | 171 | 243.5h |
 | gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | 0 | 91.5% | 739 | 89.8h |
-| gpt-6-luna | 13,121 | 350.1M | 14.2M | 314.5M | 0 | 47.3% | 3,621 | 81.5h |
+| gpt-6-luna | 13,142 | 351.3M | 14.3M | 314.5M | 0 | 47.2% | 3,626 | 81.9h |
 | gpt-5.6-luna | 12,056 | 144.0M | 2.6M | 1,057.9M | 0 | 88.0% | 3,250 | 84.8h |
 | claude-sonnet-5 | 3,393 | 6K | 1.0M | 481.2M | 10.9M | 97.8% | 73 | 14.4h |
 | claude-haiku-4-5 | 3,202 | 9K | 798K | 209.4M | 8.5M | 96.1% | 269 | 8.6h |
+| claude-fable-5-2 | 2,408 | 4K | 1.4M | 375.7M | 12.9M | 96.7% | 4 | 16.0h |
 | gemini-3-flash | 2,339 | 34.0M | 624K | 88.4M | 0 | 72.2% | 166 | 9.8h |
-| claude-fable-5-2 | 2,115 | 4K | 1.2M | 329.5M | 11.5M | 96.6% | 3 | 14.0h |
 | gpt-5.4-mini | 2,001 | 9.9M | 316K | 113.4M | 0 | 92.0% | 295 | 12.3h |
-| claude-haiku-5-5 | 1,478 | 5K | 10.5M | 1.8M | 110.8M | 1.6% | 776 | 34.6h |
+| claude-haiku-5-5 | 1,491 | 5K | 10.6M | 1.8M | 111.8M | 1.6% | 786 | 34.9h |
 | gpt-5.2 | 579 | 1.8M | 353K | 20.3M | 0 | 91.6% | 91 | 3.1h |
 | kimi-k2.6 | 81 | 2.2M | 25K | 2.8M | 0 | 56.2% | 3 | 0.4h |
 | gpt-5.3-codex-spark | 78 | 492K | 71K | 3.6M | 0 | 88.0% | 7 | 0.1h |
@@ -126,9 +126,9 @@ _77,907.0M total tokens processed. 97% cache hit rate._
 | gpt-5.6-sol-pro | 1 | 13K | 40 | 0 | 0 | 0.0% | 1 | 0.0h |
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | 0 | 0.0% | 1 | 0.0h |
 | openai/gpt-6.1-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **2,082,253** | **4,752.1M** | **661.0M** | **240,633.8M** | **5,007.9M** | **96.1%** | **44,850** | **14,222.4h** |
+| **Total** | **2,086,976** | **4,753.3M** | **662.7M** | **241,358.7M** | **5,029.1M** | **96.1%** | **44,909** | **14,263.1h** |
 
-_251,054.9M total tokens processed. 96.1% cache hit rate._
+_251,803.9M total tokens processed. 96.1% cache hit rate._
 <!-- STATS-END -->
 
 <!-- PROJECTS-START -->
@@ -152,6 +152,7 @@ _251,054.9M total tokens processed. 96.1% cache hit rate._
 - **[homebrew-tap](https://github.com/marcusquinn/homebrew-tap)** -- Homebrew tap for aidevops and other tools
 - **[marcusquinn.github.io](https://github.com/marcusquinn/marcusquinn.github.io)** -- Personal Website, Work, Ecommerce, Social Links, Software, Hosting, Services, Preferences, Audio, Music, Video, Markdown, Plain Text, Links
 - **[quickfile-mcp](https://github.com/marcusquinn/quickfile-mcp)** -- MCP server for QuickFile UK accounting software - invoices, clients, purchases, banking, and reports
+- **[quimbleshaw](https://github.com/marcusquinn/quimbleshaw)** -- Quimbleshaw: a free pixel-art hat-stacking browser game. Catch falling hats, balance a wobbling tower and knock the hats off your rivals. Play at quimbleshaw.meme
 - **[seoproanalytics](https://github.com/wpallstars/seoproanalytics)** (wpallstars) -- Actionable analytics: connect your content to the data that shows you how to grow. Private stats, search rankings and sales, no cookies.
 - **[seoprocookieconsent](https://github.com/wpallstars/seoprocookieconsent)** (wpallstars) -- SEO Pro Cookie Consent: the simplest, lightest cookie consent for WordPress. Blocks scripts until consent, geo-aware rules, themed embeds, editable policies. Free.
 - **[seoprocustom](https://github.com/wpallstars/seoprocustom)** (wpallstars) -- Change how your theme and plugins behave when their settings can't, without waiting on their makers: one small file per change, in your own copy.
@@ -193,7 +194,7 @@ _251,054.9M total tokens processed. 96.1% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-11-21 04:10 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-11-21 06:54 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
