@@ -36,8 +36,8 @@
 | Worker-classified human attention | 11.3h | 74.0h | 102.2h | 352.8h |
 | Worker/headless AI generation | 207.8h | 1177.0h | 1750.7h | 7388.0h |
 | Additive observed work | 307.6h | 1897.7h | 4,470.3h | 17,162.6h |
-| Interactive sessions | 37 | 169 | 526 | 9,600 |
-| Worker sessions | 794 | 3,606 | 6,766 | 45,554 |
+| Interactive sessions | 40 | 172 | 529 | 9,603 |
+| Worker sessions | 905 | 3,715 | 6,875 | 45,663 |
 
 _Screen time from screen-time-history:daily-observations; collection status: stale, unavailable (pmset-failed:TimeoutExpired). *365-day estimate uses observed calendar coverage._
 
@@ -51,13 +51,13 @@ _Human attention is unioned wall-clock time, so overlapping sessions are not dou
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-5-5 | 367,354 | 746K | 129.3M | 56,851.9M | 1,327.1M | 97.7% | 790 | 2,655.8h |
-| claude-sonnet-5-5 | 174,426 | 361K | 55.2M | 24,278.8M | 978.0M | 96.1% | 4,065 | 1,301.0h |
-| gpt-6.1-sol | 45,214 | 112.6M | 8.5M | 5,067.7M | 0 | 97.8% | 934 | 292.5h |
-| gpt-6-luna | 5,784 | 190.6M | 8.5M | 119.2M | 0 | 38.5% | 1,293 | 50.8h |
+| claude-opus-5-5 | 369,058 | 750K | 129.9M | 57,123.7M | 1,330.9M | 97.7% | 798 | 2,664.3h |
+| claude-sonnet-5-5 | 177,526 | 367K | 56.1M | 24,705.0M | 993.6M | 96.1% | 4,165 | 1,320.5h |
+| gpt-6.1-sol | 44,505 | 111.1M | 8.4M | 5,006.8M | 0 | 97.8% | 917 | 288.7h |
+| gpt-6-luna | 5,784 | 191.0M | 8.5M | 119.0M | 0 | 38.4% | 1,289 | 51.0h |
 | claude-fable-5-2 | 3,013 | 6K | 1.8M | 466.5M | 15.8M | 96.7% | 6 | 20.0h |
 | gpt-5.6-terra | 2,937 | 10.8M | 566K | 275.9M | 0 | 96.2% | 80 | 26.5h |
-| claude-haiku-5-5 | 2,281 | 8K | 13.0M | 69.9M | 136.7M | 33.8% | 1,077 | 45.0h |
+| claude-haiku-5-5 | 2,301 | 8K | 13.1M | 69.9M | 137.9M | 33.6% | 1,094 | 45.4h |
 | gpt-5.6-sol | 13 | 0 | 0 | 0 | 0 | 0.0% | 3 | 0.0h |
 | gpt-6.1-terra | 6 | 0 | 0 | 0 | 0 | 0.0% | 6 | 0.0h |
 | gpt-6-astra | 4 | 56K | 1K | 0 | 0 | 0.0% | 4 | 0.0h |
@@ -67,19 +67,19 @@ _Human attention is unioned wall-clock time, so overlapping sessions are not dou
 | gpt-5.5 | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | gpt-6-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | openai/gpt-6.1-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **601,041** | **315.4M** | **217.1M** | **87,130.1M** | **2,457.7M** | **96.9%** | **6,788** | **4,391.7h** |
+| **Total** | **605,156** | **314.3M** | **218.7M** | **87,767.0M** | **2,478.3M** | **96.9%** | **6,875** | **4,416.5h** |
 
-_90,120.5M total tokens processed. 96.9% cache hit rate._
+_90,778.4M total tokens processed. 96.9% cache hit rate._
 
 ## AI Model Usage (all time)
 
 | Model | Requests | Input | Output | Cache read | Cache write | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-5-5 | 618,494 | 1.2M | 225.6M | 94,897.9M | 2,338.3M | 97.6% | 1,329 | 3,998.3h |
+| claude-opus-5-5 | 620,229 | 1.2M | 226.2M | 95,176.9M | 2,342.3M | 97.6% | 1,337 | 4,007.6h |
 | claude-sonnet-4-6 | 317,151 | 249.2M | 99.5M | 23,951.5M | 987.9M | 95.1% | 9,476 | 1,398.1h |
 | gpt-5.6-sol | 291,383 | 1,527.8M | 73.1M | 35,068.6M | 0 | 95.8% | 4,147 | 2,719.4h |
 | gpt-5.5 | 256,473 | 1,244.0M | 48.4M | 22,335.9M | 0 | 94.7% | 6,488 | 2,209.6h |
-| claude-sonnet-5-5 | 182,553 | 378K | 58.4M | 25,269.6M | 1,016.9M | 96.1% | 4,285 | 1,346.8h |
+| claude-sonnet-5-5 | 185,746 | 384K | 59.4M | 25,712.2M | 1,032.8M | 96.1% | 4,386 | 1,366.8h |
 | claude-opus-4-6 | 165,983 | 112.2M | 60.1M | 16,297.3M | 687.8M | 95.3% | 4,505 | 816.2h |
 | gpt-6.1-sol | 144,264 | 393.7M | 28.6M | 16,039.9M | 0 | 97.6% | 3,043 | 1,004.0h |
 | claude-opus-4-7 | 39,573 | 52K | 38.3M | 5,405.7M | 325.5M | 94.3% | 420 | 320.7h |
@@ -88,13 +88,13 @@ _90,120.5M total tokens processed. 96.9% cache hit rate._
 | gpt-6-sol | 24,112 | 87.9M | 4.1M | 4,494.7M | 0 | 98.1% | 163 | 172.5h |
 | gpt-6-astra | 20,574 | 89.6M | 6.1M | 4,087.6M | 0 | 97.9% | 171 | 243.5h |
 | gpt-5.4 | 17,035 | 107.3M | 4.7M | 1,150.8M | 0 | 91.5% | 739 | 89.8h |
-| gpt-6-luna | 13,733 | 376.0M | 15.4M | 318.6M | 0 | 45.9% | 3,775 | 90.1h |
+| gpt-6-luna | 13,744 | 376.7M | 15.4M | 318.6M | 0 | 45.8% | 3,778 | 90.3h |
 | gpt-5.6-luna | 12,056 | 144.0M | 2.6M | 1,057.9M | 0 | 88.0% | 3,250 | 84.8h |
 | claude-sonnet-5 | 3,393 | 6K | 1.0M | 481.2M | 10.9M | 97.8% | 73 | 14.4h |
 | claude-haiku-4-5 | 3,202 | 9K | 798K | 209.4M | 8.5M | 96.1% | 269 | 8.6h |
 | claude-fable-5-2 | 3,013 | 6K | 1.8M | 466.5M | 15.8M | 96.7% | 6 | 20.0h |
 | gemini-3-flash | 2,339 | 34.0M | 624K | 88.4M | 0 | 72.2% | 166 | 9.8h |
-| claude-haiku-5-5 | 2,285 | 8K | 13.0M | 69.9M | 136.8M | 33.8% | 1,080 | 45.0h |
+| claude-haiku-5-5 | 2,305 | 8K | 13.1M | 69.9M | 138.0M | 33.6% | 1,097 | 45.4h |
 | gpt-5.4-mini | 2,001 | 9.9M | 316K | 113.4M | 0 | 92.0% | 295 | 12.3h |
 | gpt-5.2 | 579 | 1.8M | 353K | 20.3M | 0 | 91.6% | 91 | 3.1h |
 | kimi-k2.6 | 81 | 2.2M | 25K | 2.8M | 0 | 56.2% | 3 | 0.4h |
@@ -126,9 +126,9 @@ _90,120.5M total tokens processed. 96.9% cache hit rate._
 | gpt-5.6-sol-pro | 1 | 13K | 40 | 0 | 0 | 0.0% | 1 | 0.0h |
 | nemotron-3-super-free | 1 | 83K | 129 | 0 | 0 | 0.0% | 1 | 0.0h |
 | openai/gpt-6.1-sol | 1 | 0 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **2,190,534** | **4,778.3M** | **700.3M** | **256,404.9M** | **5,529.9M** | **96.1%** | **46,558** | **15,008.1h** |
+| **Total** | **2,195,493** | **4,778.9M** | **702.1M** | **257,126.5M** | **5,551.1M** | **96.1%** | **46,670** | **15,037.9h** |
 
-_267,413.5M total tokens processed. 96.1% cache hit rate._
+_268,158.7M total tokens processed. 96.1% cache hit rate._
 <!-- STATS-END -->
 
 <!-- PROJECTS-START -->
@@ -194,7 +194,7 @@ _267,413.5M total tokens processed. 96.1% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-11-24 08:37 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-11-24 11:17 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
